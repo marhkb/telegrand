@@ -216,7 +216,7 @@ impl Message {
     }
 
     pub(crate) fn sender_display_name_expression(&self) -> gtk::Expression {
-        if self.chat_().is_own_chat() {
+        if self.chat_().is_own_chat() || self.chat_().is_replies_chat() {
             self.forward_info()
                 .map(|forward_info| forward_info.origin())
                 .map(|forward_origin| match forward_origin {

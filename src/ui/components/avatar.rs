@@ -194,6 +194,9 @@ impl Avatar {
                 if chat.is_own_chat() {
                     imp.avatar.set_icon_name(Some("user-bookmarks-symbolic"));
                     imp.avatar.set_show_initials(false);
+                } else if chat.is_replies_chat() {
+                    imp.avatar.set_icon_name(Some("mail-reply-sender-symbolic"));
+                    imp.avatar.set_show_initials(false);
                 } else {
                     self.load_image(chat.avatar(), chat.session_());
                 }
@@ -209,7 +212,7 @@ impl Avatar {
                 imp.avatar
                     .set_text(Some(&strings::user_display_name(user, true)));
             } else if let Some(chat) = item.downcast_ref::<model::Chat>() {
-                if chat.is_own_chat() {
+                if chat.is_own_chat() || chat.is_replies_chat() {
                     imp.avatar.set_text(Some("-"));
                 } else {
                     imp.avatar.set_text(Some(chat.title().as_ref()));

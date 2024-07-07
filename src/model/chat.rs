@@ -397,6 +397,10 @@ impl Chat {
         self.chat_type().user() == Some(self.session_().me_())
     }
 
+    pub(crate) fn is_replies_chat(&self) -> bool {
+        self.id() == 1271266957 || self.id() == 708513
+    }
+
     fn set_permissions(&self, permissions: model::BoxedChatPermissions) {
         if self.permissions() == permissions {
             return;

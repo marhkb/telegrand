@@ -777,6 +777,14 @@ impl ChatActionBar {
                         imp.action_bar_stack.set_visible_child_name("entry");
                     } else if is_blocked {
                         imp.action_bar_stack.set_visible_child_name("unblock");
+                    } else if chat.is_replies_chat() {
+                        imp.action_bar_stack.set_visible_child_name("mute");
+
+                        if self.is_chat_muted() {
+                            imp.mute_button.set_label(&gettext("Unmute"));
+                        } else {
+                            imp.mute_button.set_label(&gettext("Mute"));
+                        }
                     } else {
                         imp.action_bar_stack.set_visible_child_name("entry");
                     }

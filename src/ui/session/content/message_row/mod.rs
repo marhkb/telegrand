@@ -212,7 +212,7 @@ impl Row {
         if let Some(message) = message.downcast_ref::<model::Message>() {
             let show_avatar = if message.is_outgoing() {
                 false
-            } else if message.chat_().is_own_chat() {
+            } else if message.chat_().is_own_chat() || message.chat_().is_replies_chat() {
                 message.forward_info().is_some()
             } else {
                 match message.chat_().chat_type() {
@@ -240,7 +240,7 @@ impl Row {
                     }
                 };
 
-                if message.chat_().is_own_chat() {
+                if message.chat_().is_own_chat() || message.chat_().is_replies_chat() {
                     match message.forward_info().unwrap().origin() {
                         model::MessageForwardOrigin::User(user) => {
                             avatar.set_custom_text(None);

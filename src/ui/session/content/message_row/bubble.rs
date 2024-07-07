@@ -156,7 +156,7 @@ impl MessageBubble {
 
         let show_sender = if force_hide_sender {
             None
-        } else if message.chat_().is_own_chat() {
+        } else if message.chat_().is_own_chat() || message.chat_().is_replies_chat() {
             if message.is_outgoing() {
                 None
             } else {

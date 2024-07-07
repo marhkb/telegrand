@@ -607,7 +607,7 @@ fn sender_label(message: model::Message) -> Option<String> {
         _ => return None,
     }
 
-    if message.chat_().is_own_chat() {
+    if message.chat_().is_own_chat() || message.chat_().is_replies_chat() {
         if message.is_outgoing() {
             None
         } else {

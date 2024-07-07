@@ -19,6 +19,8 @@ pub(crate) fn chat_display_name(chat_expression: &gtk::Expression) -> gtk::Expre
             let is_deleted = args[3].get::<bool>().unwrap();
             if chat.is_own_chat() {
                 gettext("Saved Messages")
+            } else if chat.is_replies_chat() {
+                gettext("Replies")
             } else if is_deleted {
                 gettext("Deleted Account")
             } else {
