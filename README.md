@@ -90,9 +90,11 @@ The following packages are required to build Paper Plane:
 
 - meson
 - cargo
+- blueprint-compiler
 - GTK >= 4.10 (with the patch included in the build-aux directory)
 - libadwaita >= 1.4
 - libshumate >= 1.0.0
+- rlottie >= 0.2
 - [TDLib 1.8.19](https://github.com/tdlib/td/commit/2589c3fd46925f5d57e4ec79233cd1bd0f5d0c09)
 - [Telegram API Credentials](https://my.telegram.org/) (optional, but recommended)
 
