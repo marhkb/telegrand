@@ -1,6 +1,6 @@
 <interface>
   <template class="PaplContactsWindow" parent="AdwWindow">
-    <property name="title" translatable="true">Contacts</property>
+    <property name="title" translatable="yes">Contacts</property>
     <property name="modal">true</property>
     <property name="default-width">360</property>
     <property name="default-height">600</property>
