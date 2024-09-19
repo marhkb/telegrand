@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: paper-plane\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 16:58+0200\n"
-"PO-Revision-Date: 2023-11-20 10:02+0000\n"
+"PO-Revision-Date: 2024-09-20 00:40+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/paper-plane/main/"
 "fa/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.2\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/app.drey.PaperPlane.desktop.in.in:3
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:7
@@ -196,6 +196,9 @@ msgid ""
 "<span size=\"small\">Map data by                 <a href=\"https://www."
 "openstreetmap.org\">OpenStreetMap</a>                 and contributors</span>"
 msgstr ""
+"<span size=\"small\">داده‌های نقشه به دست                   <a href=\"https"
+"://www.openstreetmap.org\">اوپن‌استریت‌مپ</a>                    و مشارکت "
+"کنندگان</span>"
 
 #: src/application.rs:197
 msgid ""
@@ -204,6 +207,10 @@ msgid ""
 "Commons Open Database License </a> (ODbL) by the                 <a "
 "href=\"https://osmfoundation.org\">aOpenStreetMap Foundation</a> (OSMF)."
 msgstr ""
+"اوپن‌استریت‌مپ® دادهٔ آزاد است که تحت                   <a href=\"https"
+"://opendatacommons.org/licenses/odbl\">                     پروانهٔ پایگاه "
+"دادهٔ باز کمون‌های دادهٔ باز</a>‏(ODbL) به دست                    <a href=\"https"
+"://osmfoundation.org\">بنیاد اوپن‌استریت‌مپ</a>‏(OSMF) پروانه شده است."
 
 #: src/expressions.rs:20 src/ui/session/sidebar/search/item_row.rs:97
 #: src/ui/session/sidebar/search/mod.rs:182
@@ -249,7 +256,7 @@ msgstr "مشخّص کردن سطح گزارش کمینه"
 
 #: src/main.rs:139
 msgid "Whether to use a test data center on first account"
-msgstr ""
+msgstr "این که از مرکز داده‌ای آزمایشی برای نخستین حساب استفاده شود یا نه"
 
 #: src/model/country_info.rs:99
 msgid "Invalid Country Code"
@@ -811,7 +818,7 @@ msgstr "_بعدی"
 
 #: src/ui/login/code.rs:117
 msgid "Send code via {type} (may still arrive within {countdown} seconds)"
-msgstr ""
+msgstr "فرستادن کد با {type} (هنوز ممکن است تا {countdown} ثانیه برسد)"
 
 #: src/ui/login/code.rs:122
 msgid "Send code via {type}"
@@ -819,7 +826,7 @@ msgstr "فرستادن کد با {type}"
 
 #: src/ui/login/code.rs:147
 msgid "The code will arrive to you via {type}."
-msgstr ""
+msgstr "کد با {type} به دستتان خواهد رسید."
 
 #: src/ui/login/code.rs:184
 msgid "Failed to authenticate: {error}"
@@ -966,11 +973,11 @@ msgstr "شکست در حذف حساب: {error}"
 
 #: src/ui/login/password.rs:294
 msgid "Code expired. A new one has been sent you."
-msgstr ""
+msgstr "کد منقضی شده. کدی جدید برایتان فرستاده شد."
 
 #: src/ui/login/password.rs:299
 msgid "Code expired. Could not sent a new one: {error}"
-msgstr ""
+msgstr "کد منقضی شده. نتوانست کدی جدید برایتان بفرستد: {error}"
 
 #: src/ui/login/password.rs:307
 msgid "Failed to send password code: {error}"
@@ -1202,11 +1209,11 @@ msgstr "ساعتی پیش به‌روز شده"
 
 #: src/ui/session/content/message_row/location.rs:155
 msgid "updated {hours} hours and {minutes} minutes ago"
-msgstr ""
+msgstr "{hours} ساعت و {minutes} دقیقه پیش به‌روز شده"
 
 #: src/ui/session/content/message_row/mod.rs:170
 msgid "Do you want to delete this message for <b>everyone</b>?"
-msgstr ""
+msgstr "مطمئنید که می‌خواهید این پسام را برای <b>همه</b> حذف کنید؟"
 
 #: src/ui/session/content/message_row/mod.rs:172
 msgid "Do you want to delete this message?"
@@ -1291,7 +1298,7 @@ msgstr "خروج از <i>{display_name}</i>"
 
 #: src/ui/session/row.rs:105
 msgid "Are you sure you want to log out?"
-msgstr ""
+msgstr "مطمئنید که می‌خواهید خارج شوید؟"
 
 #: src/ui/session/row.rs:111
 msgid "_Log out"
