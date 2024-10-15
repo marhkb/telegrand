@@ -56,15 +56,15 @@ are much older and thus the risk of getting banned is reduced.
 
 But, if you still feel brave enough, you can install the latest release from `Flathub Beta`. To do this, you need to add the the Flathub Beta remote first
 ```shell
-$ flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
 ```
 Then you can install the application by issuing
 ```shell
-$ flatpak install flathub-beta app.drey.PaperPlane
+flatpak install flathub-beta app.drey.PaperPlane
 ```
 Paper Plane can be kept up to date by issuing flatpak's update command like
 ```shell
-$ flatpak update
+flatpak update
 ```
 
 ### CI Build (Not Recommended)
