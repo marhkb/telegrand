@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: paper-plane\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 16:58+0200\n"
-"PO-Revision-Date: 2023-05-16 17:19+0000\n"
-"Last-Translator: Ibrahim Muhammad <ebraheem010@gmail.com>\n"
+"PO-Revision-Date: 2024-08-18 06:09+0000\n"
+"Last-Translator: Ahmed Mohammed <iramosu@airmail.cc>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/paper-plane/main/"
 "ar/>\n"
 "Language: ar\n"
@@ -18,54 +18,53 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.7\n"
 
 #: data/app.drey.PaperPlane.desktop.in.in:3
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:7
 msgid "Paper Plane"
-msgstr "بيبر بلين"
+msgstr "طائرة ورقية"
 
 #: data/app.drey.PaperPlane.desktop.in.in:4
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:8
 msgid "Chat over Telegram on a modern and elegant client"
-msgstr ""
+msgstr "دردش عبر تيليجرام على عميل حديث وأنيق"
 
 #: data/app.drey.PaperPlane.desktop.in.in:9
 msgid "Gnome;GTK;telegram;tg;chat;im;messaging;messenger;"
-msgstr ""
+msgstr "جنوم;غنوم;جتك;غتك;تيليجرام;تليجرام;تلجرام;تج;مراسلة;دردشة;رسالة;"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:6
 #: data/app.drey.PaperPlane.gschema.xml.in:7
 msgid "Default window width"
-msgstr "العرض الافتراضي للنافذة"
+msgstr "العرض المبدئي للنافذة"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:11
 #: data/app.drey.PaperPlane.gschema.xml.in:12
 msgid "Default window height"
-msgstr "الارتفاع الافتراضي للنافذة"
+msgstr "الارتفاع المبدئي للنافذة"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:16
 #: data/app.drey.PaperPlane.gschema.xml.in:17
 msgid "Default window maximized behaviour"
-msgstr "سلوك تكبير النافذة الافتراضي"
+msgstr "سلوك تكبير النافذة المبدئي"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:21
-#, fuzzy
 msgid "Last used session"
-msgstr "آخر الجلسات المستخدمة"
+msgstr "آخر جلسة مستخدمة"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:22
 msgid "The directory name of the last used session"
-msgstr ""
+msgstr "اسم الدليل لآخر جلسة مستخدمة"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:31
 #: src/ui/session/preferences_window.blp:7
 msgid "Color Scheme"
-msgstr "نمط الألوان"
+msgstr "مخطط الألوان"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:32
 msgid "The color scheme to be used in the app"
-msgstr "نمط اللون المستخدم في التطبيق"
+msgstr "مخطط الألوان المستخدم في التطبيق"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:10
 msgid ""
@@ -73,104 +72,121 @@ msgid ""
 "user interface and strives to meet the design principles of the GNOME "
 "desktop."
 msgstr ""
+"طائرة ورقية هو عميل بديل لتيليجرام. يستخدم لِب‌أدوايتا لواجهة المستخدم ويسعى "
+"جاهدًا لتحقيق مبادئ تصميم واجهة سطح المكتب جنوم."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:14
 msgid ""
 "Paper Plane is still under development and not yet feature-complete. "
 "However, the following things are already working:"
 msgstr ""
+"ما زال طائرة ورقية قيد التطوير ومزاياه غير مكتملة، ولكن هذه الأشياء تعمل "
+"بالفعل:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:19
 msgid "The use of multiple accounts at the same time."
-msgstr ""
+msgstr "استخدام عدة حسابات في آن واحد."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:20
 msgid "Viewing text messages, images, stickers and files."
-msgstr ""
+msgstr "عرض الرسائل النصية، والصور، والملصقات، والملفات."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:21
 msgid "Sending text messages and images."
-msgstr ""
+msgstr "إرسال الرسائل النصية والصور."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:22
 msgid "Replying to messages."
-msgstr ""
+msgstr "الرد على الرسائل."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:23
 msgid "Searching for groups and persons."
-msgstr ""
+msgstr "البحث عن مجموعات أو أشخاص."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:29
 msgid "Main window"
-msgstr "النافذة الرئيسية"
+msgstr "النافذة الرئيسة"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:47
 msgid ""
 "The third beta release of Paper Plane 0.1.0 should in the first place fix a "
 "build error on Flathub:"
 msgstr ""
+"إصدارة بيتا الثالثة لطائرة ورقية 0.1.0 ينبغي أن تحل خطاً في البناء على فلات‌هَب:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:49
 msgid ""
 "Added registered categories to te desktop file to fix a build error on "
 "Flathub."
 msgstr ""
+"إضافة تصنيفات المسجلين لملف تيليجرام سطح المكتب لإصلاح خطأ في البناء على "
+"فلات‌هَب."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:50
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:64
 msgid "Dependencies have been updated."
-msgstr ""
+msgstr "حُدثت التبعيات."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:51
 msgid "Turkish translations have been updated, thanks to @sabriunal."
-msgstr ""
+msgstr "حُدثت الترجمات التركية. شكرًا لـ@sabriunal."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:57
 msgid ""
 "The second beta release of Paper Plane 0.1.0 contains the following "
 "features, fixes and chores:"
 msgstr ""
+"إصدارة بيتا الثالثة لطائرة ورقية 0.1.0 تتضمن الميزات، والإصلاحات، والمهام "
+"التالية:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:59
 msgid ""
 "Blueprint compiler has been updated to version 0.8.1, thanks to "
 "@alissonlauffer."
-msgstr ""
+msgstr "حُدث مُصرِّف الورق السالب للإصدار 0.8.1. شكرًا لـ @alissonlauffer."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:60
 msgid ""
 "The chat history now has a background image, which is animated when new "
 "messages arrive, thanks to @yuraiz."
 msgstr ""
+"يحوي تاريخ الدردشة الآن على صورة خلفية، والتي تكون متحركة عند وصول رسائل "
+"جديدة. شكرًا لـ @yuraiz."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:61
 msgid ""
 "A bug was fixed that lead to an application crash if selecting non-existing "
 "chats from the contacts window, thank to @alissonlauffer."
 msgstr ""
+"أُصلحت علَّة أدت لانهيار التطبيق عند اختيار دردشتين غير موجودتين في قائمة جهات "
+"الاتصال. شكرًا لـ @alissonlauffer."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:62
 msgid ""
 "Avatars of deleted accounts now have a ghost icon set, thanks to @karl0d."
 msgstr ""
+"أفتارات الحسابات المحذوفة تحوي طقم أيقونات الأشباح الآن. شكرًا لـ @karl0d."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:63
 msgid ""
 "The application will now be built with more aggressive compiler options, "
 "which should result in a smaller and maybe faster binary."
 msgstr ""
+"سيبنى التطبيق الآن مع خيارات مُصرِّف أكثر شدة، والتي ستقلل حجم الثنائيات "
+"ويسرعها نسبيًا."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:65
 msgid ""
 "Portuguese and Polish translation have been updated, thanks to "
 "@jvlianodorneles and @karl0d."
 msgstr ""
+"حُدثت الترجمات البرتغالية والبولندية. شكرًا لـ @jvlianodorneles و @karl0d."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:71
 msgid ""
 "Paper Plane 0.1.0-beta.1 is the first release for enthusiasts to try out and "
 "play around with."
-msgstr ""
+msgstr "إصدارة بيتا الأولى لطائرة ورقية 0.1.0 هي أول إصدارة للهواة كي يجربوها."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:83
 msgid "Marco Melorio"
@@ -178,7 +194,7 @@ msgstr "ماركو ميلوريو"
 
 #: src/application.rs:165
 msgid "Paper Plane developers"
-msgstr "مطورو بيبر بلين"
+msgstr "مطورو طائرة ورقية"
 
 #: src/application.rs:185
 msgid "Sponsors"
@@ -189,6 +205,9 @@ msgid ""
 "<span size=\"small\">Map data by                 <a href=\"https://www."
 "openstreetmap.org\">OpenStreetMap</a>                 and contributors</span>"
 msgstr ""
+"<span size=\"small\">بيانات الخرائط بواسطة                 <a href=\"https"
+"://www.openstreetmap.org\">خريطة الشارع المفتوحة</a>                 "
+"ومساهميه</span>"
 
 #: src/application.rs:197
 msgid ""
@@ -197,6 +216,11 @@ msgid ""
 "Commons Open Database License </a> (ODbL) by the                 <a "
 "href=\"https://osmfoundation.org\">aOpenStreetMap Foundation</a> (OSMF)."
 msgstr ""
+"خريطة الشارع المفتوحة (OpenStreetMap®) هي بيانات مفتوحة مرخصة "
+"تحت                 <a href=\"https://opendatacommons.org/licenses/odbl\""
+">                رخصة قاعدة البيانات المفتوحة </a> (ODbL) من "
+"قبل                 <a href=\"https://osmfoundation.org\">aمؤسسة خريطة "
+"الشارع المفتوحة</a> (OSMF)."
 
 #: src/expressions.rs:20 src/ui/session/sidebar/search/item_row.rs:97
 #: src/ui/session/sidebar/search/mod.rs:182
@@ -209,7 +233,7 @@ msgstr "حساب محذوف"
 
 #: src/expressions.rs:90
 msgid "The admins of this group have restricted you from writing here"
-msgstr "لقد قيد مدراء هذه المجموعة كتابتك هنا"
+msgstr "قَيّد مدراء هذه المجموعة كتابتك هنا"
 
 #. Translators: This is a time representation, without seconds.
 #. Here you may want to change to a 24-hours representation, based on your locale.
@@ -232,15 +256,15 @@ msgstr "لا يُسمح بكتابة الرسائل في هذه المجموعة
 
 #: src/main.rs:121
 msgid "Prints application version"
-msgstr ""
+msgstr "يطبع إصدار التطبيق"
 
 #: src/main.rs:130
 msgid "Specify the minimum log level"
-msgstr ""
+msgstr "يحدد مستوى السجل الأدنى"
 
 #: src/main.rs:139
 msgid "Whether to use a test data center on first account"
-msgstr ""
+msgstr "فيما إذا استخدمت مركز بيانات تجريبي على الحساب الأول"
 
 #: src/model/country_info.rs:99
 msgid "Invalid Country Code"
@@ -252,11 +276,11 @@ msgstr "حساب تجريبي"
 
 #: src/strings.rs:29
 msgid "{sender} is choosing a contact"
-msgstr "يجري اختيار جهة اتصال من {sender}"
+msgstr "يجري اختيار جهة اتصال من قبل {sender}"
 
 #: src/strings.rs:33
 msgid "{sender1} and {sender2} are choosing contacts"
-msgstr "يقوم كل من {sender1} و{sender2} باختيار جهات اتصال"
+msgstr "يختار كل من {sender1} و{sender2} جهات اتصال"
 
 #: src/strings.rs:40
 msgid "{num} people are choosing contacts"
@@ -268,11 +292,11 @@ msgstr "يجري اختيار جهة اتصال"
 
 #: src/strings.rs:52
 msgid "{sender} is choosing a location"
-msgstr "يجري اختيار موقع من {sender}"
+msgstr "يجري اختيار موقع من قبل {sender}"
 
 #: src/strings.rs:56
 msgid "{sender1} and {sender2} are choosing locations"
-msgstr "يقوم كل من {sender1} و{sender2} باختيار مواقع"
+msgstr "يختار كل من {sender1} و{sender2} مواقع"
 
 #: src/strings.rs:63
 msgid "{num} people are choosing locations"
@@ -284,11 +308,11 @@ msgstr "يجري اختيار موقع"
 
 #: src/strings.rs:75
 msgid "{sender} is choosing a sticker"
-msgstr "يجري اختيار ملصق من {sender}"
+msgstr "يجري اختيار ملصق من قبل {sender}"
 
 #: src/strings.rs:79
 msgid "{sender1} and {sender2} are choosing stickers"
-msgstr "يقوم كل من {sender1} و{sender2} باختيار ملصقات"
+msgstr "يختار كل من {sender1} و{sender2} ملصقات"
 
 #: src/strings.rs:86
 msgid "{num} people are choosing stickers"
@@ -300,27 +324,27 @@ msgstr "يجري اختيار ملصق"
 
 #: src/strings.rs:98
 msgid "{sender} is recording a video"
-msgstr "يجري تسجيل مقطع من {sender}"
+msgstr "يجري تسجيل مقطع فيديو من قبل {sender}"
 
 #: src/strings.rs:102
 msgid "{sender1} and {sender2} are recording videos"
-msgstr "يقوم كل من {sender1} و{sender2} بتسجيل مقاطع"
+msgstr "يسجل كل من {sender1} و{sender2} مقاطع فيديو"
 
 #: src/strings.rs:109
 msgid "{num} people are recording videos"
-msgstr "{num} أشخاص يسجلون مقاطع"
+msgstr "{num} أشخاص يسجلون مقاطع فيديو"
 
 #: src/strings.rs:114
 msgid "recording a video"
-msgstr "يجري تسجيل مقطع"
+msgstr "يجري تسجيل مقطع فيديو"
 
 #: src/strings.rs:121
 msgid "{sender} is recording a video note"
-msgstr "يجري تسجيل رسالة مصورة من {sender}"
+msgstr "يجري تسجيل رسالة مصورة من قبل {sender}"
 
 #: src/strings.rs:125
 msgid "{sender1} and {sender2} are recording video notes"
-msgstr "يقوم كل من {sender1} و{sender2} بتسجيل رسائل مصورة"
+msgstr "يسجل كل من {sender1} و{sender2} رسائل مصورة"
 
 #: src/strings.rs:132
 msgid "{num} people are recording video notes"
@@ -332,11 +356,11 @@ msgstr "يجري تسجيل رسالة مصورة"
 
 #: src/strings.rs:144
 msgid "{sender} is recording a voice note"
-msgstr "يجري تسجيل رسالة صوتية من {sender}"
+msgstr "يجري تسجيل رسالة صوتية من قبل {sender}"
 
 #: src/strings.rs:148
 msgid "{sender1} and {sender2} are recording voice notes"
-msgstr "يقوم كل من {sender1} و{sender2} بتسجيل رسائل صوتية"
+msgstr "يسجل كل من {sender1} و{sender2} رسائل صوتية"
 
 #: src/strings.rs:155
 msgid "{num} people are recording voice notes"
@@ -348,11 +372,11 @@ msgstr "يجري تسجيل رسالة صوتية"
 
 #: src/strings.rs:167
 msgid "{sender} is playing a game"
-msgstr "{sender} حاليا في لعبة"
+msgstr "{sender} حاليًا في لعبة"
 
 #: src/strings.rs:171
 msgid "{sender1} and {sender2} are playing games"
-msgstr "يقوم كل من {sender1} و{sender2} باللعب حاليا"
+msgstr "يلعب كل من {sender1} و{sender2} حاليًا"
 
 #: src/strings.rs:178
 msgid "{num} people are playing games"
@@ -364,11 +388,11 @@ msgstr "يجري اللعب حاليا"
 
 #: src/strings.rs:190
 msgid "{sender} is typing"
-msgstr "تجري الكتابة من {sender}"
+msgstr "تجري الكتابة من قبل {sender}"
 
 #: src/strings.rs:194
 msgid "{sender1} and {sender2} are typing"
-msgstr "تجري الكتابة من {sender1} و{sender2}"
+msgstr "{sender1} و{sender2} يكتبان"
 
 #: src/strings.rs:200
 msgid "{num} people are typing"
@@ -380,11 +404,11 @@ msgstr "تجري الكتابة"
 
 #: src/strings.rs:210
 msgid "{sender} is uploading a document ({progress}%)"
-msgstr "يجري رفع مستند من {sender} ({progress}%)"
+msgstr "يجري رفع مستند من قبل {sender} ({progress}%)"
 
 #: src/strings.rs:217
 msgid "{sender1} and {sender2} are uploading documents"
-msgstr "يقوم كل من {sender1} و{sender2} برفع مستندات"
+msgstr "يرفع كل من {sender1} و{sender2} مستندات"
 
 #: src/strings.rs:224
 msgid "{num} people are uploading documents"
@@ -396,15 +420,15 @@ msgstr "يجري رفع مستند ({progress}%)"
 
 #: src/strings.rs:239
 msgid "{sender} is uploading a photo ({progress}%)"
-msgstr "يجري رفع صورة من {sender} ({progress}%)"
+msgstr "يجري رفع صورة من قبل {sender} ({progress}%)"
 
 #: src/strings.rs:246
 msgid "{sender1} and {sender2} are uploading photos"
-msgstr "يقوم كل من {sender1} و{sender2} برفع صور"
+msgstr "يرفع كل من {sender1} و{sender2} صورًا"
 
 #: src/strings.rs:253
 msgid "{num} people are uploading photos"
-msgstr "{num} أشخاص يرفعون صور"
+msgstr "{num} أشخاص يرفعون صورًا"
 
 #: src/strings.rs:259
 msgid "uploading a photo ({progress}%)"
@@ -412,11 +436,11 @@ msgstr "يجري رفع صورة ({progress}%)"
 
 #: src/strings.rs:268
 msgid "{sender} is uploading a video ({progress}%)"
-msgstr "يجري رفع مقطع فيديو من {sender} ({progress}%)"
+msgstr "يجري رفع مقطع فيديو من قبل {sender} ({progress}%)"
 
 #: src/strings.rs:275
 msgid "{sender1} and {sender2} are uploading videos"
-msgstr "يقوم كل من {sender1} و{sender2} برفع مقاطع فيديو"
+msgstr "يرفع كل من {sender1} و{sender2} مقاطع فيديو"
 
 #: src/strings.rs:282
 msgid "{num} people are uploading videos"
@@ -428,11 +452,11 @@ msgstr "يجري رفع مقطع فيديو ({progress}%)"
 
 #: src/strings.rs:297
 msgid "{sender} is uploading a video note ({progress}%)"
-msgstr "يجري رفع رسالة مصورة من {sender} ({progress}%)"
+msgstr "يجري رفع رسالة مصورة من قبل {sender} ({progress}%)"
 
 #: src/strings.rs:304
 msgid "{sender1} and {sender2} are uploading video notes"
-msgstr "يقوم كل من {sender1} و{sender2} برفع رسائل مصورة"
+msgstr "يرفع كل من {sender1} و{sender2} رسائل مصورة"
 
 #: src/strings.rs:311
 msgid "{num} people are uploading video notes"
@@ -444,11 +468,11 @@ msgstr "يجري رفع رسالة مصورة ({progress}%)"
 
 #: src/strings.rs:326
 msgid "{sender} is uploading a voice note ({progress}%)"
-msgstr "يجري رفع رسالة صوتية من {sender} ({progress}%)"
+msgstr "يجري رفع رسالة صوتية من قبل {sender} ({progress}%)"
 
 #: src/strings.rs:333
 msgid "{sender1} and {sender2} are uploading voice notes"
-msgstr "يقوم كل من {sender1} و{sender2} برفع رسائل صوتية"
+msgstr "يرفع كل من {sender1} و{sender2} رسائل صوتية"
 
 #: src/strings.rs:340
 msgid "{num} people are uploading voice notes"
@@ -460,27 +484,27 @@ msgstr "يجري رفع رسالة صوتية ({progress}%)"
 
 #: src/strings.rs:355
 msgid "{sender} is watching an animation {emoji}"
-msgstr "تجري مشاهدة رسوم متحركة من {sender} {emoji}"
+msgstr "تجري مشاهدة إيموجي {emoji} متحرك من قبل {sender}"
 
 #: src/strings.rs:362
 msgid "{sender1} and {sender2} are watching animations {emoji}"
-msgstr "يقوم كل من {sender1} و{sender2} بمشاهدة رسوم متحركة {emoji}"
+msgstr "يشاهد كل من {sender1} و{sender2} إيموجي {emoji} متحرك"
 
 #: src/strings.rs:370
 msgid "{num} people are watching animations {emoji}"
-msgstr "{num} أشخاص يشاهدون رسوما متحركة {emoji}"
+msgstr "{num} أشخاص يشاهدون إيموجي {emoji} متحرك"
 
 #: src/strings.rs:375
 msgid "watching an animation"
-msgstr "تجري مشاهدة رسوم متحركة"
+msgstr "تجري مشاهدة إيموجي متحرك"
 
 #: src/strings.rs:398
 msgid "last seen a long time ago"
-msgstr "آخر نشاط منذ وقت طويل"
+msgstr "آخر نشاط منذ زمن طويل"
 
 #: src/strings.rs:399
 msgid "online"
-msgstr "هذا الحساب متصل"
+msgstr "مُتَّصِل"
 
 #. Translators: This is an online status with the date
 #: src/strings.rs:408
@@ -521,7 +545,7 @@ msgstr "آخر نشاط منذ لحظات"
 
 #: src/strings.rs:433
 msgid "last seen recently"
-msgstr "آخر نشاط مؤخرا"
+msgstr "آخر نشاط كان مؤخرًا"
 
 #: src/strings.rs:434
 msgid "last seen within a week"
@@ -532,22 +556,20 @@ msgid "last seen within a month"
 msgstr "آخر نشاط خلال شهر"
 
 #: src/strings.rs:456 src/ui/session/content/message_row/location.blp:26
-#, fuzzy
 msgid "Live Location"
-msgstr "مقطع فيديو، {caption}"
+msgstr "التموضع المباشر"
 
 #: src/strings.rs:458
-#, fuzzy
 msgid "Location"
-msgstr "النص التوضيحي"
+msgstr "التموضع"
 
 #: src/strings.rs:467
 msgid "Photo has expired"
-msgstr "لقد انتهت صلاحية الصورة"
+msgstr "انتهت صلاحية الصورة"
 
 #: src/strings.rs:470
 msgid "Video has expired"
-msgstr "لقد انتهت صلاحية مقطع الفيديو"
+msgstr "انتهت صلاحية مقطع الفيديو"
 
 #: src/strings.rs:471
 msgid "Video Message"
@@ -555,11 +577,11 @@ msgstr "رسالة مصورة"
 
 #: src/strings.rs:504
 msgid "{sender} took a screenshot!"
-msgstr "لقد تم الاحتفاظ بلقطة شاشة من {sender}!"
+msgstr "التقط {sender} لقطة شاشة!"
 
 #: src/strings.rs:509
 msgid "Location, {venue}"
-msgstr ""
+msgstr "التموضع، {venue}"
 
 #: src/strings.rs:510
 msgid "Unsupported Message"
@@ -567,11 +589,11 @@ msgstr "رسالة غير مدعومة"
 
 #: src/strings.rs:516
 msgid "GIF"
-msgstr "صورة متحركة"
+msgstr "رسالة جيف متحركة"
 
 #: src/strings.rs:518
 msgid "GIF, {caption}"
-msgstr "صورة متحركة، {caption}"
+msgstr "رسالة جيف متحركة، {caption}"
 
 #: src/strings.rs:526
 msgid "{title} – {performer}"
@@ -672,115 +694,115 @@ msgstr "مكالمة واردة"
 
 #: src/strings.rs:665 src/strings.rs:682
 msgid "{sender} created the group \"{title}\""
-msgstr "تم إنشاء مجموعة \"{title}\" بواسطة {sender}"
+msgstr "أٌنشأت المجموعة «{title}» بواسطة {sender}"
 
 #: src/strings.rs:677
 msgid "Channel created"
-msgstr "تم إنشاء القناة"
+msgstr "أُنشأت القناة"
 
 #: src/strings.rs:696
 msgid "Channel renamed to \"{title}\""
-msgstr "تمت إعادة تسمية القناة إلى \"{title}\""
+msgstr "أٌعيدت تسمية القناة إلى «{title}»"
 
 #: src/strings.rs:701
 msgid "{sender} changed the group name to \"{title}\""
-msgstr "تم تغيير اسم المجموعة إلى \"{title}\" بواسطة {sender}"
+msgstr "غُير اسم المجموعة إلى «{title}» من قبل {sender}"
 
 #: src/strings.rs:711
 msgid "Channel photo changed"
-msgstr "تم تغيير صورة القناة"
+msgstr "غُيرت صورة القناة"
 
 #: src/strings.rs:715
 msgid "{sender} changed the group photo"
-msgstr "تم تغيير صورة المجموعة بواسطة {sender}"
+msgstr "غُيرت صورة المجموعة بواسطة {sender}"
 
 #: src/strings.rs:723
 msgid "Channel photo removed"
-msgstr "تمت إزالة صورة القناة"
+msgstr "أُزيلت صورة القناة"
 
 #: src/strings.rs:727
 msgid "{sender} removed the group photo"
-msgstr "تمت إزالة صورة المجموعة بواسطة {sender}"
+msgstr "أُزيلت صورة المجموعة من قبل {sender}"
 
 #: src/strings.rs:738 src/strings.rs:773
 msgid "{sender} joined the group"
-msgstr "تم انضمام {sender} إلى المجموعة"
+msgstr "انضم {sender} إلى المجموعة"
 
 #: src/strings.rs:743
 msgid "{sender} added {first_user} and {second_user}"
-msgstr "لقد تمت إضافة {first_user} و{second_user} بواسطة {sender}"
+msgstr "أُضيف {first_user} و{second_user} بواسطة {sender}"
 
 #: src/strings.rs:757
 msgid "{sender} added {users}"
-msgstr "لقد تمت إضافة {users} بواسطة {sender}"
+msgstr "أُضيف {users} من قبل {sender}"
 
 #: src/strings.rs:766
 msgid "{sender} joined the group via invite link"
-msgstr "لقد تم انضمام {sender} إلى المجموعة عبر رابط الدعوة"
+msgstr "انضم {sender} للمجموعة عبر رابط الدعوة"
 
 #: src/strings.rs:780
 msgid "{sender} left the group"
-msgstr "غادر/ت {sender} المجموعة"
+msgstr "غادر {sender} المجموعة"
 
 #: src/strings.rs:785
 msgid "{sender} removed {user}"
-msgstr "لقد تمت إزالة {user} بواسطة {sender}"
+msgstr "أُزيل {user} بواسطة {sender}"
 
 #: src/strings.rs:810
 msgid "{sender} scored {points} in {game}"
-msgstr "لقد تم إحراز {points} نقطة في {game} بواسطة {sender}"
+msgstr "أحرز {sender} {points} نقطة في {game}"
 
 #: src/strings.rs:819
 msgid "{sender} scored {points}"
-msgstr "لقد تم إحراز {points} نقطة بواسطة {sender}"
+msgstr "أحرز {sender} {points} نقطة"
 
 #: src/strings.rs:847
 msgid "{sender} pinned \"{text}\""
-msgstr "تم تثبيت \"{text}\" بواسطة {sender}"
+msgstr "ثُبتت «{text}» من قبل {sender}"
 
 #: src/strings.rs:849
 msgid "{sender} pinned a GIF"
-msgstr "تم تثبيت صورة متحركة بواسطة {sender}"
+msgstr "ثُبتت صورة جيف متحركة من قبل {sender}"
 
 #: src/strings.rs:850
 msgid "{sender} pinned an audio file"
-msgstr "تم تثبيت مقطع صوتي بواسطة {sender}"
+msgstr "ثُبت مقطع صوتي من قبل {sender}"
 
 #: src/strings.rs:851
 msgid "{sender} pinned a file"
-msgstr "تم تثبيت ملف بواسطة {sender}"
+msgstr "ثُبت ملف من قبل {sender}"
 
 #: src/strings.rs:852
 msgid "{sender} pinned a photo"
-msgstr "تم تثبيت صورة بواسطة {sender}"
+msgstr "ثُبتت صورة من قبل {sender}"
 
 #: src/strings.rs:853
 msgid "{sender} pinned a sticker"
-msgstr "تم تثبيت ملصق بواسطة {sender}"
+msgstr "ثُبت ملصق من قبل {sender}"
 
 #: src/strings.rs:854
 msgid "{sender} pinned a video"
-msgstr "تم تثبيت مقطع فيديو بواسطة {sender}"
+msgstr "ثُبت مقطع فيديو من قبل {sender}"
 
 #: src/strings.rs:855
 msgid "{sender} pinned a video message"
-msgstr "تم تثبيت رسالة مصورة بواسطة {sender}"
+msgstr "ثُبتت رسالة مصورة من قبل {sender}"
 
 #: src/strings.rs:856
 msgid "{sender} pinned a voice message"
-msgstr "تم تثبيت رسالة صوتية بواسطة {sender}"
+msgstr "ثُبتت رسالة صوتية من قبل {sender}"
 
 #: src/strings.rs:857 src/strings.rs:859
 msgid "{sender} pinned a message"
-msgstr "تم تثبيت رسالة بواسطة {sender}"
+msgstr "ثُبتت رسالة من قبل {sender}"
 
 #: src/strings.rs:868
 msgid "{sender} joined Telegram"
-msgstr "تم الانضمام إلى تيليجرام بواسطة {sender}"
+msgstr "انضم {sender} إلى تيليجرام"
 
 #: src/ui/components/map.blp:29
 msgid "Map data by OpenStreetMap"
-msgstr ""
+msgstr "بيانات الخرائط بواسطة خريطة الشارع المفتوحة"
 
 #: src/ui/components/phone_number_input.blp:13
 msgid "Country"
@@ -794,11 +816,11 @@ msgstr "رقم الهاتف"
 
 #: src/ui/components/phone_number_input.rs:310
 msgid "You entered an invalid country code."
-msgstr "لقد تم إدخال رمز بلد غير صالح."
+msgstr "أدخلت رمز بلد غير صالح."
 
 #: src/ui/login/code.blp:22
 msgid "Enter the Verification Code"
-msgstr "يرجى إدخال رمز التحقق"
+msgstr "أدخل رمز التحقق"
 
 #: src/ui/login/code.blp:39 src/ui/login/password.blp:185
 msgid "Code"
@@ -808,27 +830,27 @@ msgstr "الرمز"
 #: src/ui/login/password.blp:202 src/ui/login/phone_number.blp:49
 #: src/ui/login/registration.blp:64
 msgid "_Next"
-msgstr "_التالي"
+msgstr "ال_تالي"
 
 #: src/ui/login/code.rs:117
 msgid "Send code via {type} (may still arrive within {countdown} seconds)"
-msgstr ""
+msgstr "أرسل الرمز عبر {type} (قد يصلك الرمز خلال {countdown} ثانية)"
 
 #: src/ui/login/code.rs:122
 msgid "Send code via {type}"
-msgstr ""
+msgstr "أرسل الرمز عبر {type}"
 
 #: src/ui/login/code.rs:147
 msgid "The code will arrive to you via {type}."
-msgstr ""
+msgstr "سيصلك الرمز عبر {type}."
 
 #: src/ui/login/code.rs:184
 msgid "Failed to authenticate: {error}"
-msgstr ""
+msgstr "فشل التوثيق: {error}"
 
 #: src/ui/login/code.rs:198
 msgid "Failed to resend auth code: {error}"
-msgstr ""
+msgstr "فشلت إعادة إرسال رمز التوثيق: {error}"
 
 #. Translators: This is an authentication method
 #: src/ui/login/code.rs:228
@@ -862,79 +884,74 @@ msgstr "فراجمنت"
 
 #: src/ui/login/mod.rs:116
 msgid "Reset Registration Process?"
-msgstr ""
+msgstr "أعد عملية التسجيل؟"
 
 #: src/ui/login/mod.rs:117
 msgid ""
 "If you reset the registration process, the previous progress will be "
 "irrevocably lost."
-msgstr ""
+msgstr "إذا أعدت عملية التسجيل، فسيفقد مسارك السابق."
 
 #: src/ui/login/mod.rs:128 src/ui/login/password.rs:242
 #: src/ui/session/row.rs:110
 msgid "_Cancel"
-msgstr "_إلغاء"
+msgstr "أ_لغِ"
 
 #: src/ui/login/mod.rs:129
 msgid "_Reset"
-msgstr ""
+msgstr "_صَفِّر"
 
 #: src/ui/login/other_device.blp:24
 msgid "Scan Code"
-msgstr "مسح الرمز"
+msgstr "امسح الرمز"
 
 #: src/ui/login/other_device.blp:25
 msgid "Scan this code with another Telegram app logged into your account."
-msgstr "يرجى مسح هذا الرمز من خلال تطبيق تيليجرام آخر متصل بحسابك."
+msgstr "امسح هذا الرمز من خلال تطبيق تيليجرام آخر متصل بحسابك."
 
 #: src/ui/login/other_device.blp:42
-#, fuzzy
 msgid "Log in using your phone number"
-msgstr "_دخول باستخدام رمز الاستجابة السريعة"
+msgstr "لُ_ج باستخدام رقم هاتفك"
 
 #: src/ui/login/password.blp:26
 msgid "Enter Your Password"
-msgstr "يرجى إدخال كلمة المرور"
+msgstr "أدخل كلمة السر"
 
 #: src/ui/login/password.blp:40
 msgid "Password"
-msgstr "كلمة المرور"
+msgstr "كلمة السر"
 
 #: src/ui/login/password.blp:47
 msgid "Hint"
 msgstr "تلميح"
 
 #: src/ui/login/password.blp:88
-#, fuzzy
 msgid "Forgot password?"
-msgstr "_نسيت كلمة المرور؟"
+msgstr "أ_نسيت كلمة المرور؟"
 
 #: src/ui/login/password.blp:107
-#, fuzzy
 msgid "Recover Password"
-msgstr "يرجى إدخال كلمة المرور"
+msgstr "ا_ستعد كلمة السر"
 
 #: src/ui/login/password.blp:108
 msgid ""
 "When you set your cloud password, you provided a recovery e-mail address. A "
 "code can be sent there to reset your password."
 msgstr ""
-"لقد قدمت بريدا إلكترونيا احتياطيا عند وضع كلمة مرورك سحابيا. يمكن إرسال رمز "
-"إليه لإعادة ضبط كلمة مرورك."
+"قَدّمت بريدًا إلكترونيًا احتياطيًا عند تعيينك لكلمة السر سحابيًا. يمكن إرسال رمز "
+"إليه لإعادة ضبط كلمة السر."
 
 #: src/ui/login/password.blp:131
-#, fuzzy
 msgid "_Send Code"
-msgstr "مسح الرمز"
+msgstr "أ_رسل الرمز"
 
 #: src/ui/login/password.blp:150 src/ui/login/password.rs:243
 msgid "_Delete Account"
-msgstr "_حذف الحساب"
+msgstr "ا_حذف الحساب"
 
 #: src/ui/login/password.blp:168
-#, fuzzy
 msgid "Enter the Code E-Mailed to You"
-msgstr "يرجى إدخال الرمز المرسل إلى بريدك الإلكتروني"
+msgstr "أدخل الرمز المرسل إلى بريدك الإلكتروني"
 
 #: src/ui/login/password.blp:218
 msgid "Unable to access your e-mail?"
@@ -942,11 +959,11 @@ msgstr "لا يمكنك الوصول إلى بريدك الإلكتروني؟"
 
 #: src/ui/login/password.rs:198
 msgid "Failed to verify password: {error}"
-msgstr ""
+msgstr "فشل التحقق من كلمة السر: {error}"
 
 #: src/ui/login/password.rs:222
 msgid "Failed to recover password: {error}"
-msgstr ""
+msgstr "فشلت استعادة كلمة السر: {error}"
 
 #: src/ui/login/password.rs:234
 msgid "Warning"
@@ -959,29 +976,29 @@ msgid ""
 "\n"
 "Do you want to delete your account?"
 msgstr ""
-"جميع المحادثات والرسائل بالإضافة إلى أي وسائط تم إرسالها ستتعرض للمسح!\n"
+"جميع المحادثات والرسائل، بما في ذلك أي وسائط أرسلتها ستمسح!\n"
 "\n"
-"هل تريدون مسح الحساب؟"
+"هل تود حذف حسابك؟"
 
 #: src/ui/login/password.rs:269
 msgid "Failed to delete account: {error}"
-msgstr ""
+msgstr "تعذر حذف الحساب: {error}"
 
 #: src/ui/login/password.rs:294
 msgid "Code expired. A new one has been sent you."
-msgstr ""
+msgstr "انتهت صلاحية الرمز. أُرسل رمز جديد لك."
 
 #: src/ui/login/password.rs:299
 msgid "Code expired. Could not sent a new one: {error}"
-msgstr ""
+msgstr "انتهت صلاحية الرمز. تعذّر إرسال رمزٍ جديد: {error}"
 
 #: src/ui/login/password.rs:307
 msgid "Failed to send password code: {error}"
-msgstr ""
+msgstr "تعذّر إرسال رمز كلمة سر جديد: {error}"
 
 #: src/ui/login/password.rs:316
 msgid "Sorry"
-msgstr "عذرا"
+msgstr "عذرًا"
 
 #: src/ui/login/password.rs:318
 msgid ""
@@ -993,36 +1010,35 @@ msgstr ""
 
 #: src/ui/login/password.rs:323 src/ui/login/registration.rs:173
 msgid "_OK"
-msgstr "_حسنا"
+msgstr "_حسنًا"
 
 #: src/ui/login/phone_number.blp:24
 msgid "Welcome"
-msgstr "مرحبا"
+msgstr "مرحبًا"
 
 #: src/ui/login/phone_number.blp:66
-#, fuzzy
 msgid "Quick login using QR code"
-msgstr "_دخول باستخدام رمز الاستجابة السريعة"
+msgstr "ادخل باستخدام رمز الاستجابة ال_سريعة"
 
 #: src/ui/login/phone_number.rs:125
 msgid "Failed to load country codes: {error}"
-msgstr ""
+msgstr "تعذّر تحميل رموز الدول: {error}"
 
 #: src/ui/login/phone_number.rs:177 src/ui/session/row.rs:126
 msgid "Failed to log out: {error}"
-msgstr ""
+msgstr "تعذّر تسجيل الخروج: {error}"
 
 #: src/ui/login/phone_number.rs:209
 msgid "Failed to use phone number: {error}"
-msgstr ""
+msgstr "تعذّر استخدام رقم الهاتف: {error}"
 
 #: src/ui/login/phone_number.rs:233
 msgid "Failed to request QR code: {error}"
-msgstr ""
+msgstr "تعذّر طلب رمز استجابة سريع: {error}"
 
 #: src/ui/login/registration.blp:23
 msgid "Register New Account"
-msgstr "تسجيل حساب جديد"
+msgstr "سجّل حسابًا جديدًا"
 
 #: src/ui/login/registration.blp:43
 msgid "First Name"
@@ -1038,15 +1054,15 @@ msgid ""
 "you agree to the <a href=\"\">Terms of Service</a>."
 msgstr ""
 "يعني التسجيل\n"
-"الموافقة على <a href=\"\">شروط الاستخدام</a>."
+"موافقتك على <a href=\"\">شروط الاستخدام</a>."
 
 #: src/ui/login/registration.rs:145
 msgid "Failed to register account: {error}"
-msgstr ""
+msgstr "تعذّر تسجيل الحساب: {error}"
 
 #: src/ui/login/registration.rs:168
 msgid "Do you accept the Terms of Service?"
-msgstr "هل توافقون على شروط الاستخدام؟"
+msgstr "هل توافق على شروط الاستخدام؟"
 
 #: src/ui/login/registration.rs:169 src/ui/session/content/chat_history.rs:227
 #: src/ui/session/content/message_row/mod.rs:182
@@ -1063,9 +1079,8 @@ msgid "Terms of Service"
 msgstr "شروط الاستخدام"
 
 #: src/ui/session/contacts_window/mod.ui:3
-#, fuzzy
 msgid "Contacts"
-msgstr "_جهات الاتصال"
+msgstr "جهات الاتصال"
 
 #: src/ui/session/content/chat_action_bar.blp:71
 msgid "Message"
@@ -1073,29 +1088,29 @@ msgstr "رسالة"
 
 #: src/ui/session/content/chat_action_bar.blp:103
 msgid "Unblock"
-msgstr "إلغاء الحظر"
+msgstr "ألغِ الحظر"
 
 #: src/ui/session/content/chat_action_bar.blp:134
 msgid "Join"
-msgstr "انضمام"
+msgstr "انضم"
 
 #: src/ui/session/content/chat_action_bar.rs:119
 msgid "Failed to join chat: {error}"
-msgstr ""
+msgstr "فشل الإنضمام للمحادثة: {error}"
 
 #: src/ui/session/content/chat_action_bar.rs:369
 #: src/ui/session/content/chat_action_bar.rs:386
 msgid "Unknown"
-msgstr "غير معروف"
+msgstr "مجهول"
 
 #: src/ui/session/content/chat_action_bar.rs:371
 #: src/ui/session/content/chat_action_bar.rs:388
 msgid "Deleted Message"
-msgstr "رسالة تم محوها"
+msgstr "رسالة محذوفة"
 
 #: src/ui/session/content/chat_action_bar.rs:382
 msgid "Edit Message"
-msgstr "تعديل الرسالة"
+msgstr "عدّل الرسالة"
 
 #: src/ui/session/content/chat_action_bar.rs:477
 msgid "Images"
@@ -1103,31 +1118,31 @@ msgstr "صور"
 
 #: src/ui/session/content/chat_action_bar.rs:796
 msgid "Unmute"
-msgstr "إلغاء الكتم"
+msgstr "ألغِ الكتم"
 
 #: src/ui/session/content/chat_action_bar.rs:798
 msgid "Mute"
-msgstr "كتم"
+msgstr "اكتم"
 
 #: src/ui/session/content/chat_history.rs:224
 msgid "Leave chat?"
-msgstr "مغادرة المحادثة؟"
+msgstr "غادِر المحادثة؟"
 
 #: src/ui/session/content/chat_history.rs:225
 msgid "Do you want to leave this chat?"
-msgstr "هل ترغب/ين بمغادرة هذه المحادثة؟"
+msgstr "هل تود مغادرة هذه المحادثة؟"
 
 #: src/ui/session/content/chat_history.ui:67
 msgid "Scroll to bottom"
-msgstr "سحب نحو الأسفل"
+msgstr "اسحب نحو الأسفل"
 
 #: src/ui/session/content/chat_history.ui:145
 msgid "View Info"
-msgstr "عرض المعلومات"
+msgstr "اعرض المعلومات"
 
 #: src/ui/session/content/chat_history.ui:149
 msgid "Leave Chat"
-msgstr "مغادرة المحادثة"
+msgstr "غادِر المحادثة"
 
 #. Translators: This is a date format in the day divider without the year
 #: src/ui/session/content/chat_history_row.rs:119
@@ -1145,7 +1160,7 @@ msgstr "آلي"
 
 #: src/ui/session/content/chat_info_window.rs:145
 msgid "Mobile"
-msgstr "هاتف"
+msgstr "محمول"
 
 #: src/ui/session/content/chat_info_window.rs:152
 msgid "Username"
@@ -1159,8 +1174,8 @@ msgstr[0] "لا يوجد أعضاء"
 msgstr[1] "عضو واحد"
 msgstr[2] "عضوان"
 msgstr[3] "{num} أعضاء"
-msgstr[4] "{num} عضوا"
-msgstr[5] "{num} عضوا"
+msgstr[4] "{num} عضوًا"
+msgstr[5] "{num} عضو"
 
 #: src/ui/session/content/chat_info_window.rs:198
 #: src/ui/session/content/chat_info_window.rs:254
@@ -1173,7 +1188,7 @@ msgstr "الرابط"
 
 #: src/ui/session/content/chat_info_window.rs:272
 msgid "Copied to clipboard"
-msgstr "تم النسخ إلى الحافظة"
+msgstr "نٌسِخت إلى الحافظة"
 
 #: src/ui/session/content/message_menu.blp:6
 msgid "_Reply"
@@ -1181,51 +1196,48 @@ msgstr "_رد"
 
 #: src/ui/session/content/message_menu.blp:12
 msgid "_Edit"
-msgstr "_تعديل"
+msgstr "_عَدِّل"
 
 #: src/ui/session/content/message_menu.blp:18
 msgid "Delete for Ever_yone"
-msgstr "حذف _للجميع"
+msgstr "احذف للجم_يع"
 
 #: src/ui/session/content/message_menu.blp:24
 msgid "_Delete for Me"
-msgstr "_حذف لي أنا فقط"
+msgstr "ا_حذف لي أنا فقط"
 
 #: src/ui/session/content/message_row/indicators.rs:248
 msgid "edited"
-msgstr "تم تعديلها"
+msgstr "عُدِّلت"
 
 #: src/ui/session/content/message_row/indicators.rs:256
 msgid "sponsored"
-msgstr "تم ترويجها"
+msgstr "مروجة"
 
 #: src/ui/session/content/message_row/location.rs:139
 #: src/ui/session/content/message_row/location.rs:148
-#, fuzzy
 msgid "updated just now"
-msgstr "آخر نشاط منذ لحظات"
+msgstr "حُدِّثت للتو"
 
 #: src/ui/session/content/message_row/location.rs:152
-#, fuzzy
 msgid "updated an hour ago"
-msgstr "آخر نشاط منذ أقل من ساعة"
+msgstr "حُدِّثت منذ ساعة"
 
 #: src/ui/session/content/message_row/location.rs:155
 msgid "updated {hours} hours and {minutes} minutes ago"
-msgstr ""
+msgstr "حُدِّثت منذ {hours} ساعات و {minutes} دقائق"
 
 #: src/ui/session/content/message_row/mod.rs:170
 msgid "Do you want to delete this message for <b>everyone</b>?"
-msgstr "هل ترغب/ين بحذف هذه الرسالة <b>للجميع</b>؟"
+msgstr "هل تود حذف هذه الرسالة <b>للجميع</b>؟"
 
 #: src/ui/session/content/message_row/mod.rs:172
 msgid "Do you want to delete this message?"
-msgstr "هل ترغب/ين بحذف هذه الرسالة؟"
+msgstr "هل تود حذف هذه الرسالة؟"
 
 #: src/ui/session/content/message_row/mod.rs:176
-#, fuzzy
 msgid "Confirm model::Message Deletion"
-msgstr "تأكيد حذف الرسالة"
+msgstr "أكّد حذف الرسالة"
 
 #: src/ui/session/content/message_row/reply.rs:70
 msgid "Loading…"
@@ -1237,16 +1249,15 @@ msgstr "هذه الرسالة غير مدعومة"
 
 #: src/ui/session/content/mod.blp:22
 msgid "No Chat Selected"
-msgstr "لم يتم اختيار أي محادثة"
+msgstr "لم تختر أي محادثة"
 
 #: src/ui/session/content/mod.blp:23
 msgid "Select a chat to start messaging."
-msgstr "يرجى اختيار محادثة لبدء التراسل."
+msgstr "اختر محادثة لبدء التراسل."
 
 #: src/ui/session/content/send_media_window.blp:8
-#, fuzzy
 msgid "Send Image"
-msgstr "صور"
+msgstr "أرسل صورة"
 
 #: src/ui/session/content/send_media_window.blp:23
 msgid "Caption"
@@ -1254,11 +1265,11 @@ msgstr "النص التوضيحي"
 
 #: src/ui/session/content/send_media_window.blp:30
 msgid "Send"
-msgstr ""
+msgstr "أرسل"
 
 #: src/ui/session/content/send_media_window.blp:41
 msgid "Send as _File"
-msgstr ""
+msgstr "أرسل ك_ملف"
 
 #: src/ui/session/mod.blp:15 src/ui/session/sidebar/mod.ui:38
 #: src/ui/session/sidebar/search/section_row.rs:124
@@ -1266,17 +1277,16 @@ msgid "Chats"
 msgstr "المحادثات"
 
 #: src/ui/session/mod.blp:26
-#, fuzzy
 msgid "Content"
-msgstr "_جهات الاتصال"
+msgstr "المحتوى"
 
 #: src/ui/session/preferences_window.blp:10
 msgid "Follow System Colors"
-msgstr "اتباع ألوان النظام"
+msgstr "اتّبع ألوان النظام"
 
 #: src/ui/session/preferences_window.blp:19
 msgid "Dark Theme"
-msgstr "النمط الداكن"
+msgstr "السمة الداكنة"
 
 #: src/ui/session/preferences_window.blp:29
 msgid "Storage"
@@ -1284,32 +1294,31 @@ msgstr "التخزين"
 
 #: src/ui/session/preferences_window.blp:32
 msgid "Cache Size"
-msgstr "حجم الذاكرة المؤقتة"
+msgstr "مساحة الخبيئة"
 
 #: src/ui/session/preferences_window.blp:42
 msgid "Clear Cache"
-msgstr "مسح الذاكرة المؤقتة"
+msgstr "امحُ الخبيئة"
 
 #: src/ui/session/preferences_window.rs:211
 msgid "Cache cleared"
-msgstr "تم مسح الذاكرة المؤقتة"
+msgstr "مُحيت الخبيئة"
 
 #: src/ui/session/row.blp:54
 msgid "Logout"
-msgstr ""
+msgstr "اخرج"
 
 #: src/ui/session/row.rs:99
 msgid "Log out <i>{display_name}</i>"
-msgstr ""
+msgstr "أخرِج <i>{display_name}</i>"
 
 #: src/ui/session/row.rs:105
 msgid "Are you sure you want to log out?"
-msgstr ""
+msgstr "هل أنت متأكد من تسجيل الخروج؟"
 
 #: src/ui/session/row.rs:111
-#, fuzzy
 msgid "_Log out"
-msgstr "_تسجيل الخروج"
+msgstr "تسجيل ال_خروج"
 
 #: src/ui/session/sidebar/mod.ui:7
 msgid "_Contacts"
@@ -1317,23 +1326,23 @@ msgstr "_جهات الاتصال"
 
 #: src/ui/session/sidebar/mod.ui:13
 msgid "_Preferences"
-msgstr "_التفضيلات"
+msgstr "ال_تفضيلات"
 
 #: src/ui/session/sidebar/mod.ui:17
 msgid "_Keyboard Shortcuts"
-msgstr "_اختصارات لوحة المفاتيح"
+msgstr "اختصارات لوحة الم_فاتيح"
 
 #: src/ui/session/sidebar/mod.ui:21
 msgid "_About Paper Plane"
-msgstr "_حول بيبر بلين"
+msgstr "_عَنْ طائرة ورقية"
 
 #: src/ui/session/sidebar/mod.ui:148 src/ui/session/sidebar/search/mod.ui:16
 msgid "Search"
-msgstr "بحث"
+msgstr "ابحث"
 
 #: src/ui/session/sidebar/mod.ui:165
 msgid "Sessions"
-msgstr ""
+msgstr "الجلسات"
 
 #: src/ui/session/sidebar/row.rs:414
 msgid "Draft:"
@@ -1345,19 +1354,19 @@ msgstr "أنت"
 
 #: src/ui/session/sidebar/row_menu.blp:6
 msgid "_Pin"
-msgstr "_تثبيت"
+msgstr "_ثّبِّت"
 
 #: src/ui/session/sidebar/row_menu.blp:12
 msgid "_Unpin"
-msgstr "_إلغاء التثبيت"
+msgstr "أل_غ التثبيت"
 
 #: src/ui/session/sidebar/row_menu.blp:18
 msgid "_Mark as Unread"
-msgstr "_تعيين كغير مقروء"
+msgstr "عيّن كغير مقرو_ءة"
 
 #: src/ui/session/sidebar/row_menu.blp:24
 msgid "Mark as _Read"
-msgstr "تعيين _كمقروء"
+msgstr "عيّن _كمقر_وءة"
 
 #: src/ui/session/sidebar/search/mod.ui:79
 msgid "No Search Results"
@@ -1365,7 +1374,7 @@ msgstr "لا توجد نتائج بحث"
 
 #: src/ui/session/sidebar/search/mod.ui:80
 msgid "Try a different search."
-msgstr "يرجى تجربة بحث مختلف."
+msgstr "جرب بحثًا آخر."
 
 #: src/ui/session/sidebar/search/section_row.rs:127
 msgid "Global Search"
@@ -1373,19 +1382,19 @@ msgstr "بحث عام"
 
 #: src/ui/session/sidebar/search/section_row.rs:130
 msgid "Recent"
-msgstr "حديث"
+msgstr "حديثة"
 
 #: src/ui/session/switcher.blp:7
 msgid "_Production Server"
-msgstr "_الخادم الجاهز للعمل"
+msgstr "الخادوم الجا_هز للعمل"
 
 #: src/ui/session/switcher.blp:12
 msgid "_Test Server"
-msgstr "_الخادم التجريبي"
+msgstr "الخادوم التجريب_ي"
 
 #: src/ui/session/switcher.blp:41
 msgid "New Session"
-msgstr ""
+msgstr "جلسة جديدة"
 
 #~ msgid "A Telegram client optimized for the GNOME desktop"
 #~ msgstr "عميل تيليجرام مصمم لملاءمة واجهة جنوم"
