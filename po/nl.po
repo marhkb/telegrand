@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: paper-plane\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 16:58+0200\n"
-"PO-Revision-Date: 2023-09-27 07:02+0000\n"
+"PO-Revision-Date: 2024-02-25 10:01+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/paper-plane/main/"
 "nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/app.drey.PaperPlane.desktop.in.in:3
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:7
@@ -27,7 +27,7 @@ msgstr "Paper Plane"
 #: data/app.drey.PaperPlane.desktop.in.in:4
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:8
 msgid "Chat over Telegram on a modern and elegant client"
-msgstr ""
+msgstr "Chat via Telegram op een moderne en elegante app"
 
 #: data/app.drey.PaperPlane.desktop.in.in:9
 msgid "Gnome;GTK;telegram;tg;chat;im;messaging;messenger;"
@@ -54,7 +54,7 @@ msgstr "Laatstgebruikte sessie"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:22
 msgid "The directory name of the last used session"
-msgstr ""
+msgstr "De map­naam van de laatst­gebruikte sessie"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:31
 #: src/ui/session/preferences_window.blp:7
@@ -71,20 +71,25 @@ msgid ""
 "user interface and strives to meet the design principles of the GNOME "
 "desktop."
 msgstr ""
+"Paper Plane is een alternatieve Telegram-app. Het gebruikt LibAdwaita als "
+"gebruikers­interface en streeft ernaar om te voldoen aan de ontwerp­"
+"principes van GNOME."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:14
 msgid ""
 "Paper Plane is still under development and not yet feature-complete. "
 "However, the following things are already working:"
 msgstr ""
+"Paper Plane is nog in ontwikkeling en nog niet compleet. De volgende dingen "
+"werken echter al:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:19
 msgid "The use of multiple accounts at the same time."
-msgstr ""
+msgstr "Het tegelijkertijd gebruiken van meerdere accounts."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:20
 msgid "Viewing text messages, images, stickers and files."
-msgstr ""
+msgstr "Tekst­berichten, afbeeldingen, stickers en bestanden bekijken."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:21
 msgid "Sending text messages and images."
@@ -107,12 +112,16 @@ msgid ""
 "The third beta release of Paper Plane 0.1.0 should in the first place fix a "
 "build error on Flathub:"
 msgstr ""
+"De derde bèta­versie van Paper Plane 0.1.0 zou in de eerste plaats een bouw­"
+"fout op Flathub moeten verhelpen:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:49
 msgid ""
 "Added registered categories to te desktop file to fix a build error on "
 "Flathub."
 msgstr ""
+"Geregistreerde categorieën toegevoegd aan het desktop­bestand om een bouw­"
+"fout op Flathub te verhelpen."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:50
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:64
@@ -121,54 +130,71 @@ msgstr "Afhankelijkheden zijn bijgewerkt."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:51
 msgid "Turkish translations have been updated, thanks to @sabriunal."
-msgstr ""
+msgstr "Turkse vertalingen zijn bijgewerkt, dankzij @sabriunal."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:57
 msgid ""
 "The second beta release of Paper Plane 0.1.0 contains the following "
 "features, fixes and chores:"
 msgstr ""
+"De tweede bèta­versie van Paper Plane 0.1.0 bevat de volgende functies, "
+"probleem­oplossingen en kleinig­heden:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:59
 msgid ""
 "Blueprint compiler has been updated to version 0.8.1, thanks to "
 "@alissonlauffer."
 msgstr ""
+"De Blueprint-compiler is bij­gewerkt naar versie 0.8.1, dankzij "
+"@alissonlauffer."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:60
 msgid ""
 "The chat history now has a background image, which is animated when new "
 "messages arrive, thanks to @yuraiz."
 msgstr ""
+"De gespreks­geschiedenis heeft nu een achtergrond­afbeelding, die dankzij @"
+"yuraiz geanimeerd wordt wanneer er nieuwe berichten binnen­komen."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:61
 msgid ""
 "A bug was fixed that lead to an application crash if selecting non-existing "
 "chats from the contacts window, thank to @alissonlauffer."
 msgstr ""
+"Er is een probleem opgelost die leidde tot een app-crash bij het selecteren "
+"van niet-bestaande gesprekken in het contacten­venster, dankzij "
+"@alissonlauffer."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:62
 msgid ""
 "Avatars of deleted accounts now have a ghost icon set, thanks to @karl0d."
 msgstr ""
+"Avatars van verwijderde accounts hebben nu een spook­pictogram, dankzij "
+"@karl0d."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:63
 msgid ""
 "The application will now be built with more aggressive compiler options, "
 "which should result in a smaller and maybe faster binary."
 msgstr ""
+"De app zal nu worden gebouwd met agressievere compiler­opties, wat zou "
+"moeten resulteren in een kleiner en misschien sneller programma­bestand."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:65
 msgid ""
 "Portuguese and Polish translation have been updated, thanks to "
 "@jvlianodorneles and @karl0d."
 msgstr ""
+"De Portugese en Poolse vertalingen zijn bijgewerkt, dankzij @jvlianodorneles "
+"en @karl0d."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:71
 msgid ""
 "Paper Plane 0.1.0-beta.1 is the first release for enthusiasts to try out and "
 "play around with."
 msgstr ""
+"Paper Plane 0.1.0-beta.1 is de eerste uit­gave voor lief­hebbers om uit te "
+"proberen en mee te spelen."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:83
 msgid "Marco Melorio"
@@ -187,6 +213,8 @@ msgid ""
 "<span size=\"small\">Map data by                 <a href=\"https://www."
 "openstreetmap.org\">OpenStreetMap</a>                 and contributors</span>"
 msgstr ""
+"<span size=\"small\">Kaartgegevens door <a href=\"https://www.openstreetmap."
+"org\">OpenStreetMap</a> en bijdragers</span>"
 
 #: src/application.rs:197
 msgid ""
@@ -195,6 +223,10 @@ msgid ""
 "Commons Open Database License </a> (ODbL) by the                 <a "
 "href=\"https://osmfoundation.org\">aOpenStreetMap Foundation</a> (OSMF)."
 msgstr ""
+"OpenStreetMap® is open data, gelicentieerd onder de <a href=\"https"
+"://opendatacommons.org/licenses/odbl\">Open Data Commons Open Database "
+"License</a> (ODbL) door de <a href=\"https://osmfoundation.org\""
+">OpenStreetMap Foundation</a> (OSMF)."
 
 #: src/expressions.rs:20 src/ui/session/sidebar/search/item_row.rs:97
 #: src/ui/session/sidebar/search/mod.rs:182
@@ -240,6 +272,7 @@ msgstr "Geef het minimale loggings­niveau op"
 #: src/main.rs:139
 msgid "Whether to use a test data center on first account"
 msgstr ""
+"Of voor het eerste account een test­gegevens­centrum gebruikt moet worden"
 
 #: src/model/country_info.rs:99
 msgid "Invalid Country Code"
@@ -802,6 +835,7 @@ msgstr "_Volgende"
 #: src/ui/login/code.rs:117
 msgid "Send code via {type} (may still arrive within {countdown} seconds)"
 msgstr ""
+"Code versturen via {type} (kan nog aan­komen binnen {countdown} seconden)"
 
 #: src/ui/login/code.rs:122
 msgid "Send code via {type}"
@@ -809,7 +843,7 @@ msgstr "Code sturen via {type}"
 
 #: src/ui/login/code.rs:147
 msgid "The code will arrive to you via {type}."
-msgstr ""
+msgstr "U zult de code ontvangen via {type}."
 
 #: src/ui/login/code.rs:184
 msgid "Failed to authenticate: {error}"
@@ -817,7 +851,7 @@ msgstr "Authenticatie mislukt: {error}"
 
 #: src/ui/login/code.rs:198
 msgid "Failed to resend auth code: {error}"
-msgstr ""
+msgstr "Authenticatie­code opnieuw sturen mislukt: {error}"
 
 #. Translators: This is an authentication method
 #: src/ui/login/code.rs:228
@@ -858,6 +892,8 @@ msgid ""
 "If you reset the registration process, the previous progress will be "
 "irrevocably lost."
 msgstr ""
+"Als u het registratie­proces reset, gaat de eerdere voort­gang "
+"onherroepelijk verloren."
 
 #: src/ui/login/mod.rs:128 src/ui/login/password.rs:242
 #: src/ui/session/row.rs:110
@@ -877,9 +913,8 @@ msgid "Scan this code with another Telegram app logged into your account."
 msgstr "Scan deze code met een andere Telegram-app waar u bent ingelogd."
 
 #: src/ui/login/other_device.blp:42
-#, fuzzy
 msgid "Log in using your phone number"
-msgstr "_Inloggen met QR-code"
+msgstr "Inloggen met uw telefoon­nummer"
 
 #: src/ui/login/password.blp:26
 msgid "Enter Your Password"
@@ -919,7 +954,6 @@ msgid "_Delete Account"
 msgstr "Account _verwijderen"
 
 #: src/ui/login/password.blp:168
-#, fuzzy
 msgid "Enter the Code E-Mailed to You"
 msgstr "Voer de code in die via e-mail naar u is verstuurd"
 
@@ -929,11 +963,11 @@ msgstr "Geen toegang tot uw e-mail?"
 
 #: src/ui/login/password.rs:198
 msgid "Failed to verify password: {error}"
-msgstr ""
+msgstr "Wacht­woord verifiëren mislukt: {error}"
 
 #: src/ui/login/password.rs:222
 msgid "Failed to recover password: {error}"
-msgstr ""
+msgstr "Wacht­woord herstellen mislukt: {error}"
 
 #: src/ui/login/password.rs:234
 msgid "Warning"
@@ -953,19 +987,19 @@ msgstr ""
 
 #: src/ui/login/password.rs:269
 msgid "Failed to delete account: {error}"
-msgstr ""
+msgstr "Account verwijderen mislukt: {error}"
 
 #: src/ui/login/password.rs:294
 msgid "Code expired. A new one has been sent you."
-msgstr ""
+msgstr "Code verlopen, er is een nieuwe gestuurd."
 
 #: src/ui/login/password.rs:299
 msgid "Code expired. Could not sent a new one: {error}"
-msgstr ""
+msgstr "Code verlopen, nieuwe versturen mislukt: {error}"
 
 #: src/ui/login/password.rs:307
 msgid "Failed to send password code: {error}"
-msgstr ""
+msgstr "Wachtwoord­code versturen mislukt: {error}"
 
 #: src/ui/login/password.rs:316
 msgid "Sorry"
@@ -988,25 +1022,24 @@ msgid "Welcome"
 msgstr "Welkom"
 
 #: src/ui/login/phone_number.blp:66
-#, fuzzy
 msgid "Quick login using QR code"
-msgstr "_Inloggen met QR-code"
+msgstr "Snel inloggen met QR-code"
 
 #: src/ui/login/phone_number.rs:125
 msgid "Failed to load country codes: {error}"
-msgstr ""
+msgstr "Land­codes laden mislukt: {error}"
 
 #: src/ui/login/phone_number.rs:177 src/ui/session/row.rs:126
 msgid "Failed to log out: {error}"
-msgstr ""
+msgstr "Uitloggen mislukt: {error}"
 
 #: src/ui/login/phone_number.rs:209
 msgid "Failed to use phone number: {error}"
-msgstr ""
+msgstr "Telefoon­nummer gebruiken mislukt: {error}"
 
 #: src/ui/login/phone_number.rs:233
 msgid "Failed to request QR code: {error}"
-msgstr ""
+msgstr "QR-code opvragen mislukt: {error}"
 
 #: src/ui/login/registration.blp:23
 msgid "Register New Account"
@@ -1030,7 +1063,7 @@ msgstr ""
 
 #: src/ui/login/registration.rs:145
 msgid "Failed to register account: {error}"
-msgstr ""
+msgstr "Account registreren mislukt: {error}"
 
 #: src/ui/login/registration.rs:168
 msgid "Do you accept the Terms of Service?"
@@ -1068,7 +1101,7 @@ msgstr "Deelnemen"
 
 #: src/ui/session/content/chat_action_bar.rs:119
 msgid "Failed to join chat: {error}"
-msgstr ""
+msgstr "Deel­nemen aan chat mislukt: {error}"
 
 #: src/ui/session/content/chat_action_bar.rs:369
 #: src/ui/session/content/chat_action_bar.rs:386
@@ -1193,7 +1226,7 @@ msgstr "een uur geleden bijgewerkt"
 
 #: src/ui/session/content/message_row/location.rs:155
 msgid "updated {hours} hours and {minutes} minutes ago"
-msgstr ""
+msgstr "{hours} uur en {minutes} minuten geleden bijgewerkt"
 
 #: src/ui/session/content/message_row/mod.rs:170
 msgid "Do you want to delete this message for <b>everyone</b>?"
@@ -1205,7 +1238,7 @@ msgstr "Wilt u dit bericht verwijderen?"
 
 #: src/ui/session/content/message_row/mod.rs:176
 msgid "Confirm model::Message Deletion"
-msgstr ""
+msgstr "Bevestig het verwijderen van model::Message"
 
 #: src/ui/session/content/message_row/reply.rs:70
 msgid "Loading…"
@@ -1282,7 +1315,7 @@ msgstr "<i>{display_name}</i> uitloggen"
 
 #: src/ui/session/row.rs:105
 msgid "Are you sure you want to log out?"
-msgstr ""
+msgstr "Weet u zeker dat u wilt uit­loggen?"
 
 #: src/ui/session/row.rs:111
 msgid "_Log out"

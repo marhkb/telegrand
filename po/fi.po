@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: paper-plane\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 16:58+0200\n"
-"PO-Revision-Date: 2022-02-01 22:52+0000\n"
-"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
-"Language-Team: Finnish <https://hosted.weblate.org/projects/paper-plane/"
-"paper-plane/fi/>\n"
+"PO-Revision-Date: 2025-01-17 12:00+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/paper-plane/main/"
+"fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: data/app.drey.PaperPlane.desktop.in.in:3
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:7
@@ -1362,9 +1362,8 @@ msgid "Sessions"
 msgstr ""
 
 #: src/ui/session/sidebar/row.rs:414
-#, fuzzy
 msgid "Draft:"
-msgstr "Luonnos"
+msgstr "Luonnos:"
 
 #: src/ui/session/sidebar/row.rs:597
 msgid "You"
