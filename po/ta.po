@@ -8,59 +8,62 @@ msgstr ""
 "Project-Id-Version: paper-plane\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 16:58+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-01-25 04:46+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/paper-plane/main/"
+"ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: data/app.drey.PaperPlane.desktop.in.in:3
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:7
 msgid "Paper Plane"
-msgstr ""
+msgstr "காகித வானூர்தி"
 
 #: data/app.drey.PaperPlane.desktop.in.in:4
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:8
 msgid "Chat over Telegram on a modern and elegant client"
-msgstr ""
+msgstr "நவீன மற்றும் நேர்த்தியான கிளையண்டில் தந்தி மீது அரட்டையடிக்கவும்"
 
 #: data/app.drey.PaperPlane.desktop.in.in:9
 msgid "Gnome;GTK;telegram;tg;chat;im;messaging;messenger;"
-msgstr ""
+msgstr "Gnome; gtk; தந்தி; tg; அரட்டை; im; செய்தி; தூதர்;"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:6
 #: data/app.drey.PaperPlane.gschema.xml.in:7
 msgid "Default window width"
-msgstr ""
+msgstr "இயல்புநிலை சாளர அகலம்"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:11
 #: data/app.drey.PaperPlane.gschema.xml.in:12
 msgid "Default window height"
-msgstr ""
+msgstr "இயல்புநிலை சாளர உயரம்"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:16
 #: data/app.drey.PaperPlane.gschema.xml.in:17
 msgid "Default window maximized behaviour"
-msgstr ""
+msgstr "இயல்புநிலை சாளரம் அதிகபட்ச நடத்தை"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:21
 msgid "Last used session"
-msgstr ""
+msgstr "கடைசியாக பயன்படுத்தப்பட்ட அமர்வு"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:22
 msgid "The directory name of the last used session"
-msgstr ""
+msgstr "கடைசியாக பயன்படுத்தப்பட்ட அமர்வின் அடைவு பெயர்"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:31
 #: src/ui/session/preferences_window.blp:7
 msgid "Color Scheme"
-msgstr ""
+msgstr "வண்ணத் திட்டம்"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:32
 msgid "The color scheme to be used in the app"
-msgstr ""
+msgstr "பயன்பாட்டில் பயன்படுத்தப்பட வேண்டிய வண்ணத் திட்டம்"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:10
 msgid ""
@@ -68,122 +71,151 @@ msgid ""
 "user interface and strives to meet the design principles of the GNOME "
 "desktop."
 msgstr ""
+"காகித வானூர்தி ஒரு மாற்று தந்தி வாடிக்கையாளர். இது அதன் பயனர் இடைமுகத்திற்கு "
+"லிபாட்வைட்டாவைப் பயன்படுத்துகிறது மற்றும் க்னோம் டெச்க்டாப்பின் வடிவமைப்புக் கொள்கைகளை நிறைவு"
+" செய்ய முயற்சிக்கிறது."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:14
 msgid ""
 "Paper Plane is still under development and not yet feature-complete. "
 "However, the following things are already working:"
 msgstr ""
+"காகித வானூர்தி இன்னும் வளர்ச்சியில் உள்ளது, இன்னும் நற்பொருத்தம் இல்லை. இருப்பினும், பின்வரும்"
+" விசயங்கள் ஏற்கனவே செயல்படுகின்றன:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:19
 msgid "The use of multiple accounts at the same time."
-msgstr ""
+msgstr "ஒரே நேரத்தில் பல கணக்குகளின் பயன்பாடு."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:20
 msgid "Viewing text messages, images, stickers and files."
-msgstr ""
+msgstr "உரை செய்திகள், படங்கள், ச்டிக்கர்கள் மற்றும் கோப்புகளைப் பார்ப்பது."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:21
 msgid "Sending text messages and images."
-msgstr ""
+msgstr "உரை செய்திகள் மற்றும் படங்களை அனுப்புகிறது."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:22
 msgid "Replying to messages."
-msgstr ""
+msgstr "செய்திகளுக்கு பதிலளித்தல்."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:23
 msgid "Searching for groups and persons."
-msgstr ""
+msgstr "குழுக்கள் மற்றும் நபர்களைத் தேடுகிறது."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:29
 msgid "Main window"
-msgstr ""
+msgstr "முதன்மை சாளரம்"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:47
 msgid ""
 "The third beta release of Paper Plane 0.1.0 should in the first place fix a "
 "build error on Flathub:"
 msgstr ""
+"காகித வானூர்தி 0.1.0 இன் மூன்றாவது பீட்டா வெளியீடு முதல் இடத்தில் ஃப்ளாத்தப்பில் ஒரு "
+"உருவாக்க பிழையை சரிசெய்ய வேண்டும்:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:49
 msgid ""
 "Added registered categories to te desktop file to fix a build error on "
 "Flathub."
 msgstr ""
+"ஃபிளடப்பில் உருவாக்க பிழையை சரிசெய்ய TE டெச்க்டாப் கோப்பில் பதிவுசெய்யப்பட்ட வகைகளைச் "
+"சேர்த்தது."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:50
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:64
 msgid "Dependencies have been updated."
-msgstr ""
+msgstr "சார்புநிலைகள் புதுப்பிக்கப்பட்டுள்ளன."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:51
 msgid "Turkish translations have been updated, thanks to @sabriunal."
 msgstr ""
+"துருக்கிய மொழிபெயர்ப்புகள் புதுப்பிக்கப்பட்டுள்ளன, @sabriunal க்கு நன்றி."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:57
 msgid ""
 "The second beta release of Paper Plane 0.1.0 contains the following "
 "features, fixes and chores:"
 msgstr ""
+"காகித வானூர்தி 0.1.0 இன் இரண்டாவது பீட்டா வெளியீட்டில் பின்வரும் நற்பொருத்தங்கள், திருத்தங்கள்"
+" மற்றும் வேலைகள் உள்ளன:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:59
 msgid ""
 "Blueprint compiler has been updated to version 0.8.1, thanks to "
 "@alissonlauffer."
 msgstr ""
+"புளூபிரிண்ட் கம்பைலர் பதிப்பு 0.8.1 க்கு புதுப்பிக்கப்பட்டுள்ளது, @alissonlauffer க்கு "
+"நன்றி."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:60
 msgid ""
 "The chat history now has a background image, which is animated when new "
 "messages arrive, thanks to @yuraiz."
 msgstr ""
+"அரட்டை வரலாற்றில் இப்போது ஒரு பின்னணி படம் உள்ளது, இது புதிய செய்திகள் வரும்போது "
+"அனிமேசன் செய்யப்படுகிறது, @yuraiz க்கு நன்றி."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:61
 msgid ""
 "A bug was fixed that lead to an application crash if selecting non-existing "
 "chats from the contacts window, thank to @alissonlauffer."
 msgstr ""
+"தொடர்புகள் சாளரத்திலிருந்து இல்லாத அரட்டைகளைத் தேர்ந்தெடுத்தால், பயன்பாட்டு செயலிழப்புக்கு "
+"வழிவகுக்கும் ஒரு பிழை சரி செய்யப்பட்டது, @alissonlauffer க்கு நன்றி."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:62
 msgid ""
 "Avatars of deleted accounts now have a ghost icon set, thanks to @karl0d."
 msgstr ""
+"நீக்கப்பட்ட கணக்குகளின் அவதாரங்கள் இப்போது ஒரு பேய் படவுரு தொகுப்பைக் கொண்டுள்ளன, @கார்ல் 0 "
+"டி நன்றி."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:63
 msgid ""
 "The application will now be built with more aggressive compiler options, "
 "which should result in a smaller and maybe faster binary."
 msgstr ""
+"பயன்பாடு இப்போது மிகவும் ஆக்ரோசமான கம்பைலர் விருப்பங்களுடன் கட்டமைக்கப்படும், இதன் விளைவாக "
+"சிறிய மற்றும் வேகமான பைனரி ஏற்பட வேண்டும்."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:65
 msgid ""
 "Portuguese and Polish translation have been updated, thanks to "
 "@jvlianodorneles and @karl0d."
 msgstr ""
+"போர்த்துகீசியம் மற்றும் போலந்து மொழிபெயர்ப்பு புதுப்பிக்கப்பட்டுள்ளது, @jvlianodorneles "
+"மற்றும் @karl0d க்கு நன்றி."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:71
 msgid ""
 "Paper Plane 0.1.0-beta.1 is the first release for enthusiasts to try out and "
 "play around with."
 msgstr ""
+"காகித வானூர்தி 0.1.0-பீட்டா 1 என்பது ஆர்வலர்கள் முயற்சித்து விளையாடுவதற்கான முதல் "
+"வெளியீடாகும்."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:83
 msgid "Marco Melorio"
-msgstr ""
+msgstr "மார்கோ மெலோரியோ"
 
 #: src/application.rs:165
 msgid "Paper Plane developers"
-msgstr ""
+msgstr "காகித விமான உருவாக்குபவர்கள்"
 
 #: src/application.rs:185
 msgid "Sponsors"
-msgstr ""
+msgstr "ஒப்புரவாளர்கள்"
 
 #: src/application.rs:191
 msgid ""
 "<span size=\"small\">Map data by                 <a href=\"https://www."
 "openstreetmap.org\">OpenStreetMap</a>                 and contributors</span>"
 msgstr ""
+"<span அளவு = \"சிறியது\"> வரைபட தரவு <a href = "
+"\"https://www.openstreetmap.org\"> openstreetmap </a> மற்றும் பங்களிப்பாளர்கள் "
+"</span>"
 
 #: src/application.rs:197
 msgid ""
@@ -192,19 +224,24 @@ msgid ""
 "Commons Open Database License </a> (ODbL) by the                 <a "
 "href=\"https://osmfoundation.org\">aOpenStreetMap Foundation</a> (OSMF)."
 msgstr ""
+"OpenStreetMap® என்பது திறந்த தரவு, <a href = "
+"\"https://opendatacommons.org/licenses/odbl\"> திறந்த தரவு காமன்ச் திறந்த தரவுத்"
+"தள உரிமம் </a> (ODBL) ஐ <a href = \"https:/ /smfoundation.org\""
+">aopenstreetmap அறக்கட்டளை </a> (OSMF)."
 
 #: src/expressions.rs:20 src/ui/session/sidebar/search/item_row.rs:97
 #: src/ui/session/sidebar/search/mod.rs:182
 msgid "Saved Messages"
-msgstr ""
+msgstr "சேமித்த செய்திகள்"
 
 #: src/expressions.rs:22 src/expressions.rs:44 src/strings.rs:384
 msgid "Deleted Account"
-msgstr ""
+msgstr "கணக்கு நீக்கப்பட்டது"
 
 #: src/expressions.rs:90
 msgid "The admins of this group have restricted you from writing here"
 msgstr ""
+"இந்த குழுவின் நிர்வாகிகள் உங்களை இங்கே எழுதுவதிலிருந்து கட்டுப்படுத்தியுள்ளனர்"
 
 #. Translators: This is a time representation, without seconds.
 #. Here you may want to change to a 24-hours representation, based on your locale.
@@ -212,488 +249,488 @@ msgstr ""
 #: src/expressions.rs:103 src/ui/session/content/message_row/indicators.rs:239
 #: src/ui/session/sidebar/row.rs:648
 msgid "%l:%M %p"
-msgstr ""
+msgstr "%எல்: %மீ %ப"
 
 #. Translators: This is a date and time representation, without seconds.
 #. Here you may want to change to a 24-hours representation and change order, based on your locale.
 #. You can use this site to learn more: https://www.strfti.me/
 #: src/expressions.rs:108
 msgid "%B %e, %Y %l:%M %p"
-msgstr ""
+msgstr "%B %e, %y %l: %m %p"
 
 #: src/expressions.rs:120
 msgid "Writing messages isn't allowed in this group."
-msgstr ""
+msgstr "இந்த குழுவில் செய்திகளை எழுதுவது அனுமதிக்கப்படவில்லை."
 
 #: src/main.rs:121
 msgid "Prints application version"
-msgstr ""
+msgstr "பயன்பாட்டு பதிப்பை அச்சிடுகிறது"
 
 #: src/main.rs:130
 msgid "Specify the minimum log level"
-msgstr ""
+msgstr "குறைந்தபட்ச பதிவு அளவைக் குறிப்பிடவும்"
 
 #: src/main.rs:139
 msgid "Whether to use a test data center on first account"
-msgstr ""
+msgstr "முதல் கணக்கில் சோதனை தரவு மையத்தைப் பயன்படுத்தலாமா?"
 
 #: src/model/country_info.rs:99
 msgid "Invalid Country Code"
-msgstr ""
+msgstr "தவறான நாட்டு குறியீடு"
 
 #: src/model/country_info.rs:108
 msgid "Test Account"
-msgstr ""
+msgstr "சோதனை கணக்கு"
 
 #: src/strings.rs:29
 msgid "{sender} is choosing a contact"
-msgstr ""
+msgstr "{அனுப்புநர் a ஒரு தொடர்பைத் தேர்வு செய்கிறார்"
 
 #: src/strings.rs:33
 msgid "{sender1} and {sender2} are choosing contacts"
-msgstr ""
+msgstr "{sender1} மற்றும் {sender2} தொடர்புகளைத் தேர்வுசெய்கிறது"
 
 #: src/strings.rs:40
 msgid "{num} people are choosing contacts"
-msgstr ""
+msgstr "{num} மக்கள் தொடர்புகளைத் தேர்வு செய்கிறார்கள்"
 
 #: src/strings.rs:45
 msgid "choosing a contact"
-msgstr ""
+msgstr "தொடர்பைத் தேர்ந்தெடுப்பது"
 
 #: src/strings.rs:52
 msgid "{sender} is choosing a location"
-msgstr ""
+msgstr "{அனுப்புநர் a ஒரு இருப்பிடத்தைத் தேர்வு செய்கிறார்"
 
 #: src/strings.rs:56
 msgid "{sender1} and {sender2} are choosing locations"
-msgstr ""
+msgstr "{sender1}} மற்றும் {sender2} இருப்பிடங்களைத் தேர்வு செய்கின்றன"
 
 #: src/strings.rs:63
 msgid "{num} people are choosing locations"
-msgstr ""
+msgstr "{num} மக்கள் இருப்பிடங்களைத் தேர்வு செய்கிறார்கள்"
 
 #: src/strings.rs:68
 msgid "choosing a location"
-msgstr ""
+msgstr "இருப்பிடத்தைத் தேர்ந்தெடுப்பது"
 
 #: src/strings.rs:75
 msgid "{sender} is choosing a sticker"
-msgstr ""
+msgstr "{அனுப்புநர் a ஒரு ச்டிக்கரைத் தேர்வு செய்கிறார்"
 
 #: src/strings.rs:79
 msgid "{sender1} and {sender2} are choosing stickers"
-msgstr ""
+msgstr "{sender1} மற்றும் {sender2} ச்டிக்கர்களைத் தேர்ந்தெடுக்கிறது"
 
 #: src/strings.rs:86
 msgid "{num} people are choosing stickers"
-msgstr ""
+msgstr "{num} மக்கள் ச்டிக்கர்களைத் தேர்வு செய்கிறார்கள்"
 
 #: src/strings.rs:91
 msgid "choosing a sticker"
-msgstr ""
+msgstr "ஒரு ச்டிக்கரைத் தேர்ந்தெடுப்பது"
 
 #: src/strings.rs:98
 msgid "{sender} is recording a video"
-msgstr ""
+msgstr "{sender} ஒரு வீடியோவைப் பதிவு செய்கிறார்"
 
 #: src/strings.rs:102
 msgid "{sender1} and {sender2} are recording videos"
-msgstr ""
+msgstr "{sender1}} மற்றும் {sender2} வீடியோக்களை பதிவு செய்கின்றன"
 
 #: src/strings.rs:109
 msgid "{num} people are recording videos"
-msgstr ""
+msgstr "{num} மக்கள் வீடியோக்களைப் பதிவு செய்கிறார்கள்"
 
 #: src/strings.rs:114
 msgid "recording a video"
-msgstr ""
+msgstr "வீடியோவைப் பதிவுசெய்கிறது"
 
 #: src/strings.rs:121
 msgid "{sender} is recording a video note"
-msgstr ""
+msgstr "{sender} வீடியோ குறிப்பை பதிவு செய்கிறார்"
 
 #: src/strings.rs:125
 msgid "{sender1} and {sender2} are recording video notes"
-msgstr ""
+msgstr "{sender1}} மற்றும் {sender2} ஆகியவை வீடியோ குறிப்புகளை பதிவு செய்கின்றன"
 
 #: src/strings.rs:132
 msgid "{num} people are recording video notes"
-msgstr ""
+msgstr "{num} மக்கள் வீடியோ குறிப்புகளை பதிவு செய்கிறார்கள்"
 
 #: src/strings.rs:137
 msgid "recording a video note"
-msgstr ""
+msgstr "வீடியோ குறிப்பைப் பதிவுசெய்கிறது"
 
 #: src/strings.rs:144
 msgid "{sender} is recording a voice note"
-msgstr ""
+msgstr "{அனுப்புநர் a ஒரு குரல் குறிப்பை பதிவு செய்கிறார்"
 
 #: src/strings.rs:148
 msgid "{sender1} and {sender2} are recording voice notes"
-msgstr ""
+msgstr "{sender1} மற்றும் {sender2} ஆகியவை குரல் குறிப்புகளை பதிவு செய்கின்றன"
 
 #: src/strings.rs:155
 msgid "{num} people are recording voice notes"
-msgstr ""
+msgstr "{num} மக்கள் குரல் குறிப்புகளை பதிவு செய்கிறார்கள்"
 
 #: src/strings.rs:160
 msgid "recording a voice note"
-msgstr ""
+msgstr "குரல் குறிப்பைப் பதிவுசெய்கிறது"
 
 #: src/strings.rs:167
 msgid "{sender} is playing a game"
-msgstr ""
+msgstr "{அனுப்புநர் a ஒரு விளையாட்டை விளையாடுகிறார்"
 
 #: src/strings.rs:171
 msgid "{sender1} and {sender2} are playing games"
-msgstr ""
+msgstr "{sender1} மற்றும் {sender2} விளையாடுகிறது"
 
 #: src/strings.rs:178
 msgid "{num} people are playing games"
-msgstr ""
+msgstr "{num} மக்கள் விளையாடுகிறார்கள்"
 
 #: src/strings.rs:183
 msgid "playing a game"
-msgstr ""
+msgstr "ஒரு விளையாட்டு விளையாடுவது"
 
 #: src/strings.rs:190
 msgid "{sender} is typing"
-msgstr ""
+msgstr "{sender} தட்டச்சு செய்கிறார்"
 
 #: src/strings.rs:194
 msgid "{sender1} and {sender2} are typing"
-msgstr ""
+msgstr "{sender1} மற்றும் {sender2} தட்டச்சு செய்கின்றன"
 
 #: src/strings.rs:200
 msgid "{num} people are typing"
-msgstr ""
+msgstr "{num} மக்கள் தட்டச்சு செய்கிறார்கள்"
 
 #: src/strings.rs:203
 msgid "typing"
-msgstr ""
+msgstr "தட்டச்சு"
 
 #: src/strings.rs:210
 msgid "{sender} is uploading a document ({progress}%)"
-msgstr ""
+msgstr "{sender} ஒரு ஆவணத்தை பதிவேற்றுகிறார் ({progress}%)"
 
 #: src/strings.rs:217
 msgid "{sender1} and {sender2} are uploading documents"
-msgstr ""
+msgstr "{sender1} மற்றும் {sender2} ஆகியவை ஆவணங்களை பதிவேற்றுகின்றன"
 
 #: src/strings.rs:224
 msgid "{num} people are uploading documents"
-msgstr ""
+msgstr "{num} மக்கள் ஆவணங்களை பதிவேற்றுகிறார்கள்"
 
 #: src/strings.rs:230
 msgid "uploading a document ({progress}%)"
-msgstr ""
+msgstr "ஒரு ஆவணத்தை பதிவேற்றுதல் ({progress}%)"
 
 #: src/strings.rs:239
 msgid "{sender} is uploading a photo ({progress}%)"
-msgstr ""
+msgstr "{sender} ஒரு புகைப்படத்தை பதிவேற்றுகிறார் ({progress}%)"
 
 #: src/strings.rs:246
 msgid "{sender1} and {sender2} are uploading photos"
-msgstr ""
+msgstr "{sender1} மற்றும் {sender2} புகைப்படங்களை பதிவேற்றுகின்றன"
 
 #: src/strings.rs:253
 msgid "{num} people are uploading photos"
-msgstr ""
+msgstr "{num} மக்கள் புகைப்படங்களை பதிவேற்றுகிறார்கள்"
 
 #: src/strings.rs:259
 msgid "uploading a photo ({progress}%)"
-msgstr ""
+msgstr "புகைப்படத்தைப் பதிவேற்றுதல் ({progress}%)"
 
 #: src/strings.rs:268
 msgid "{sender} is uploading a video ({progress}%)"
-msgstr ""
+msgstr "{sender} ஒரு வீடியோவைப் பதிவேற்றுகிறார் ({progress}%)"
 
 #: src/strings.rs:275
 msgid "{sender1} and {sender2} are uploading videos"
-msgstr ""
+msgstr "{sender1} மற்றும் {sender2} வீடியோக்களை பதிவேற்றுகிறது"
 
 #: src/strings.rs:282
 msgid "{num} people are uploading videos"
-msgstr ""
+msgstr "{num} மக்கள் வீடியோக்களைப் பதிவேற்றுகிறார்கள்"
 
 #: src/strings.rs:288
 msgid "uploading a video ({progress}%)"
-msgstr ""
+msgstr "வீடியோவைப் பதிவேற்றுவது ({progress}%)"
 
 #: src/strings.rs:297
 msgid "{sender} is uploading a video note ({progress}%)"
-msgstr ""
+msgstr "{sender} ஒரு வீடியோ குறிப்பை பதிவேற்றுகிறார் ({progress}%)"
 
 #: src/strings.rs:304
 msgid "{sender1} and {sender2} are uploading video notes"
-msgstr ""
+msgstr "{sender1} மற்றும் {sender2} வீடியோ குறிப்புகளை பதிவேற்றுகின்றன"
 
 #: src/strings.rs:311
 msgid "{num} people are uploading video notes"
-msgstr ""
+msgstr "{num} மக்கள் வீடியோ குறிப்புகளை பதிவேற்றுகிறார்கள்"
 
 #: src/strings.rs:317
 msgid "uploading a video note ({progress}%)"
-msgstr ""
+msgstr "வீடியோ குறிப்பைப் பதிவேற்றுவது ({progress}%)"
 
 #: src/strings.rs:326
 msgid "{sender} is uploading a voice note ({progress}%)"
-msgstr ""
+msgstr "{அனுப்புநர் a ஒரு குரல் குறிப்பை பதிவேற்றுகிறார் ({sender}%)"
 
 #: src/strings.rs:333
 msgid "{sender1} and {sender2} are uploading voice notes"
-msgstr ""
+msgstr "{sender1} மற்றும் {sender2} குரல் குறிப்புகளை பதிவேற்றுகின்றன"
 
 #: src/strings.rs:340
 msgid "{num} people are uploading voice notes"
-msgstr ""
+msgstr "{num} மக்கள் குரல் குறிப்புகளைப் பதிவேற்றுகிறார்கள்"
 
 #: src/strings.rs:346
 msgid "uploading a voice note ({progress}%)"
-msgstr ""
+msgstr "குரல் குறிப்பைப் பதிவேற்றுவது ({progress}%)"
 
 #: src/strings.rs:355
 msgid "{sender} is watching an animation {emoji}"
-msgstr ""
+msgstr "{அனுப்புநர் an ஒரு அனிமேசனைப் பார்க்கிறார் {sender}"
 
 #: src/strings.rs:362
 msgid "{sender1} and {sender2} are watching animations {emoji}"
-msgstr ""
+msgstr "{sender1} மற்றும் {sender2} அனிமேசனைப் பார்க்கிறார்கள் {emoji}"
 
 #: src/strings.rs:370
 msgid "{num} people are watching animations {emoji}"
-msgstr ""
+msgstr "{num} மக்கள் அனிமேசனைப் பார்க்கிறார்கள் {emoji}"
 
 #: src/strings.rs:375
 msgid "watching an animation"
-msgstr ""
+msgstr "அனிமேசன் பார்ப்பது"
 
 #: src/strings.rs:398
 msgid "last seen a long time ago"
-msgstr ""
+msgstr "கடைசியாக நீண்ட காலத்திற்கு முன்பு பார்த்தேன்"
 
 #: src/strings.rs:399
 msgid "online"
-msgstr ""
+msgstr "ஆன்லைனில்"
 
 #. Translators: This is an online status with the date
 #: src/strings.rs:408
 #, c-format
 msgid "last seen %x"
-msgstr ""
+msgstr "கடைசியாக பார்த்த %x"
 
 #. Translators: This is an online status with the last seen time, without seconds
 #. Here you may want to change to a 24-hours representation, based on your locale.
 #. You can use this site to learn more: https://www.strfti.me/
 #: src/strings.rs:413
 msgid "last seen yesterday at %l:%M %p"
-msgstr ""
+msgstr "கடைசியாக நேற்று %எல்: %மீ %ப"
 
 #: src/strings.rs:417
 msgid "last seen {num} hour ago"
 msgid_plural "last seen {num} hours ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "கடைசியாக பார்த்த {num} மணி நேரத்திற்கு முன்பு"
+msgstr[1] "கடைசியாக பார்த்த {num} மணிநேரங்களுக்கு முன்பு"
 
 #: src/strings.rs:424
 msgid "last seen {num} minute ago"
 msgid_plural "last seen {num} minutes ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "கடைசியாக பார்த்த {num} நிமிடத்திற்கு முன்பு"
+msgstr[1] "கடைசியாக பார்த்த {num} நிமிடங்களுக்கு முன்பு"
 
 #: src/strings.rs:430
 msgid "last seen just now"
-msgstr ""
+msgstr "கடைசியாக இப்போது பார்த்தேன்"
 
 #: src/strings.rs:433
 msgid "last seen recently"
-msgstr ""
+msgstr "கடைசியாக அண்மைக் காலத்தில் பார்த்தது"
 
 #: src/strings.rs:434
 msgid "last seen within a week"
-msgstr ""
+msgstr "கடைசியாக ஒரு வாரத்திற்குள் பார்த்தது"
 
 #: src/strings.rs:435
 msgid "last seen within a month"
-msgstr ""
+msgstr "கடைசியாக ஒரு மாதத்திற்குள் பார்த்தது"
 
 #: src/strings.rs:456 src/ui/session/content/message_row/location.blp:26
 msgid "Live Location"
-msgstr ""
+msgstr "நேரடி இடம்"
 
 #: src/strings.rs:458
 msgid "Location"
-msgstr ""
+msgstr "இடம்"
 
 #: src/strings.rs:467
 msgid "Photo has expired"
-msgstr ""
+msgstr "புகைப்படம் காலாவதியானது"
 
 #: src/strings.rs:470
 msgid "Video has expired"
-msgstr ""
+msgstr "வீடியோ காலாவதியானது"
 
 #: src/strings.rs:471
 msgid "Video Message"
-msgstr ""
+msgstr "வீடியோ செய்தி"
 
 #: src/strings.rs:504
 msgid "{sender} took a screenshot!"
-msgstr ""
+msgstr "{அனுப்புநர் a ஒரு திரை காட்சி எடுத்தார்!"
 
 #: src/strings.rs:509
 msgid "Location, {venue}"
-msgstr ""
+msgstr "இடம், {venue}"
 
 #: src/strings.rs:510
 msgid "Unsupported Message"
-msgstr ""
+msgstr "ஆதரிக்கப்படாத செய்தி"
 
 #: src/strings.rs:516
 msgid "GIF"
-msgstr ""
+msgstr "Gif"
 
 #: src/strings.rs:518
 msgid "GIF, {caption}"
-msgstr ""
+msgstr "Gif, {caption}"
 
 #: src/strings.rs:526
 msgid "{title} – {performer}"
-msgstr ""
+msgstr "{title} - {performer}"
 
 #: src/strings.rs:532
 msgid "{title} – {performer}, {caption}"
-msgstr ""
+msgstr "{title} - {performer}, {caption}"
 
 #: src/strings.rs:548
 msgid "{file_name}, {caption}"
-msgstr ""
+msgstr "{file_name}, {caption}"
 
 #: src/strings.rs:556
 msgid "Photo"
-msgstr ""
+msgstr "புகைப்படம்"
 
 #: src/strings.rs:558
 msgid "Photo, {caption}"
-msgstr ""
+msgstr "புகைப்படம், {caption}"
 
 #. Translators: This is a sticker with the associated emoji
 #: src/strings.rs:564
 msgid "{emoji} Sticker"
-msgstr ""
+msgstr "{emoji} ச்டிக்கர்"
 
 #: src/strings.rs:569
 msgid "Video"
-msgstr ""
+msgstr "ஒளிதோற்றம்"
 
 #: src/strings.rs:571
 msgid "Video, {caption}"
-msgstr ""
+msgstr "வீடியோ, {caption}"
 
 #: src/strings.rs:577
 msgid "Voice Message"
-msgstr ""
+msgstr "குரல் செய்தி"
 
 #: src/strings.rs:579
 msgid "Voice Message, {caption}"
-msgstr ""
+msgstr "குரல் செய்தி, {caption}"
 
 #: src/strings.rs:598
 msgid "Declined outgoing video call"
-msgstr ""
+msgstr "வெளிச்செல்லும் வீடியோ அழைப்பு மறுக்கப்பட்டது"
 
 #: src/strings.rs:600
 msgid "Declined outgoing call"
-msgstr ""
+msgstr "வெளிச்செல்லும் அழைப்பு மறுக்கப்பட்டது"
 
 #: src/strings.rs:606
 msgid "Declined incoming video call"
-msgstr ""
+msgstr "உள்வரும் வீடியோ அழைப்பு மறுக்கப்பட்டது"
 
 #: src/strings.rs:608
 msgid "Declined incoming call"
-msgstr ""
+msgstr "உள்வரும் அழைப்பு மறுக்கப்பட்டது"
 
 #: src/strings.rs:614
 msgid "Canceled call"
-msgstr ""
+msgstr "ரத்து செய்யப்பட்ட அழைப்பு"
 
 #: src/strings.rs:616
 msgid "Missed call"
-msgstr ""
+msgstr "தவறவிட்ட அழைப்பு"
 
 #: src/strings.rs:629
 msgid "Outgoing video call ({duration})"
-msgstr ""
+msgstr "வெளிச்செல்லும் வீடியோ அழைப்பு ({duration})"
 
 #: src/strings.rs:634
 msgid "Outgoing call ({duration})"
-msgstr ""
+msgstr "வெளிச்செல்லும் அழைப்பு ({duration})"
 
 #: src/strings.rs:639
 msgid "Outgoing video call"
-msgstr ""
+msgstr "வெளிச்செல்லும் வீடியோ அழைப்பு"
 
 #: src/strings.rs:641
 msgid "Outgoing call"
-msgstr ""
+msgstr "வெளிச்செல்லும் அழைப்பு"
 
 #: src/strings.rs:646
 msgid "Incoming video call ({duration})"
-msgstr ""
+msgstr "உள்வரும் வீடியோ அழைப்பு ({duration})"
 
 #: src/strings.rs:651
 msgid "Incoming call ({duration})"
-msgstr ""
+msgstr "உள்வரும் அழைப்பு ({duration})"
 
 #: src/strings.rs:656
 msgid "Incoming video call"
-msgstr ""
+msgstr "உள்வரும் வீடியோ அழைப்பு"
 
 #: src/strings.rs:658 src/ui/window.rs:143
 msgid "Incoming call"
-msgstr ""
+msgstr "உள்வரும் அழைப்பு"
 
 #: src/strings.rs:665 src/strings.rs:682
 msgid "{sender} created the group \"{title}\""
-msgstr ""
+msgstr "{sender} \"{title}\" குழுவை உருவாக்கினார்"
 
 #: src/strings.rs:677
 msgid "Channel created"
-msgstr ""
+msgstr "சேனல் உருவாக்கப்பட்டது"
 
 #: src/strings.rs:696
 msgid "Channel renamed to \"{title}\""
-msgstr ""
+msgstr "சேனல் \"{title}\" என மறுபெயரிடப்பட்டது"
 
 #: src/strings.rs:701
 msgid "{sender} changed the group name to \"{title}\""
-msgstr ""
+msgstr "{sender} குழு பெயரை \"{title}\" என்று மாற்றினார்"
 
 #: src/strings.rs:711
 msgid "Channel photo changed"
-msgstr ""
+msgstr "சேனல் புகைப்படம் மாற்றப்பட்டது"
 
 #: src/strings.rs:715
 msgid "{sender} changed the group photo"
-msgstr ""
+msgstr "{அனுப்புநர் குழு புகைப்படத்தை மாற்றினார்"
 
 #: src/strings.rs:723
 msgid "Channel photo removed"
-msgstr ""
+msgstr "சேனல் புகைப்படம் அகற்றப்பட்டது"
 
 #: src/strings.rs:727
 msgid "{sender} removed the group photo"
-msgstr ""
+msgstr "{அனுப்புநர் குழு புகைப்படத்தை அகற்றினார்"
 
 #: src/strings.rs:738 src/strings.rs:773
 msgid "{sender} joined the group"
-msgstr ""
+msgstr "{sender} குழுவில் சேர்ந்தார்"
 
 #: src/strings.rs:743
 msgid "{sender} added {first_user} and {second_user}"
-msgstr ""
+msgstr "{sender} சேர்க்கப்பட்டது {first_user} மற்றும் {second_user}"
 
 #: src/strings.rs:757
 msgid "{sender} added {users}"
