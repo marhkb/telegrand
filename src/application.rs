@@ -1,5 +1,6 @@
 use std::cell::OnceCell;
 
+use adw::prelude::AdwDialogExt;
 use adw::subclass::prelude::*;
 use gettextrs::gettext;
 use glib::clone;
@@ -97,44 +98,64 @@ impl Application {
     fn setup_gactions(&self) {
         // Quit
         let action_quit = gio::SimpleAction::new("quit", None);
-        action_quit.connect_activate(clone!(@weak self as app => move |_, _| {
-            // This is needed to trigger the delete event and saving the window state
-            app.main_window().close();
-            app.quit();
-        }));
+        action_quit.connect_activate(clone!(
+            #[weak(rename_to = app)]
+            self,
+            move |_, _| {
+                // This is needed to trigger the delete event and saving the window state
+                app.main_window().close();
+                app.quit();
+            }
+        ));
         self.add_action(&action_quit);
 
         // About
         let action_about = gio::SimpleAction::new("about", None);
-        action_about.connect_activate(clone!(@weak self as app => move |_, _| {
-            app.show_about_dialog();
-        }));
+        action_about.connect_activate(clone!(
+            #[weak(rename_to = app)]
+            self,
+            move |_, _| {
+                app.show_about_dialog();
+            }
+        ));
         self.add_action(&action_about);
 
         // Select chat
         let action_select_chat =
             gio::SimpleAction::new("select-chat", Some(glib::VariantTy::new("(ix)").unwrap()));
-        action_select_chat.connect_activate(clone!(@weak self as app => move |_, data| {
-            let (client_id, chat_id) = data.unwrap().get().unwrap();
-            app.main_window().select_chat(client_id, chat_id);
-        }));
+        action_select_chat.connect_activate(clone!(
+            #[weak(rename_to = app)]
+            self,
+            move |_, data| {
+                let (client_id, chat_id) = data.unwrap().get().unwrap();
+                app.main_window().select_chat(client_id, chat_id);
+            }
+        ));
         self.add_action(&action_select_chat);
 
         // New login on production server
         let action_new_login_production_server =
             gio::SimpleAction::new("new-login-production-server", None);
-        action_new_login_production_server.connect_activate(
-            clone!(@weak self as app => move |_, _| {
-                app.main_window().client_manager_view().add_new_client(false);
-            }),
-        );
+        action_new_login_production_server.connect_activate(clone!(
+            #[weak(rename_to = app)]
+            self,
+            move |_, _| {
+                app.main_window()
+                    .client_manager_view()
+                    .add_new_client(false);
+            }
+        ));
         self.add_action(&action_new_login_production_server);
 
         // New login on test server
         let action_new_login_test_server = gio::SimpleAction::new("new-login-test-server", None);
-        action_new_login_test_server.connect_activate(clone!(@weak self as app => move |_, _| {
-            app.main_window().client_manager_view().add_new_client(true);
-        }));
+        action_new_login_test_server.connect_activate(clone!(
+            #[weak(rename_to = app)]
+            self,
+            move |_, _| {
+                app.main_window().client_manager_view().add_new_client(true);
+            }
+        ));
         self.add_action(&action_new_login_test_server);
     }
 
@@ -154,8 +175,7 @@ impl Application {
     }
 
     fn show_about_dialog(&self) {
-        let about = adw::AboutWindow::builder()
-            .transient_for(&self.main_window())
+        let about = adw::AboutDialog::builder()
             .application_name("Paper Plane")
             .application_icon(config::APP_ID)
             .version(config::VERSION)
@@ -201,6 +221,6 @@ impl Application {
             )),
         );
 
-        about.present();
+        about.present(Some(&self.main_window()));
     }
 }

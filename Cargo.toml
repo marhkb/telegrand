@@ -5,26 +5,26 @@ authors = ["Marco Melorio <marco.melorio@protonmail.com>", "Marcus Behrendt <mar
 edition = "2021"
 
 [dependencies]
-adw = { version = "0.6", package = "libadwaita", features = ["v1_5"] }
+adw = { version = "0.7", package = "libadwaita", features = ["v1_6"] }
 anyhow = "1"
 async-channel = "2"
 ellipse = "0.2"
 futures = { version = "0.3", default-features = false }
-gettext-rs = { version = "0.7", features = ["gettext-system"] }
-gtk = { version = "0.8", package = "gtk4", features = ["gnome_45", "blueprint"] }
+gettext-rs = { version = "=0.7.0", features = ["gettext-system"] }
+gtk = { version = "0.9", package = "gtk4", features = ["gnome_47", "blueprint"] }
 image = { version = "0.25", default-features = false, features = ["jpeg", "png", "webp"] }
 indexmap = "2"
 locale_config = "0.3"
 log = "0.4"
-ori = { git = "https://github.com/paper-plane-developers/origami.git", tag="v0.8.1", package = "origami" }
+ori = { git = "https://github.com/paper-plane-developers/origami.git", tag="v0.9.0", package = "origami" }
 pretty_env_logger = "0.5"
-qrcode-generator = { version = "4", default-features = false }
+qrcode-generator = { version = "5", default-features = false }
 regex = "1"
-rlt = { package = "gtk-rlottie", git = "https://github.com/paper-plane-developers/gtk-rlottie-rs.git", tag = "v0.8.1" }
-shumate = { version = "0.5", package = "libshumate" }
+rlt = { git = "https://github.com/paper-plane-developers/gtk-rlottie-rs.git", tag = "v0.9.0", package = "gtk-rlottie" }
+shumate = { version = "0.6", package = "libshumate" }
 tdlib = { version = "0.10", default-features = false }
 temp-dir = "0.1"
-thiserror = "1"
+thiserror = "2"
 
 [profile.release]
 lto = true

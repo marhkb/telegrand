@@ -125,11 +125,14 @@ impl MessageBaseExt for MessageVenue {
         imp.message_bubble.add_message_label_class("dim-label");
 
         // Update the message.
-        let handler_id =
-            message.connect_content_notify(clone!(@weak self as obj => move |message| {
+        let handler_id = message.connect_content_notify(clone!(
+            #[weak(rename_to = obj)]
+            self,
+            move |message| {
                 obj.update_row(message);
                 obj.update_map_window(message);
-            }));
+            }
+        ));
         imp.handler_id.replace(Some(handler_id));
         self.update_row(message);
 

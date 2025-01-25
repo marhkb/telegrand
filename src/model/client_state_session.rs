@@ -74,24 +74,28 @@ mod imp {
 
             let obj = &*self.obj();
 
-            utils::spawn(clone!(@weak obj => async move {
-                if let Err(e) = tdlib::functions::set_option(
-                    "notification_group_count_max".to_string(),
-                    Some(tdlib::enums::OptionValue::Integer(tdlib::types::OptionValueInteger {
-                        value: 5,
-                    })),
-                    obj.client_().id(),
-                )
-                .await
-                {
-                    log::warn!(
-                        "Error setting the notification_group_count_max option: {:?}",
-                        e
-                    );
-                }
+            utils::spawn(clone!(
+                #[weak]
+                obj,
+                async move {
+                    if let Err(e) = tdlib::functions::set_option(
+                        "notification_group_count_max".to_string(),
+                        Some(tdlib::enums::OptionValue::Integer(
+                            tdlib::types::OptionValueInteger { value: 5 },
+                        )),
+                        obj.client_().id(),
+                    )
+                    .await
+                    {
+                        log::warn!(
+                            "Error setting the notification_group_count_max option: {:?}",
+                            e
+                        );
+                    }
 
-                obj.fetch_chats();
-            }));
+                    obj.fetch_chats();
+                }
+            ));
         }
     }
 
@@ -316,17 +320,23 @@ impl ClientStateSession {
                 entry.insert(vec![sender]);
 
                 let client_id = self.client_().id();
-                utils::spawn(clone!(@weak self as obj => async move {
-                    let result = tdlib::functions::download_file(file_id, 5, 0, 0, false, client_id).await;
-                    match result {
-                        Ok(tdlib::enums::File::File(file)) => {
-                            obj.handle_file_update(file);
-                        }
-                        Err(e) => {
-                            log::warn!("Error downloading a file: {:?}", e);
+                utils::spawn(clone!(
+                    #[weak(rename_to = obj)]
+                    self,
+                    async move {
+                        let result =
+                            tdlib::functions::download_file(file_id, 5, 0, 0, false, client_id)
+                                .await;
+                        match result {
+                            Ok(tdlib::enums::File::File(file)) => {
+                                obj.handle_file_update(file);
+                            }
+                            Err(e) => {
+                                log::warn!("Error downloading a file: {:?}", e);
+                            }
                         }
                     }
-                }));
+                ));
             }
         }
     }

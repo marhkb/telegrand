@@ -122,109 +122,119 @@ mod imp {
             let entry_handler = Rc::new(RefCell::new(None));
 
             combo_row_handler.replace(Some(self.combo_row.connect_selected_item_notify(clone!(
-                @weak obj,
-                @strong entry_handler,
-                => move |combo_row|
-            {
-                combo_row.set_subtitle("");
+                #[weak]
+                obj,
+                #[strong]
+                entry_handler,
+                move |combo_row| {
+                    combo_row.set_subtitle("");
 
-                let imp = obj.imp();
-
-                let entry_handler = entry_handler.borrow();
-                let entry_handler = entry_handler.as_ref().unwrap();
-
-                let (pos_start, pos_end) = imp.calling_code_bounds.get();
-                let number_prefix = (0..pos_start).map(|_| ' ')
-                    .chain(Some('+'))
-                    .collect::<String>();
-
-                let (number, pos_start, pos_end) = obj
-                    .selected_country_info()
-                    .map(|selected_country_info| {
-                        let calling_codes = selected_country_info.calling_codes();
-                        let first_calling_code = calling_codes.first_or_empty();
-                        (
-                            [
-                                number_prefix.as_str(),
-                                first_calling_code,
-                                obj.number()
-                                    .chars()
-                                    .skip(pos_end)
-                                    .collect::<String>()
-                                    .as_str(),
-                            ]
-                            .concat(),
-                            pos_start,
-                            pos_start + first_calling_code.chars().count() + 1,
-                        )
-                    })
-                    .unwrap_or((number_prefix, 0, 1));
-
-                imp.entry_row.block_signal(entry_handler);
-                obj.set_number(&number);
-                imp.entry_row.unblock_signal(entry_handler);
-
-                imp.calling_code_bounds.set((pos_start, pos_end));
-
-                obj.highlight_calling_code();
-            }))));
-
-            // Format the phone number and reset the cursor.
-            entry_handler.replace(Some(self.entry_row.connect_changed(clone!(
-                @weak obj,
-                @strong combo_row_handler,
-                => move |_|
-            {
-                if let Some(ref model) = obj.model() {
                     let imp = obj.imp();
 
-                    let combo_row_handler = combo_row_handler.borrow();
-                    let combo_row_handler = combo_row_handler.as_ref().unwrap();
+                    let entry_handler = entry_handler.borrow();
+                    let entry_handler = entry_handler.as_ref().unwrap();
 
-                    let number = obj.number();
-                    let (text_pos_start, text_pos_end, list_pos) = match number
-                        .char_indices()
-                        .find(|(_, c)| !c.is_whitespace())
-                    {
-                        Some((text_pos_start, '+')) => {
-                            let analysis = model.analyze_for_calling_code(
-                                number
-                                    .chars()
-                                    .skip(text_pos_start + 1)
-                                    .collect::<String>()
-                                    .trim_end(),
-                                obj.preferred_country_code().as_deref(),
-                            );
+                    let (pos_start, pos_end) = imp.calling_code_bounds.get();
+                    let number_prefix = (0..pos_start)
+                        .map(|_| ' ')
+                        .chain(Some('+'))
+                        .collect::<String>();
+
+                    let (number, pos_start, pos_end) = obj
+                        .selected_country_info()
+                        .map(|selected_country_info| {
+                            let calling_codes = selected_country_info.calling_codes();
+                            let first_calling_code = calling_codes.first_or_empty();
                             (
-                                text_pos_start,
-                                text_pos_start as u32 + analysis.code_len + 1,
-                                analysis.list_pos,
+                                [
+                                    number_prefix.as_str(),
+                                    first_calling_code,
+                                    obj.number()
+                                        .chars()
+                                        .skip(pos_end)
+                                        .collect::<String>()
+                                        .as_str(),
+                                ]
+                                .concat(),
+                                pos_start,
+                                pos_start + first_calling_code.chars().count() + 1,
                             )
-                        }
-                        _ => (0, 0, None),
-                    };
+                        })
+                        .unwrap_or((number_prefix, 0, 1));
 
-                    imp.combo_row.block_signal(combo_row_handler);
-                    obj.set_selected_country_code(list_pos);
-                    imp.combo_row.unblock_signal(combo_row_handler);
+                    imp.entry_row.block_signal(entry_handler);
+                    obj.set_number(&number);
+                    imp.entry_row.unblock_signal(entry_handler);
 
-                    imp.calling_code_bounds.set((text_pos_start, text_pos_end as usize));
+                    imp.calling_code_bounds.set((pos_start, pos_end));
 
                     obj.highlight_calling_code();
                 }
-            }))));
+            ))));
+
+            // Format the phone number and reset the cursor.
+            entry_handler.replace(Some(self.entry_row.connect_changed(clone!(
+                #[weak]
+                obj,
+                #[strong]
+                combo_row_handler,
+                move |_| {
+                    if let Some(ref model) = obj.model() {
+                        let imp = obj.imp();
+
+                        let combo_row_handler = combo_row_handler.borrow();
+                        let combo_row_handler = combo_row_handler.as_ref().unwrap();
+
+                        let number = obj.number();
+                        let (text_pos_start, text_pos_end, list_pos) =
+                            match number.char_indices().find(|(_, c)| !c.is_whitespace()) {
+                                Some((text_pos_start, '+')) => {
+                                    let analysis = model.analyze_for_calling_code(
+                                        number
+                                            .chars()
+                                            .skip(text_pos_start + 1)
+                                            .collect::<String>()
+                                            .trim_end(),
+                                        obj.preferred_country_code().as_deref(),
+                                    );
+                                    (
+                                        text_pos_start,
+                                        text_pos_start as u32 + analysis.code_len + 1,
+                                        analysis.list_pos,
+                                    )
+                                }
+                                _ => (0, 0, None),
+                            };
+
+                        imp.combo_row.block_signal(combo_row_handler);
+                        obj.set_selected_country_code(list_pos);
+                        imp.combo_row.unblock_signal(combo_row_handler);
+
+                        imp.calling_code_bounds
+                            .set((text_pos_start, text_pos_end as usize));
+
+                        obj.highlight_calling_code();
+                    }
+                }
+            ))));
 
             // We give focus the the phone number entry as soon as the user has selected an country
             // from the combo box.
             let focus_events = gtk::EventControllerFocus::new();
-            focus_events.connect_leave(clone!(@weak obj => move |_| {
-                // We need to set the cursor position at the end on the next idle.
-                glib::idle_add_local_once(clone!(
-                    @weak obj => move || {
-                        obj.imp().entry_row.set_position(i32::MAX);
-                    }
-                ));
-            }));
+            focus_events.connect_leave(clone!(
+                #[weak]
+                obj,
+                move |_| {
+                    // We need to set the cursor position at the end on the next idle.
+                    glib::idle_add_local_once(clone!(
+                        #[weak]
+                        obj,
+                        move || {
+                            obj.imp().entry_row.set_position(i32::MAX);
+                        }
+                    ));
+                }
+            ));
             self.combo_row.add_controller(focus_events);
         }
 

@@ -115,43 +115,65 @@ impl Avatar {
         let user_signal_group = glib::SignalGroup::new::<model::User>();
         user_signal_group.connect_notify_local(
             Some("type"),
-            clone!(@weak self as obj => move |_, _| {
-                obj.update_display_name();
-                obj.update_avatar();
-            }),
+            clone!(
+                #[weak(rename_to = obj)]
+                self,
+                move |_, _| {
+                    obj.update_display_name();
+                    obj.update_avatar();
+                }
+            ),
         );
         user_signal_group.connect_notify_local(
             Some("first-name"),
-            clone!(@weak self as obj => move |_, _| {
-                obj.update_display_name();
-            }),
+            clone!(
+                #[weak(rename_to = obj)]
+                self,
+                move |_, _| {
+                    obj.update_display_name();
+                }
+            ),
         );
         user_signal_group.connect_notify_local(
             Some("last-name"),
-            clone!(@weak self as obj => move |_, _| {
-                obj.update_display_name();
-            }),
+            clone!(
+                #[weak(rename_to = obj)]
+                self,
+                move |_, _| {
+                    obj.update_display_name();
+                }
+            ),
         );
         user_signal_group.connect_notify_local(
             Some("avatar"),
-            clone!(@weak self as obj => move|_, _| {
-                obj.update_avatar();
-            }),
+            clone!(
+                #[weak(rename_to = obj)]
+                self,
+                move |_, _| {
+                    obj.update_avatar();
+                }
+            ),
         );
         imp.user_signal_group.set(user_signal_group).unwrap();
 
         let chat_signal_group = glib::SignalGroup::new::<model::Chat>();
         chat_signal_group.connect_notify_local(
             Some("title"),
-            clone!(@weak self as obj => move |_, _| {
-                obj.update_display_name()
-            }),
+            clone!(
+                #[weak(rename_to = obj)]
+                self,
+                move |_, _| obj.update_display_name()
+            ),
         );
         chat_signal_group.connect_notify_local(
             Some("avatar"),
-            clone!(@weak self as obj => move|_, _| {
-                obj.update_avatar();
-            }),
+            clone!(
+                #[weak(rename_to = obj)]
+                self,
+                move |_, _| {
+                    obj.update_avatar();
+                }
+            ),
         );
 
         imp.chat_signal_group.set(chat_signal_group).unwrap();
@@ -166,9 +188,15 @@ impl Avatar {
             } else {
                 let file_id = file.id;
 
-                utils::spawn(clone!(@weak self as obj, @weak session => async move {
-                    obj.download_avatar(file_id, &session).await;
-                }));
+                utils::spawn(clone!(
+                    #[weak(rename_to = obj)]
+                    self,
+                    #[weak]
+                    session,
+                    async move {
+                        obj.download_avatar(file_id, &session).await;
+                    }
+                ));
             }
         } else {
             self.imp().avatar.set_custom_image(gdk::Paintable::NONE);

@@ -98,9 +98,13 @@ impl ContactsWindow {
 
         obj.imp().session.set(session).unwrap();
 
-        utils::spawn(clone!(@weak obj => async move {
-            obj.fetch_contacts().await;
-        }));
+        utils::spawn(clone!(
+            #[weak]
+            obj,
+            async move {
+                obj.fetch_contacts().await;
+            }
+        ));
 
         obj
     }

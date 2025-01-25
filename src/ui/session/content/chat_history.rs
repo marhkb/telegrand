@@ -136,48 +136,64 @@ mod imp {
             obj.setup_expressions();
 
             let adj = self.list_view.vadjustment().unwrap();
-            adj.connect_value_changed(clone!(@weak obj => move |adj| {
-                obj.view_messages();
+            adj.connect_value_changed(clone!(
+                #[weak]
+                obj,
+                move |adj| {
+                    obj.view_messages();
 
-                let imp = obj.imp();
+                    let imp = obj.imp();
 
-                if imp.is_loading_messages.get() {
-                    return;
-                }
-
-                if imp.is_auto_scrolling.get() {
-                    if adj.value() + adj.page_size() >= adj.upper() {
-                        imp.is_auto_scrolling.set(false);
-                        obj.set_sticky(true);
-                    }
-                } else {
-                    obj.set_sticky(adj.value() + adj.page_size() >= adj.upper());
-
-                    if adj.value() >= adj.page_size() * 2.0 && adj.upper() > adj.page_size() * 2.0 {
+                    if imp.is_loading_messages.get() {
                         return;
                     }
 
-                    if let Some(model) = imp.model.borrow().as_ref() {
-                        imp.is_loading_messages.set(true);
+                    if imp.is_auto_scrolling.get() {
+                        if adj.value() + adj.page_size() >= adj.upper() {
+                            imp.is_auto_scrolling.set(false);
+                            obj.set_sticky(true);
+                        }
+                    } else {
+                        obj.set_sticky(adj.value() + adj.page_size() >= adj.upper());
 
-                        utils::spawn(clone!(@weak obj, @weak model => async move {
-                            obj.imp().is_loading_messages.set(false);
+                        if adj.value() >= adj.page_size() * 2.0
+                            && adj.upper() > adj.page_size() * 2.0
+                        {
+                            return;
+                        }
 
-                            if let Err(model::ChatHistoryError::Tdlib(e)) =
-                                model.load_older_messages(2).await
-                            {
-                                log::warn!("Couldn't load more chat messages: {:?}", e);
-                            }
-                        }));
+                        if let Some(model) = imp.model.borrow().as_ref() {
+                            imp.is_loading_messages.set(true);
+
+                            utils::spawn(clone!(
+                                #[weak]
+                                obj,
+                                #[weak]
+                                model,
+                                async move {
+                                    obj.imp().is_loading_messages.set(false);
+
+                                    if let Err(model::ChatHistoryError::Tdlib(e)) =
+                                        model.load_older_messages(2).await
+                                    {
+                                        log::warn!("Couldn't load more chat messages: {:?}", e);
+                                    }
+                                }
+                            ));
+                        }
                     }
                 }
-            }));
+            ));
 
-            adj.connect_upper_notify(clone!(@weak obj => move |_| {
-                if obj.sticky() || obj.imp().is_auto_scrolling.get() {
-                    obj.scroll_down();
+            adj.connect_upper_notify(clone!(
+                #[weak]
+                obj,
+                move |_| {
+                    if obj.sticky() || obj.imp().is_auto_scrolling.get() {
+                        obj.scroll_down();
+                    }
                 }
-            }));
+            ));
         }
 
         fn dispose(&self) {
@@ -243,8 +259,7 @@ impl ChatHistory {
 
     async fn show_leave_chat_dialog(&self) {
         if let Some(chat) = self.chat() {
-            let dialog = adw::MessageDialog::new(
-                Some(&self.parent_window().unwrap()),
+            let dialog = adw::AlertDialog::new(
                 Some(&gettext("Leave chat?")),
                 Some(&gettext("Do you want to leave this chat?")),
             );
@@ -253,7 +268,7 @@ impl ChatHistory {
             dialog.set_close_response("no");
             dialog.set_response_appearance("yes", adw::ResponseAppearance::Destructive);
 
-            if dialog.choose_future().await == "yes" {
+            if dialog.choose_future(&self.parent_window().unwrap()).await == "yes" {
                 match tdlib::functions::leave_chat(chat.id(), chat.session_().client_().id()).await
                 {
                     Ok(_) => {
@@ -272,20 +287,26 @@ impl ChatHistory {
     }
 
     fn request_sponsored_message(&self, chat: &model::Chat, list: &gio::ListStore) {
-        utils::spawn(clone!(@weak chat, @weak list => async move {
-            match model::SponsoredMessage::request(&chat).await {
-                Ok(sponsored_message) => {
-                    if let Some(sponsored_message) = sponsored_message {
-                        list.append(&sponsored_message);
+        utils::spawn(clone!(
+            #[weak]
+            chat,
+            #[weak]
+            list,
+            async move {
+                match model::SponsoredMessage::request(&chat).await {
+                    Ok(sponsored_message) => {
+                        if let Some(sponsored_message) = sponsored_message {
+                            list.append(&sponsored_message);
+                        }
                     }
-                }
-                Err(e) => {
-                    if e.code != 404 {
-                        log::warn!("Failed to request a SponsoredMessage: {:?}", e);
+                    Err(e) => {
+                        if e.code != 404 {
+                            log::warn!("Failed to request a SponsoredMessage: {:?}", e);
+                        }
                     }
                 }
             }
-        }));
+        ));
     }
 
     pub(crate) fn add_to_viewed_message_ids(&self, message_id: i64) {
@@ -375,42 +396,54 @@ impl ChatHistory {
                 model.clone().upcast()
             };
 
-            utils::spawn(clone!(@weak self as obj, @weak model => async move {
-                let imp = obj.imp();
+            utils::spawn(clone!(
+                #[weak(rename_to = obj)]
+                self,
+                #[weak]
+                model,
+                async move {
+                    let imp = obj.imp();
 
-                imp.is_loading_messages.set(true);
+                    imp.is_loading_messages.set(true);
 
-                let scrollbar = imp.scrolled_window.vscrollbar();
-                scrollbar.set_visible(false);
+                    let scrollbar = imp.scrolled_window.vscrollbar();
+                    scrollbar.set_visible(false);
 
-                let adj = imp.list_view.vadjustment().unwrap();
-                adj.set_value(0.0);
+                    let adj = imp.list_view.vadjustment().unwrap();
+                    adj.set_value(0.0);
 
-                while adj.value() == 0.0 {
-                    match model.load_older_messages(2).await {
-                        Ok(can_load_more) => if !can_load_more {
-                            break;
-                        }
-                        Err(e) => {
-                            log::warn!("Couldn't load initial history messages: {}", e);
-                            break;
+                    while adj.value() == 0.0 {
+                        match model.load_older_messages(2).await {
+                            Ok(can_load_more) => {
+                                if !can_load_more {
+                                    break;
+                                }
+                            }
+                            Err(e) => {
+                                log::warn!("Couldn't load initial history messages: {}", e);
+                                break;
+                            }
                         }
                     }
+
+                    scrollbar.set_visible(true);
+
+                    imp.is_loading_messages.set(false);
+                    obj.set_sticky(true);
+
+                    obj.view_messages();
                 }
+            ));
 
-                scrollbar.set_visible(true);
-
-                imp.is_loading_messages.set(false);
-                obj.set_sticky(true);
-
-                obj.view_messages();
-            }));
-
-            let handler = chat.connect_new_message(clone!(@weak self as obj => move |_, msg| {
-                if msg.is_outgoing() {
-                    obj.imp().background.animate();
+            let handler = chat.connect_new_message(clone!(
+                #[weak(rename_to = obj)]
+                self,
+                move |_, msg| {
+                    if msg.is_outgoing() {
+                        obj.imp().background.animate();
+                    }
                 }
-            }));
+            ));
             imp.chat_handler.replace(Some(handler));
 
             let selection = gtk::NoSelection::new(Some(list_view_model));
@@ -473,12 +506,11 @@ where
     F: Fn(i64, i32) -> Fut + 'static,
     Fut: Future<Output = Result<(), tdlib::types::Error>>,
 {
-    utils::spawn(clone!(@weak chat => async move  {
-        op(
-            chat.id(),
-            chat.session_().client_().id(),
-        )
-        .await
-        .unwrap();
-    }));
+    utils::spawn(clone!(
+        #[weak]
+        chat,
+        async move {
+            op(chat.id(), chat.session_().client_().id()).await.unwrap();
+        }
+    ));
 }

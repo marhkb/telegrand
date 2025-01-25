@@ -1,17 +1,17 @@
 mod contacts_window;
 mod content;
-mod preferences_window;
+mod preferences_dialog;
 mod row;
 mod sidebar;
 mod switcher;
 
 use std::sync::OnceLock;
 
+use adw::prelude::*;
 use adw::subclass::prelude::*;
 use glib::clone;
 use gtk::gdk;
 use gtk::glib;
-use gtk::prelude::*;
 use gtk::CompositeTemplate;
 
 pub(crate) use self::contacts_window::ContactsWindow;
@@ -41,7 +41,7 @@ pub(crate) use self::content::MessageText;
 pub(crate) use self::content::MessageVenue;
 pub(crate) use self::content::MessageVideo;
 pub(crate) use self::content::SendMediaWindow;
-pub(crate) use self::preferences_window::PreferencesWindow;
+pub(crate) use self::preferences_dialog::PreferencesDialog;
 pub(crate) use self::row::Row;
 pub(crate) use self::sidebar::Avatar as SidebarAvatar;
 pub(crate) use self::sidebar::ChatFolderBar as SidebarChatFolderBar;
@@ -66,6 +66,7 @@ use crate::ui;
 use crate::utils;
 
 mod imp {
+
     use super::*;
 
     #[derive(Debug, Default, CompositeTemplate)]
@@ -89,18 +90,25 @@ mod imp {
         fn class_init(klass: &mut Self::Class) {
             klass.bind_template();
 
-            klass.install_action("session.show-preferences", None, move |widget, _, _| {
-                let parent_window = widget.root().and_then(|r| r.downcast().ok());
-                let preferences = ui::PreferencesWindow::new(parent_window.as_ref(), widget);
-                preferences.present();
+            klass.install_action("session.show-preferences", None, move |session, _, _| {
+                ui::PreferencesDialog::from(session).present(
+                    session
+                        .root()
+                        .and_then(|r| r.downcast::<gtk::Window>().ok())
+                        .as_ref(),
+                );
             });
             klass.install_action("session.show-contacts", None, move |widget, _, _| {
                 let parent = widget.root().and_then(|r| r.downcast().ok());
                 let contacts = ui::ContactsWindow::new(parent.as_ref(), widget.clone());
 
-                contacts.connect_contact_activated(clone!(@weak widget => move |_, user_id| {
-                    widget.select_chat(user_id);
-                }));
+                contacts.connect_contact_activated(clone!(
+                    #[weak]
+                    widget,
+                    move |_, user_id| {
+                        widget.select_chat(user_id);
+                    }
+                ));
 
                 contacts.present();
             });
@@ -180,12 +188,25 @@ impl Session {
     pub(crate) fn select_chat(&self, id: ChatId) {
         match self.model().unwrap().try_chat(id) {
             Some(chat) => self.imp().sidebar.set_selected_chat(Some(&chat)),
-            None => utils::spawn(clone!(@weak self as obj => async move {
-                match tdlib::functions::create_private_chat(id, true, obj.model().unwrap().client_().id()).await {
-                    Ok(tdlib::enums::Chat::Chat(data)) => obj.imp().sidebar.set_selected_chat(obj.model().unwrap().try_chat(data.id).as_ref()),
-                    Err(e) => log::warn!("Failed to create private chat: {:?}", e),
+            None => utils::spawn(clone!(
+                #[weak(rename_to = obj)]
+                self,
+                async move {
+                    match tdlib::functions::create_private_chat(
+                        id,
+                        true,
+                        obj.model().unwrap().client_().id(),
+                    )
+                    .await
+                    {
+                        Ok(tdlib::enums::Chat::Chat(data)) => obj
+                            .imp()
+                            .sidebar
+                            .set_selected_chat(obj.model().unwrap().try_chat(data.id).as_ref()),
+                        Err(e) => log::warn!("Failed to create private chat: {:?}", e),
+                    }
                 }
-            })),
+            )),
         }
     }
 

@@ -83,22 +83,30 @@ mod imp {
                 Some(chat) => {
                     let handler_id = chat.connect_notify_local(
                         Some("is-marked-as-unread"),
-                        clone!(@weak self as obj => move |chat, _| {
-                            if chat.is_marked_as_unread() {
-                                obj.set_selected_chat(None);
+                        clone!(
+                            #[weak(rename_to = obj)]
+                            self,
+                            move |chat, _| {
+                                if chat.is_marked_as_unread() {
+                                    obj.set_selected_chat(None);
+                                }
                             }
-                        }),
+                        ),
                     );
                     self.marked_as_unread_handler_id.replace(Some(handler_id));
 
                     self.selection.set_selected_chat(Some(chat));
 
                     if chat.is_marked_as_unread() {
-                        utils::spawn(clone!(@weak chat => async move {
-                            if let Err(e) = chat.mark_as_read().await {
-                                log::warn!("Error on toggling chat's unread state: {e:?}");
+                        utils::spawn(clone!(
+                            #[weak]
+                            chat,
+                            async move {
+                                if let Err(e) = chat.mark_as_read().await {
+                                    log::warn!("Error on toggling chat's unread state: {e:?}");
+                                }
                             }
-                        }));
+                        ));
                     }
                 }
                 None => self.selection.set_selected_chat(None),

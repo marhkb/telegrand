@@ -93,7 +93,7 @@ impl Row {
 
     pub(crate) async fn log_out(&self) {
         if let Some(session) = self.session() {
-            let dialog: adw::MessageDialog = adw::MessageDialog::builder()
+            let dialog = adw::AlertDialog::builder()
                 .heading_use_markup(true)
                 .heading(gettext_f(
                     "Log out <i>{display_name}</i>",
@@ -103,7 +103,6 @@ impl Row {
                     )],
                 ))
                 .body(gettext("Are you sure you want to log out?"))
-                .transient_for(self.root().unwrap().downcast_ref::<gtk::Window>().unwrap())
                 .build();
 
             dialog.add_responses(&[
@@ -113,7 +112,11 @@ impl Row {
             dialog.set_default_response(Some("cancel"));
             dialog.set_response_appearance("log-out", adw::ResponseAppearance::Destructive);
 
-            if dialog.choose_future().await == "log-out" {
+            if dialog
+                .choose_future(self.root().unwrap().downcast_ref::<gtk::Window>().unwrap())
+                .await
+                == "log-out"
+            {
                 let imp = self.imp();
 
                 imp.stack.set_visible_child(&imp.spinner.get());
