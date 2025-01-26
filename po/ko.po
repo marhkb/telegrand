@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: paper-plane\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 16:58+0200\n"
-"PO-Revision-Date: 2023-11-09 09:34+0000\n"
-"Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/paper-plane/main/"
-"sv/>\n"
-"Language: sv\n"
+"PO-Revision-Date: 2024-03-27 16:04+0000\n"
+"Last-Translator: honnip <me@honnip.page>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/paper-plane/main/"
+"ko/>\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.2-dev\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/app.drey.PaperPlane.desktop.in.in:3
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:7
@@ -27,43 +27,43 @@ msgstr "Paper Plane"
 #: data/app.drey.PaperPlane.desktop.in.in:4
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:8
 msgid "Chat over Telegram on a modern and elegant client"
-msgstr "Chatta över Telegram med en modern och elegant klient"
+msgstr ""
 
 #: data/app.drey.PaperPlane.desktop.in.in:9
 msgid "Gnome;GTK;telegram;tg;chat;im;messaging;messenger;"
-msgstr "Gnome;GTK;telegram;tg;chatt;im;meddelanden;meddelandeklient;"
+msgstr ""
 
 #: data/app.drey.PaperPlane.gschema.xml.in:6
 #: data/app.drey.PaperPlane.gschema.xml.in:7
 msgid "Default window width"
-msgstr "Standard fönsterbredd"
+msgstr "기본 창 너비"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:11
 #: data/app.drey.PaperPlane.gschema.xml.in:12
 msgid "Default window height"
-msgstr "Standard fönsterhöjd"
+msgstr "기본 창 높이"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:16
 #: data/app.drey.PaperPlane.gschema.xml.in:17
 msgid "Default window maximized behaviour"
-msgstr "Standard fönstermaximeringsbeteende"
+msgstr ""
 
 #: data/app.drey.PaperPlane.gschema.xml.in:21
 msgid "Last used session"
-msgstr "Senast använd session"
+msgstr "마지막으로 사용한 세션"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:22
 msgid "The directory name of the last used session"
-msgstr "Katalognamnet för den senast använda sessionen"
+msgstr "마지막으로 사용한 세션의 디렉터리 이름"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:31
 #: src/ui/session/preferences_window.blp:7
 msgid "Color Scheme"
-msgstr "Färgschema"
+msgstr ""
 
 #: data/app.drey.PaperPlane.gschema.xml.in:32
 msgid "The color scheme to be used in the app"
-msgstr "Färgschemat som ska användas i appen"
+msgstr ""
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:10
 msgid ""
@@ -71,149 +71,125 @@ msgid ""
 "user interface and strives to meet the design principles of the GNOME "
 "desktop."
 msgstr ""
-"Paper Plane är en alternativ Telegram-klient. Den använder libadwaita för "
-"sitt användargränssnitt och strävar efter att uppfylla designprinciperna för "
-"GNOME-skrivbordet."
+"Paper Plane은 대체 Telegram 클라이언트입니다. 사용자 인터페이스로 "
+"libadwaita를 사용하고 GNOME 데스크탑의 디자인 원칙을 달성하기 위해 "
+"노력합니다."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:14
 msgid ""
 "Paper Plane is still under development and not yet feature-complete. "
 "However, the following things are already working:"
 msgstr ""
-"Paper Plane är fortfarande under utveckling och ännu inte komplett med "
-"funktioner. Men följande saker fungerar redan:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:19
 msgid "The use of multiple accounts at the same time."
-msgstr "Användning av flera konton samtidigt."
+msgstr "동시에 여러 계정 사용하기"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:20
 msgid "Viewing text messages, images, stickers and files."
-msgstr "Visa textmeddelanden, bilder, klistermärken och filer."
+msgstr "문자 메시지와 이미지, 스티커와 파일 보기"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:21
 msgid "Sending text messages and images."
-msgstr "Skicka textmeddelanden och bilder."
+msgstr "문자 메시지와 이미지 보내기"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:22
 msgid "Replying to messages."
-msgstr "Svara på meddelanden."
+msgstr "메시지 답장하기"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:23
 msgid "Searching for groups and persons."
-msgstr "Söker efter grupper och personer."
+msgstr "그룹 및 개인 검색"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:29
 msgid "Main window"
-msgstr "Huvudfönstret"
+msgstr ""
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:47
 msgid ""
 "The third beta release of Paper Plane 0.1.0 should in the first place fix a "
 "build error on Flathub:"
 msgstr ""
-"Den tredje betaversionen av Paper Plane 0.1.0 fixade i första hand ett "
-"byggfel på Flathub:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:49
 msgid ""
 "Added registered categories to te desktop file to fix a build error on "
 "Flathub."
 msgstr ""
-"Lade till registrerade kategorier till skrivbordsfilen för att fixa ett "
-"byggfel på Flathub."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:50
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:64
 msgid "Dependencies have been updated."
-msgstr "Beroenden har uppdaterats."
+msgstr ""
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:51
 msgid "Turkish translations have been updated, thanks to @sabriunal."
-msgstr "Turkisk översättning har uppdaterats, tack vare @sabriunal."
+msgstr ""
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:57
 msgid ""
 "The second beta release of Paper Plane 0.1.0 contains the following "
 "features, fixes and chores:"
 msgstr ""
-"Den andra betaversionen av Paper Plane 0.1.0 innehåller följande funktioner, "
-"korrigeringar och sysslor:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:59
 msgid ""
 "Blueprint compiler has been updated to version 0.8.1, thanks to "
 "@alissonlauffer."
 msgstr ""
-"Blueprint-kompilatorn har uppdaterats till version 0.8.1, tack vare "
-"@alissonlauffer."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:60
 msgid ""
 "The chat history now has a background image, which is animated when new "
 "messages arrive, thanks to @yuraiz."
 msgstr ""
-"Chatthistoriken har nu en bakgrundsbild, som animeras när nya meddelanden "
-"kommer, tack vare @yuraiz."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:61
 msgid ""
 "A bug was fixed that lead to an application crash if selecting non-existing "
 "chats from the contacts window, thank to @alissonlauffer."
 msgstr ""
-"En bugg fixades som ledde till en programkrasch om man valde icke-"
-"existerande chattar från kontaktfönstret, tack vare @alissonlauffer."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:62
 msgid ""
 "Avatars of deleted accounts now have a ghost icon set, thanks to @karl0d."
 msgstr ""
-"Avatarer av raderade konton har nu en spökikonuppsättning, tack vare @karl0d."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:63
 msgid ""
 "The application will now be built with more aggressive compiler options, "
 "which should result in a smaller and maybe faster binary."
 msgstr ""
-"Programmet kommer nu att byggas med mer aggressiva kompileringsalternativ, "
-"vilket borde resultera i en mindre och kanske snabbare binär."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:65
 msgid ""
 "Portuguese and Polish translation have been updated, thanks to "
 "@jvlianodorneles and @karl0d."
 msgstr ""
-"Portugisiska och polska översättningar har uppdaterats, tack vare @"
-"jvlianodorneles och @karl0d."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:71
 msgid ""
 "Paper Plane 0.1.0-beta.1 is the first release for enthusiasts to try out and "
 "play around with."
 msgstr ""
-"Paper Plane 0.1.0-beta.1 är den första utgåvan för entusiaster att prova och "
-"leka med."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:83
 msgid "Marco Melorio"
-msgstr "Marco Melorio"
+msgstr ""
 
 #: src/application.rs:165
 msgid "Paper Plane developers"
-msgstr "Paper Plane utvecklare"
+msgstr "Paper Plane 개발자"
 
 #: src/application.rs:185
 msgid "Sponsors"
-msgstr "Sponsorer"
+msgstr ""
 
 #: src/application.rs:191
 msgid ""
 "<span size=\"small\">Map data by                 <a href=\"https://www."
 "openstreetmap.org\">OpenStreetMap</a>                 and contributors</span>"
 msgstr ""
-"<span size=\"small\">Kartdata av                 <a href=\"https://www."
-"openstreetmap.org\">OpenStreetMap</a>                 och "
-"bidragsgivare</span>"
 
 #: src/application.rs:197
 msgid ""
@@ -222,23 +198,19 @@ msgid ""
 "Commons Open Database License </a> (ODbL) by the                 <a "
 "href=\"https://osmfoundation.org\">aOpenStreetMap Foundation</a> (OSMF)."
 msgstr ""
-"OpenStreetMap® är öppen data, licensierad under                 <a href="
-"\"https://opendatacommons.org/licenses/odbl\">                Öppna Data "
-"Commons Öppna databas licens </a> (ODbL) av                 <a href=\"https"
-"://osmfoundation.org\">aOpenStreetMap stiftelsen</a> (OSMF)."
 
 #: src/expressions.rs:20 src/ui/session/sidebar/search/item_row.rs:97
 #: src/ui/session/sidebar/search/mod.rs:182
 msgid "Saved Messages"
-msgstr "Sparade meddelanden"
+msgstr "저장한 메시지"
 
 #: src/expressions.rs:22 src/expressions.rs:44 src/strings.rs:384
 msgid "Deleted Account"
-msgstr "Borttaget konto"
+msgstr "탈퇴한 계정"
 
 #: src/expressions.rs:90
 msgid "The admins of this group have restricted you from writing here"
-msgstr "Administratörerna för denna grupp har hindrat dig från att skriva här"
+msgstr ""
 
 #. Translators: This is a time representation, without seconds.
 #. Here you may want to change to a 24-hours representation, based on your locale.
@@ -246,343 +218,341 @@ msgstr "Administratörerna för denna grupp har hindrat dig från att skriva hä
 #: src/expressions.rs:103 src/ui/session/content/message_row/indicators.rs:239
 #: src/ui/session/sidebar/row.rs:648
 msgid "%l:%M %p"
-msgstr "%H.%M"
+msgstr ""
 
 #. Translators: This is a date and time representation, without seconds.
 #. Here you may want to change to a 24-hours representation and change order, based on your locale.
 #. You can use this site to learn more: https://www.strfti.me/
 #: src/expressions.rs:108
 msgid "%B %e, %Y %l:%M %p"
-msgstr "%B %e, %Å %l:%M %p"
+msgstr ""
 
 #: src/expressions.rs:120
 msgid "Writing messages isn't allowed in this group."
-msgstr "Det är inte tillåtet att skriva meddelanden i den här gruppen."
+msgstr ""
 
 #: src/main.rs:121
 msgid "Prints application version"
-msgstr "Skriver ut programversion"
+msgstr ""
 
 #: src/main.rs:130
 msgid "Specify the minimum log level"
-msgstr "Specificera lägsta loggnivå"
+msgstr ""
 
 #: src/main.rs:139
 msgid "Whether to use a test data center on first account"
-msgstr "Om ett testdatacenter ska användas på första konto"
+msgstr ""
 
 #: src/model/country_info.rs:99
 msgid "Invalid Country Code"
-msgstr "Ogiltig landskod"
+msgstr "잘못된 국가 코드"
 
 #: src/model/country_info.rs:108
 msgid "Test Account"
-msgstr "Testa konto"
+msgstr "테스트 계정"
 
 #: src/strings.rs:29
 msgid "{sender} is choosing a contact"
-msgstr "{sender} väljer en kontakt"
+msgstr ""
 
 #: src/strings.rs:33
 msgid "{sender1} and {sender2} are choosing contacts"
-msgstr "{sender1} och {sender2} väljer kontakter"
+msgstr ""
 
 #: src/strings.rs:40
 msgid "{num} people are choosing contacts"
-msgstr "{num} personer väljer kontakter"
+msgstr ""
 
 #: src/strings.rs:45
 msgid "choosing a contact"
-msgstr "väljer en kontakt"
+msgstr ""
 
 #: src/strings.rs:52
 msgid "{sender} is choosing a location"
-msgstr "{sender} väljer en plats"
+msgstr ""
 
 #: src/strings.rs:56
 msgid "{sender1} and {sender2} are choosing locations"
-msgstr "{sender1} och {sender2} väljer platser"
+msgstr ""
 
 #: src/strings.rs:63
 msgid "{num} people are choosing locations"
-msgstr "{num} personer väljer platser"
+msgstr ""
 
 #: src/strings.rs:68
 msgid "choosing a location"
-msgstr "väljer en plats"
+msgstr ""
 
 #: src/strings.rs:75
 msgid "{sender} is choosing a sticker"
-msgstr "{sender} väljer ett klistermärke"
+msgstr ""
 
 #: src/strings.rs:79
 msgid "{sender1} and {sender2} are choosing stickers"
-msgstr "{sender1} och {sender2} väljer klistermärken"
+msgstr ""
 
 #: src/strings.rs:86
 msgid "{num} people are choosing stickers"
-msgstr "{num} personer väljer klistermärken"
+msgstr ""
 
 #: src/strings.rs:91
 msgid "choosing a sticker"
-msgstr "väljer ett klistermärke"
+msgstr ""
 
 #: src/strings.rs:98
 msgid "{sender} is recording a video"
-msgstr "{sender} spelar in en video"
+msgstr ""
 
 #: src/strings.rs:102
 msgid "{sender1} and {sender2} are recording videos"
-msgstr "{sender1} och {sender2} spelar in videor"
+msgstr ""
 
 #: src/strings.rs:109
 msgid "{num} people are recording videos"
-msgstr "{num} personer spelar in videor"
+msgstr ""
 
 #: src/strings.rs:114
 msgid "recording a video"
-msgstr "spelar in en video"
+msgstr ""
 
 #: src/strings.rs:121
 msgid "{sender} is recording a video note"
-msgstr "{sender} spelar in en videoanteckning"
+msgstr ""
 
 #: src/strings.rs:125
 msgid "{sender1} and {sender2} are recording video notes"
-msgstr "{sender1} och {sender2} spelar in videoanteckningar"
+msgstr ""
 
 #: src/strings.rs:132
 msgid "{num} people are recording video notes"
-msgstr "{num} personer spelar in videoanteckningar"
+msgstr ""
 
 #: src/strings.rs:137
 msgid "recording a video note"
-msgstr "spelar in en videoanteckning"
+msgstr ""
 
 #: src/strings.rs:144
 msgid "{sender} is recording a voice note"
-msgstr "{sender} spelar in en röstanteckning"
+msgstr ""
 
 #: src/strings.rs:148
 msgid "{sender1} and {sender2} are recording voice notes"
-msgstr "{sender1} och {sender2} spelar in röstanteckningar"
+msgstr ""
 
 #: src/strings.rs:155
 msgid "{num} people are recording voice notes"
-msgstr "{num} personer spelar in röstanteckningar"
+msgstr ""
 
 #: src/strings.rs:160
 msgid "recording a voice note"
-msgstr "spelar in en röstanteckning"
+msgstr ""
 
 #: src/strings.rs:167
 msgid "{sender} is playing a game"
-msgstr "{sender} spelar ett spel"
+msgstr ""
 
 #: src/strings.rs:171
 msgid "{sender1} and {sender2} are playing games"
-msgstr "{sender1} och {sender2} spelar spel"
+msgstr ""
 
 #: src/strings.rs:178
 msgid "{num} people are playing games"
-msgstr "{num} personer spelar spel"
+msgstr ""
 
 #: src/strings.rs:183
 msgid "playing a game"
-msgstr "spelar ett spel"
+msgstr ""
 
 #: src/strings.rs:190
 msgid "{sender} is typing"
-msgstr "{sender} skriver"
+msgstr ""
 
 #: src/strings.rs:194
 msgid "{sender1} and {sender2} are typing"
-msgstr "{sender1} och {sender2} skriver"
+msgstr ""
 
 #: src/strings.rs:200
 msgid "{num} people are typing"
-msgstr "{num} personer skriver"
+msgstr ""
 
 #: src/strings.rs:203
 msgid "typing"
-msgstr "skriver"
+msgstr ""
 
 #: src/strings.rs:210
 msgid "{sender} is uploading a document ({progress}%)"
-msgstr "{sender} laddar upp ett dokument ({progress}%)"
+msgstr ""
 
 #: src/strings.rs:217
 msgid "{sender1} and {sender2} are uploading documents"
-msgstr "{sender1} och {sender2} laddar upp dokument"
+msgstr ""
 
 #: src/strings.rs:224
 msgid "{num} people are uploading documents"
-msgstr "{num} personer laddar upp dokument"
+msgstr ""
 
 #: src/strings.rs:230
 msgid "uploading a document ({progress}%)"
-msgstr "laddar upp ett dokument ({progress}%)"
+msgstr ""
 
 #: src/strings.rs:239
 msgid "{sender} is uploading a photo ({progress}%)"
-msgstr "{sender} laddar upp ett foto ({progress}%)"
+msgstr ""
 
 #: src/strings.rs:246
 msgid "{sender1} and {sender2} are uploading photos"
-msgstr "{sender1} och {sender2} laddar upp foton"
+msgstr ""
 
 #: src/strings.rs:253
 msgid "{num} people are uploading photos"
-msgstr "{num} personer laddar upp foton"
+msgstr ""
 
 #: src/strings.rs:259
 msgid "uploading a photo ({progress}%)"
-msgstr "laddar upp ett foto ({progress}%)"
+msgstr ""
 
 #: src/strings.rs:268
 msgid "{sender} is uploading a video ({progress}%)"
-msgstr "{sender} laddar upp en video ({progress}%)"
+msgstr ""
 
 #: src/strings.rs:275
 msgid "{sender1} and {sender2} are uploading videos"
-msgstr "{sender1} och {sender2} laddar upp videor"
+msgstr ""
 
 #: src/strings.rs:282
 msgid "{num} people are uploading videos"
-msgstr "{num} personer laddar upp videor"
+msgstr ""
 
 #: src/strings.rs:288
 msgid "uploading a video ({progress}%)"
-msgstr "laddar upp en video ({progress}%)"
+msgstr ""
 
 #: src/strings.rs:297
 msgid "{sender} is uploading a video note ({progress}%)"
-msgstr "{sender} laddar upp en videoanteckning ({progress}%)"
+msgstr ""
 
 #: src/strings.rs:304
 msgid "{sender1} and {sender2} are uploading video notes"
-msgstr "{sender1} och {sender2} laddar upp videoanteckningar"
+msgstr ""
 
 #: src/strings.rs:311
 msgid "{num} people are uploading video notes"
-msgstr "{num} personer laddar upp videoanteckningar"
+msgstr ""
 
 #: src/strings.rs:317
 msgid "uploading a video note ({progress}%)"
-msgstr "laddar upp en videoanteckning ({progress}%)"
+msgstr ""
 
 #: src/strings.rs:326
 msgid "{sender} is uploading a voice note ({progress}%)"
-msgstr "{sender} laddar upp en röstanteckning ({progress}%)"
+msgstr ""
 
 #: src/strings.rs:333
 msgid "{sender1} and {sender2} are uploading voice notes"
-msgstr "{sender1} och {sender2} laddar upp röstanteckningar"
+msgstr ""
 
 #: src/strings.rs:340
 msgid "{num} people are uploading voice notes"
-msgstr "{num} personer laddar upp röstanteckningar"
+msgstr ""
 
 #: src/strings.rs:346
 msgid "uploading a voice note ({progress}%)"
-msgstr "laddar upp en röstanteckning ({progress}%)"
+msgstr ""
 
 #: src/strings.rs:355
 msgid "{sender} is watching an animation {emoji}"
-msgstr "{sender} tittar på en animation {emoji}"
+msgstr ""
 
 #: src/strings.rs:362
 msgid "{sender1} and {sender2} are watching animations {emoji}"
-msgstr "{sender1} och {sender2} tittar på animationer {emoji}"
+msgstr ""
 
 #: src/strings.rs:370
 msgid "{num} people are watching animations {emoji}"
-msgstr "{num} personer tittar på animationer {emoji}"
+msgstr ""
 
 #: src/strings.rs:375
 msgid "watching an animation"
-msgstr "tittar på en animation"
+msgstr ""
 
 #: src/strings.rs:398
 msgid "last seen a long time ago"
-msgstr "senast sedd för länge sedan"
+msgstr "마지막으로 접속한 지 오래됨"
 
 #: src/strings.rs:399
 msgid "online"
-msgstr "online"
+msgstr ""
 
 #. Translators: This is an online status with the date
 #: src/strings.rs:408
 #, c-format
 msgid "last seen %x"
-msgstr "senast sedd %x"
+msgstr "%x까지 접속함"
 
 #. Translators: This is an online status with the last seen time, without seconds
 #. Here you may want to change to a 24-hours representation, based on your locale.
 #. You can use this site to learn more: https://www.strfti.me/
 #: src/strings.rs:413
 msgid "last seen yesterday at %l:%M %p"
-msgstr "senast sedd igår vid %l:%M %p"
+msgstr "어제 %p %l:%M까지 접속함"
 
 #: src/strings.rs:417
 msgid "last seen {num} hour ago"
 msgid_plural "last seen {num} hours ago"
-msgstr[0] "sågs senast för {num} timme sedan"
-msgstr[1] "sågs senast för {num} timmar sedan"
+msgstr[0] "{num}시간 전에 접속함"
 
 #: src/strings.rs:424
 msgid "last seen {num} minute ago"
 msgid_plural "last seen {num} minutes ago"
-msgstr[0] "sågs senast för {num} minut sedan"
-msgstr[1] "sågs senast för {num} minuter sedan"
+msgstr[0] "{num}분 전에 접속함"
 
 #: src/strings.rs:430
 msgid "last seen just now"
-msgstr "sågs senast just precis nu"
+msgstr "방금 접속함"
 
 #: src/strings.rs:433
 msgid "last seen recently"
-msgstr "senast sedd nyligen"
+msgstr "최근에 접속함"
 
 #: src/strings.rs:434
 msgid "last seen within a week"
-msgstr "senast sedd inom en vecka"
+msgstr ""
 
 #: src/strings.rs:435
 msgid "last seen within a month"
-msgstr "senast sedd inom en månad"
+msgstr ""
 
 #: src/strings.rs:456 src/ui/session/content/message_row/location.blp:26
 msgid "Live Location"
-msgstr "Liveplats"
+msgstr ""
 
 #: src/strings.rs:458
 msgid "Location"
-msgstr "Plats"
+msgstr ""
 
 #: src/strings.rs:467
 msgid "Photo has expired"
-msgstr "Foto har gått ut"
+msgstr ""
 
 #: src/strings.rs:470
 msgid "Video has expired"
-msgstr "Video har gått ut"
+msgstr ""
 
 #: src/strings.rs:471
 msgid "Video Message"
-msgstr "Videomeddelande"
+msgstr ""
 
 #: src/strings.rs:504
 msgid "{sender} took a screenshot!"
-msgstr "{sender} tog en skärmdump!"
+msgstr ""
 
 #: src/strings.rs:509
 msgid "Location, {venue}"
-msgstr "Plats,{venue}"
+msgstr ""
 
 #: src/strings.rs:510
 msgid "Unsupported Message"
-msgstr "Icke-stött meddelande"
+msgstr ""
 
 #: src/strings.rs:516
 msgid "GIF"
@@ -590,384 +560,379 @@ msgstr "GIF"
 
 #: src/strings.rs:518
 msgid "GIF, {caption}"
-msgstr "GIF, {caption}"
+msgstr ""
 
 #: src/strings.rs:526
 msgid "{title} – {performer}"
-msgstr "{title} – {performer}"
+msgstr ""
 
 #: src/strings.rs:532
 msgid "{title} – {performer}, {caption}"
-msgstr "{title} – {performer}, {caption}"
+msgstr ""
 
 #: src/strings.rs:548
 msgid "{file_name}, {caption}"
-msgstr "{file_name}, {caption}"
+msgstr ""
 
 #: src/strings.rs:556
 msgid "Photo"
-msgstr "Bild"
+msgstr ""
 
 #: src/strings.rs:558
 msgid "Photo, {caption}"
-msgstr "Foto, {caption}"
+msgstr ""
 
 #. Translators: This is a sticker with the associated emoji
 #: src/strings.rs:564
 msgid "{emoji} Sticker"
-msgstr "{emoji} Klistermärke"
+msgstr ""
 
 #: src/strings.rs:569
 msgid "Video"
-msgstr "Video"
+msgstr ""
 
 #: src/strings.rs:571
 msgid "Video, {caption}"
-msgstr "Video, {caption}"
+msgstr ""
 
 #: src/strings.rs:577
 msgid "Voice Message"
-msgstr "Röstmeddelande"
+msgstr ""
 
 #: src/strings.rs:579
 msgid "Voice Message, {caption}"
-msgstr "Röstmeddelande, {caption}"
+msgstr ""
 
 #: src/strings.rs:598
 msgid "Declined outgoing video call"
-msgstr "Nekat utgående videosamtal"
+msgstr ""
 
 #: src/strings.rs:600
 msgid "Declined outgoing call"
-msgstr "Nekat utgående samtal"
+msgstr ""
 
 #: src/strings.rs:606
 msgid "Declined incoming video call"
-msgstr "Nekat inkommande videosamtal"
+msgstr ""
 
 #: src/strings.rs:608
 msgid "Declined incoming call"
-msgstr "Nekat inkommande samtal"
+msgstr ""
 
 #: src/strings.rs:614
 msgid "Canceled call"
-msgstr "Avbrutet samtal"
+msgstr ""
 
 #: src/strings.rs:616
 msgid "Missed call"
-msgstr "Missat samtal"
+msgstr ""
 
 #: src/strings.rs:629
 msgid "Outgoing video call ({duration})"
-msgstr "Utgående videosamtal ({duration})"
+msgstr ""
 
 #: src/strings.rs:634
 msgid "Outgoing call ({duration})"
-msgstr "Utgående samtal ({duration})"
+msgstr ""
 
 #: src/strings.rs:639
 msgid "Outgoing video call"
-msgstr "Utgående videosamtal"
+msgstr ""
 
 #: src/strings.rs:641
 msgid "Outgoing call"
-msgstr "Utgående samtal"
+msgstr ""
 
 #: src/strings.rs:646
 msgid "Incoming video call ({duration})"
-msgstr "Inkommande videosamtal ({duration})"
+msgstr ""
 
 #: src/strings.rs:651
 msgid "Incoming call ({duration})"
-msgstr "Inkommande samtal ({duration})"
+msgstr ""
 
 #: src/strings.rs:656
 msgid "Incoming video call"
-msgstr "Inkommande videosamtal"
+msgstr ""
 
 #: src/strings.rs:658 src/ui/window.rs:143
 msgid "Incoming call"
-msgstr "Inkommande samtal"
+msgstr ""
 
 #: src/strings.rs:665 src/strings.rs:682
 msgid "{sender} created the group \"{title}\""
-msgstr "{sender} skapade grupp \"{title}\""
+msgstr ""
 
 #: src/strings.rs:677
 msgid "Channel created"
-msgstr "Kanal skapad"
+msgstr ""
 
 #: src/strings.rs:696
 msgid "Channel renamed to \"{title}\""
-msgstr "Kanal har bytt namn till \"{title}\""
+msgstr ""
 
 #: src/strings.rs:701
 msgid "{sender} changed the group name to \"{title}\""
-msgstr "{sender} ändrade gruppnamnet till \"{title}\""
+msgstr ""
 
 #: src/strings.rs:711
 msgid "Channel photo changed"
-msgstr "Kanalfoto ändrat"
+msgstr ""
 
 #: src/strings.rs:715
 msgid "{sender} changed the group photo"
-msgstr "{sender} ändrade gruppfotot"
+msgstr ""
 
 #: src/strings.rs:723
 msgid "Channel photo removed"
-msgstr "Kanalbild borttagen"
+msgstr ""
 
 #: src/strings.rs:727
 msgid "{sender} removed the group photo"
-msgstr "{sender} tog bort gruppfoto"
+msgstr ""
 
 #: src/strings.rs:738 src/strings.rs:773
 msgid "{sender} joined the group"
-msgstr "{sender} gick med i gruppen"
+msgstr ""
 
 #: src/strings.rs:743
 msgid "{sender} added {first_user} and {second_user}"
-msgstr "{sender} lade till {first_user} och {second_user}"
+msgstr ""
 
 #: src/strings.rs:757
 msgid "{sender} added {users}"
-msgstr "{sender} la till {users}"
+msgstr ""
 
 #: src/strings.rs:766
 msgid "{sender} joined the group via invite link"
-msgstr "{sender} gick med i gruppen via inbjudningslänk"
+msgstr ""
 
 #: src/strings.rs:780
 msgid "{sender} left the group"
-msgstr "{sender} lämnade gruppen"
+msgstr ""
 
 #: src/strings.rs:785
 msgid "{sender} removed {user}"
-msgstr "{sender} tog bort {user}"
+msgstr ""
 
 #: src/strings.rs:810
 msgid "{sender} scored {points} in {game}"
-msgstr "{sender} fick poäng {points} i {game}"
+msgstr ""
 
 #: src/strings.rs:819
 msgid "{sender} scored {points}"
-msgstr "{sender} fick {points}"
+msgstr ""
 
 #: src/strings.rs:847
 msgid "{sender} pinned \"{text}\""
-msgstr "{sender} fäste \"{text}\""
+msgstr ""
 
 #: src/strings.rs:849
 msgid "{sender} pinned a GIF"
-msgstr "{sender} fäste en GIF"
+msgstr ""
 
 #: src/strings.rs:850
 msgid "{sender} pinned an audio file"
-msgstr "{sender} fäste en ljudfil"
+msgstr ""
 
 #: src/strings.rs:851
 msgid "{sender} pinned a file"
-msgstr "{sender} fäste en fil"
+msgstr ""
 
 #: src/strings.rs:852
 msgid "{sender} pinned a photo"
-msgstr "{sender} fäste ett foto"
+msgstr ""
 
 #: src/strings.rs:853
 msgid "{sender} pinned a sticker"
-msgstr "{sender} fäste ett klistermärke"
+msgstr ""
 
 #: src/strings.rs:854
 msgid "{sender} pinned a video"
-msgstr "{sender} fäste en video"
+msgstr ""
 
 #: src/strings.rs:855
 msgid "{sender} pinned a video message"
-msgstr "{sender} fäste ett videomeddelande"
+msgstr ""
 
 #: src/strings.rs:856
 msgid "{sender} pinned a voice message"
-msgstr "{sender} fäste ett röstmeddelande"
+msgstr ""
 
 #: src/strings.rs:857 src/strings.rs:859
 msgid "{sender} pinned a message"
-msgstr "{sender} fäste ett meddelande"
+msgstr ""
 
 #: src/strings.rs:868
 msgid "{sender} joined Telegram"
-msgstr "{sender} gick med i Telegram"
+msgstr ""
 
 #: src/ui/components/map.blp:29
 msgid "Map data by OpenStreetMap"
-msgstr "Kartdata av OpenStreetMap"
+msgstr ""
 
 #: src/ui/components/phone_number_input.blp:13
 msgid "Country"
-msgstr "Land"
+msgstr ""
 
 #: src/ui/components/phone_number_input.blp:21 src/ui/login/code.blp:16
 #: src/ui/login/other_device.blp:19 src/ui/login/password.blp:20
 #: src/ui/login/registration.blp:17
 msgid "Phone Number"
-msgstr "Telefonnummer"
+msgstr ""
 
 #: src/ui/components/phone_number_input.rs:310
 msgid "You entered an invalid country code."
-msgstr "Du angav en ogiltig landskod."
+msgstr ""
 
 #: src/ui/login/code.blp:22
 msgid "Enter the Verification Code"
-msgstr "Ange verifieringskoden"
+msgstr ""
 
 #: src/ui/login/code.blp:39 src/ui/login/password.blp:185
 msgid "Code"
-msgstr "Kod"
+msgstr ""
 
 #: src/ui/login/code.blp:56 src/ui/login/password.blp:72
 #: src/ui/login/password.blp:202 src/ui/login/phone_number.blp:49
 #: src/ui/login/registration.blp:64
 msgid "_Next"
-msgstr "_Nästa"
+msgstr ""
 
 #: src/ui/login/code.rs:117
 msgid "Send code via {type} (may still arrive within {countdown} seconds)"
-msgstr "Skicka kod via {type} (kan fortfarande komma inom {countdown} sekunder)"
+msgstr ""
 
 #: src/ui/login/code.rs:122
 msgid "Send code via {type}"
-msgstr "Skicka kod via {type}"
+msgstr ""
 
 #: src/ui/login/code.rs:147
 msgid "The code will arrive to you via {type}."
-msgstr "Koden kommer till dig via {type}."
+msgstr ""
 
 #: src/ui/login/code.rs:184
 msgid "Failed to authenticate: {error}"
-msgstr "Misslyckades med autentisering: {error}"
+msgstr ""
 
 #: src/ui/login/code.rs:198
 msgid "Failed to resend auth code: {error}"
-msgstr "Misslyckades att skicka autentiseringskoden igen: {error}"
+msgstr ""
 
 #. Translators: This is an authentication method
 #: src/ui/login/code.rs:228
 msgid "Telegram"
-msgstr "Telegram"
+msgstr ""
 
 #. Translators: This is an authentication method
 #: src/ui/login/code.rs:230
 msgid "SMS"
-msgstr "SMS"
+msgstr ""
 
 #. Translators: This is an authentication method
 #: src/ui/login/code.rs:232
 msgid "Call"
-msgstr "Ring"
+msgstr ""
 
 #. Translators: This is an authentication method
 #: src/ui/login/code.rs:234
 msgid "Flash Call"
-msgstr "Snabbring"
+msgstr ""
 
 #. Translators: This is an authentication method
 #: src/ui/login/code.rs:236
 msgid "Missed Call"
-msgstr "Missat samtal"
+msgstr ""
 
 #. Translators: This is an authentication method
 #: src/ui/login/code.rs:238
 msgid "Fragment"
-msgstr "Fragment"
+msgstr ""
 
 #: src/ui/login/mod.rs:116
 msgid "Reset Registration Process?"
-msgstr "Återställa registreringsprocessen?"
+msgstr ""
 
 #: src/ui/login/mod.rs:117
 msgid ""
 "If you reset the registration process, the previous progress will be "
 "irrevocably lost."
 msgstr ""
-"Om du återställer registreringsprocessen kommer de tidigare framstegen att "
-"gå oåterkalleligt förlorade."
 
 #: src/ui/login/mod.rs:128 src/ui/login/password.rs:242
 #: src/ui/session/row.rs:110
 msgid "_Cancel"
-msgstr "_Avbryt"
+msgstr ""
 
 #: src/ui/login/mod.rs:129
 msgid "_Reset"
-msgstr "_Återställ"
+msgstr ""
 
 #: src/ui/login/other_device.blp:24
 msgid "Scan Code"
-msgstr "Skanna kod"
+msgstr ""
 
 #: src/ui/login/other_device.blp:25
 msgid "Scan this code with another Telegram app logged into your account."
 msgstr ""
-"Skanna denna kod med en annan Telegram-app som är inloggad på ditt konto."
 
 #: src/ui/login/other_device.blp:42
 msgid "Log in using your phone number"
-msgstr "Logga in med ditt telefonnummer"
+msgstr ""
 
 #: src/ui/login/password.blp:26
 msgid "Enter Your Password"
-msgstr "Ange ditt lösenord"
+msgstr ""
 
 #: src/ui/login/password.blp:40
 msgid "Password"
-msgstr "Lösenord"
+msgstr ""
 
 #: src/ui/login/password.blp:47
 msgid "Hint"
-msgstr "Ledtråd"
+msgstr ""
 
 #: src/ui/login/password.blp:88
 msgid "Forgot password?"
-msgstr "Glömt lösenord?"
+msgstr ""
 
 #: src/ui/login/password.blp:107
 msgid "Recover Password"
-msgstr "Återställ lösenord"
+msgstr ""
 
 #: src/ui/login/password.blp:108
 msgid ""
 "When you set your cloud password, you provided a recovery e-mail address. A "
 "code can be sent there to reset your password."
 msgstr ""
-"När du ställde in ditt molnlösenord angav du en återställnings-e-postadress. "
-"En kod kan skickas dit för att återställa ditt lösenord."
 
 #: src/ui/login/password.blp:131
 msgid "_Send Code"
-msgstr "_Skicka kod"
+msgstr ""
 
 #: src/ui/login/password.blp:150 src/ui/login/password.rs:243
 msgid "_Delete Account"
-msgstr "_Radera konto"
+msgstr ""
 
 #: src/ui/login/password.blp:168
 msgid "Enter the Code E-Mailed to You"
-msgstr "Ange koden som skickats till dig via e-post"
+msgstr ""
 
 #: src/ui/login/password.blp:218
 msgid "Unable to access your e-mail?"
-msgstr "Kan du inte komma åt din e-post?"
+msgstr ""
 
 #: src/ui/login/password.rs:198
 msgid "Failed to verify password: {error}"
-msgstr "Misslyckades med att verifiera lösenord: {error}"
+msgstr ""
 
 #: src/ui/login/password.rs:222
 msgid "Failed to recover password: {error}"
-msgstr "Misslyckades att återställa lösenord: {error}"
+msgstr ""
 
 #: src/ui/login/password.rs:234
 msgid "Warning"
-msgstr "Varning"
+msgstr ""
 
 #: src/ui/login/password.rs:236
 msgid ""
@@ -976,554 +941,411 @@ msgid ""
 "\n"
 "Do you want to delete your account?"
 msgstr ""
-"Du kommer att förlora alla dina chattar och meddelanden, tillsammans med "
-"alla media och filer du delat!\n"
-"\n"
-"Vill du ta bort ditt konto?"
 
 #: src/ui/login/password.rs:269
 msgid "Failed to delete account: {error}"
-msgstr "Misslyckades att ta bort konto: {error}"
+msgstr ""
 
 #: src/ui/login/password.rs:294
 msgid "Code expired. A new one has been sent you."
-msgstr "Koden har löpt ut. En ny har skickats till dig."
+msgstr ""
 
 #: src/ui/login/password.rs:299
 msgid "Code expired. Could not sent a new one: {error}"
-msgstr "Koden har löpt ut. Kunde inte skicka en ny: {error}"
+msgstr ""
 
 #: src/ui/login/password.rs:307
 msgid "Failed to send password code: {error}"
-msgstr "Misslyckades med att skicka lösenordskod: {error}"
+msgstr ""
 
 #: src/ui/login/password.rs:316
 msgid "Sorry"
-msgstr "Förlåt"
+msgstr ""
 
 #: src/ui/login/password.rs:318
 msgid ""
 "If you can't restore access to the e-mail, your remaining options are either "
 "to remember your password or to delete and then recreate your account."
 msgstr ""
-"Om du inte kan återställa åtkomsten via e-post är dina återstående "
-"alternativ antingen att komma ihåg ditt lösenord eller att radera och sedan "
-"återskapa ditt konto."
 
 #: src/ui/login/password.rs:323 src/ui/login/registration.rs:173
 msgid "_OK"
-msgstr "_OK"
+msgstr ""
 
 #: src/ui/login/phone_number.blp:24
 msgid "Welcome"
-msgstr "Välkommen"
+msgstr ""
 
 #: src/ui/login/phone_number.blp:66
 msgid "Quick login using QR code"
-msgstr "Snabbinloggning med QR-kod"
+msgstr ""
 
 #: src/ui/login/phone_number.rs:125
 msgid "Failed to load country codes: {error}"
-msgstr "Misslyckades att läsa in landskoder: {error}"
+msgstr ""
 
 #: src/ui/login/phone_number.rs:177 src/ui/session/row.rs:126
 msgid "Failed to log out: {error}"
-msgstr "Misslyckades att logga ut: {error}"
+msgstr ""
 
 #: src/ui/login/phone_number.rs:209
 msgid "Failed to use phone number: {error}"
-msgstr "Misslyckades att använda telefonnummer: {error}"
+msgstr ""
 
 #: src/ui/login/phone_number.rs:233
 msgid "Failed to request QR code: {error}"
-msgstr "Misslyckades att begära QR-kod: {error}"
+msgstr ""
 
 #: src/ui/login/registration.blp:23
 msgid "Register New Account"
-msgstr "Registrera nytt konto"
+msgstr ""
 
 #: src/ui/login/registration.blp:43
 msgid "First Name"
-msgstr "Förnamn"
+msgstr ""
 
 #: src/ui/login/registration.blp:48
 msgid "Last Name"
-msgstr "Efternamn"
+msgstr ""
 
 #: src/ui/login/registration.blp:87
 msgid ""
 "By signing up,\n"
 "you agree to the <a href=\"\">Terms of Service</a>."
 msgstr ""
-"Genom att bli medlem,\n"
-"går du med på <a href=\"\">användarvillkoren</a>."
 
 #: src/ui/login/registration.rs:145
 msgid "Failed to register account: {error}"
-msgstr "Misslyckades att registrera konto: {error}"
+msgstr ""
 
 #: src/ui/login/registration.rs:168
 msgid "Do you accept the Terms of Service?"
-msgstr "Godkänner du användarvillkoren?"
+msgstr ""
 
 #: src/ui/login/registration.rs:169 src/ui/session/content/chat_history.rs:227
 #: src/ui/session/content/message_row/mod.rs:182
 msgid "_No"
-msgstr "_Nej"
+msgstr ""
 
 #: src/ui/login/registration.rs:169 src/ui/session/content/chat_history.rs:227
 #: src/ui/session/content/message_row/mod.rs:182
 msgid "_Yes"
-msgstr "_Ja"
+msgstr ""
 
 #: src/ui/login/registration.rs:172
 msgid "Terms of Service"
-msgstr "Användarvillkoren"
+msgstr ""
 
 #: src/ui/session/contacts_window/mod.ui:3
 msgid "Contacts"
-msgstr "Kontakter"
+msgstr ""
 
 #: src/ui/session/content/chat_action_bar.blp:71
 msgid "Message"
-msgstr "Meddelande"
+msgstr ""
 
 #: src/ui/session/content/chat_action_bar.blp:103
 msgid "Unblock"
-msgstr "Avblockera"
+msgstr ""
 
 #: src/ui/session/content/chat_action_bar.blp:134
 msgid "Join"
-msgstr "Gå med"
+msgstr ""
 
 #: src/ui/session/content/chat_action_bar.rs:119
 msgid "Failed to join chat: {error}"
-msgstr "Misslyckades att gå med i chatt: {error}"
+msgstr ""
 
 #: src/ui/session/content/chat_action_bar.rs:369
 #: src/ui/session/content/chat_action_bar.rs:386
 msgid "Unknown"
-msgstr "Okänd"
+msgstr ""
 
 #: src/ui/session/content/chat_action_bar.rs:371
 #: src/ui/session/content/chat_action_bar.rs:388
 msgid "Deleted Message"
-msgstr "Borttaget meddelande"
+msgstr ""
 
 #: src/ui/session/content/chat_action_bar.rs:382
 msgid "Edit Message"
-msgstr "Redigera meddelande"
+msgstr ""
 
 #: src/ui/session/content/chat_action_bar.rs:477
 msgid "Images"
-msgstr "Bilder"
+msgstr ""
 
 #: src/ui/session/content/chat_action_bar.rs:796
 msgid "Unmute"
-msgstr "Avtysta"
+msgstr ""
 
 #: src/ui/session/content/chat_action_bar.rs:798
 msgid "Mute"
-msgstr "Tysta"
+msgstr ""
 
 #: src/ui/session/content/chat_history.rs:224
 msgid "Leave chat?"
-msgstr "Lämna chatt?"
+msgstr ""
 
 #: src/ui/session/content/chat_history.rs:225
 msgid "Do you want to leave this chat?"
-msgstr "Vill du lämna den här chatten?"
+msgstr ""
 
 #: src/ui/session/content/chat_history.ui:67
 msgid "Scroll to bottom"
-msgstr "Bläddra till botten"
+msgstr ""
 
 #: src/ui/session/content/chat_history.ui:145
 msgid "View Info"
-msgstr "Visa information"
+msgstr ""
 
 #: src/ui/session/content/chat_history.ui:149
 msgid "Leave Chat"
-msgstr "Lämna chatt"
+msgstr ""
 
 #. Translators: This is a date format in the day divider without the year
 #: src/ui/session/content/chat_history_row.rs:119
 msgid "%B %e"
-msgstr "%e %B"
+msgstr ""
 
 #. Translators: This is a date format in the day divider with the year
 #: src/ui/session/content/chat_history_row.rs:122
 msgid "%B %e, %Y"
-msgstr "%e %B %Y"
+msgstr ""
 
 #: src/ui/session/content/chat_info_window.rs:132
 msgid "bot"
-msgstr "bot"
+msgstr ""
 
 #: src/ui/session/content/chat_info_window.rs:145
 msgid "Mobile"
-msgstr "Mobil"
+msgstr ""
 
 #: src/ui/session/content/chat_info_window.rs:152
 msgid "Username"
-msgstr "Användarnamn"
+msgstr ""
 
 #: src/ui/session/content/chat_info_window.rs:169
 #: src/ui/session/content/chat_info_window.rs:215
 msgid "{num} member"
 msgid_plural "{num} members"
-msgstr[0] "{num} medlem"
-msgstr[1] "{num} medlemmar"
+msgstr[0] ""
+msgstr[1] ""
 
 #: src/ui/session/content/chat_info_window.rs:198
 #: src/ui/session/content/chat_info_window.rs:254
 msgid "Description"
-msgstr "Beskrivning"
+msgstr ""
 
 #: src/ui/session/content/chat_info_window.rs:226
 msgid "Link"
-msgstr "Länk"
+msgstr ""
 
 #: src/ui/session/content/chat_info_window.rs:272
 msgid "Copied to clipboard"
-msgstr "Kopierad till urklipp"
+msgstr ""
 
 #: src/ui/session/content/message_menu.blp:6
 msgid "_Reply"
-msgstr "_Svara"
+msgstr ""
 
 #: src/ui/session/content/message_menu.blp:12
 msgid "_Edit"
-msgstr "_Redigera"
+msgstr ""
 
 #: src/ui/session/content/message_menu.blp:18
 msgid "Delete for Ever_yone"
-msgstr "Ta bort för alli_hopa"
+msgstr ""
 
 #: src/ui/session/content/message_menu.blp:24
 msgid "_Delete for Me"
-msgstr "_Radera för mig"
+msgstr ""
 
 #: src/ui/session/content/message_row/indicators.rs:248
 msgid "edited"
-msgstr "redigerad"
+msgstr ""
 
 #: src/ui/session/content/message_row/indicators.rs:256
 msgid "sponsored"
-msgstr "sponsrad"
+msgstr ""
 
 #: src/ui/session/content/message_row/location.rs:139
 #: src/ui/session/content/message_row/location.rs:148
 msgid "updated just now"
-msgstr "uppdaterades precis nu"
+msgstr ""
 
 #: src/ui/session/content/message_row/location.rs:152
 msgid "updated an hour ago"
-msgstr "uppdaterad för en timme sen"
+msgstr ""
 
 #: src/ui/session/content/message_row/location.rs:155
 msgid "updated {hours} hours and {minutes} minutes ago"
-msgstr "uppdaterad för {hours} timmar och {minutes} minuter sedan"
+msgstr ""
 
 #: src/ui/session/content/message_row/mod.rs:170
 msgid "Do you want to delete this message for <b>everyone</b>?"
-msgstr "Vill du radera det här meddelandet för <b>alla</b>?"
+msgstr ""
 
 #: src/ui/session/content/message_row/mod.rs:172
 msgid "Do you want to delete this message?"
-msgstr "Vill du radera det här meddelandet?"
+msgstr ""
 
 #: src/ui/session/content/message_row/mod.rs:176
 msgid "Confirm model::Message Deletion"
-msgstr "Bekräfta modell::Meddelanderadering"
+msgstr ""
 
 #: src/ui/session/content/message_row/reply.rs:70
 msgid "Loading…"
-msgstr "Laddar…"
+msgstr ""
 
 #: src/ui/session/content/message_row/text.rs:134
 msgid "This message is unsupported"
-msgstr "Det här meddelandet stöds inte"
+msgstr ""
 
 #: src/ui/session/content/mod.blp:22
 msgid "No Chat Selected"
-msgstr "Ingen chatt vald"
+msgstr ""
 
 #: src/ui/session/content/mod.blp:23
 msgid "Select a chat to start messaging."
-msgstr "Välj en chatt för att börja skicka meddelanden."
+msgstr ""
 
 #: src/ui/session/content/send_media_window.blp:8
 msgid "Send Image"
-msgstr "Skicka bild"
+msgstr ""
 
 #: src/ui/session/content/send_media_window.blp:23
 msgid "Caption"
-msgstr "Rubrik"
+msgstr ""
 
 #: src/ui/session/content/send_media_window.blp:30
 msgid "Send"
-msgstr "Skicka"
+msgstr ""
 
 #: src/ui/session/content/send_media_window.blp:41
 msgid "Send as _File"
-msgstr "Skicka som _fil"
+msgstr ""
 
 #: src/ui/session/mod.blp:15 src/ui/session/sidebar/mod.ui:38
 #: src/ui/session/sidebar/search/section_row.rs:124
 msgid "Chats"
-msgstr "Chatter"
+msgstr ""
 
 #: src/ui/session/mod.blp:26
 msgid "Content"
-msgstr "Innehåll"
+msgstr ""
 
 #: src/ui/session/preferences_window.blp:10
 msgid "Follow System Colors"
-msgstr "Följ systemfärger"
+msgstr ""
 
 #: src/ui/session/preferences_window.blp:19
 msgid "Dark Theme"
-msgstr "Mörkt tema"
+msgstr ""
 
 #: src/ui/session/preferences_window.blp:29
 msgid "Storage"
-msgstr "Lagring"
+msgstr ""
 
 #: src/ui/session/preferences_window.blp:32
 msgid "Cache Size"
-msgstr "Cachestorlek"
+msgstr ""
 
 #: src/ui/session/preferences_window.blp:42
 msgid "Clear Cache"
-msgstr "Rensa cache"
+msgstr ""
 
 #: src/ui/session/preferences_window.rs:211
 msgid "Cache cleared"
-msgstr "Cache rensad"
+msgstr ""
 
 #: src/ui/session/row.blp:54
 msgid "Logout"
-msgstr "Logga ut"
+msgstr ""
 
 #: src/ui/session/row.rs:99
 msgid "Log out <i>{display_name}</i>"
-msgstr "Logga ut <i>{display_name}</i>"
+msgstr ""
 
 #: src/ui/session/row.rs:105
 msgid "Are you sure you want to log out?"
-msgstr "Är du säker på att du vill logga ut?"
+msgstr ""
 
 #: src/ui/session/row.rs:111
 msgid "_Log out"
-msgstr "_Logga ut"
+msgstr ""
 
 #: src/ui/session/sidebar/mod.ui:7
 msgid "_Contacts"
-msgstr "_Kontakter"
+msgstr ""
 
 #: src/ui/session/sidebar/mod.ui:13
 msgid "_Preferences"
-msgstr "_Inställningar"
+msgstr ""
 
 #: src/ui/session/sidebar/mod.ui:17
 msgid "_Keyboard Shortcuts"
-msgstr "_Tangentbordsgenvägar"
+msgstr ""
 
 #: src/ui/session/sidebar/mod.ui:21
 msgid "_About Paper Plane"
-msgstr "_Om Paper Plane"
+msgstr ""
 
 #: src/ui/session/sidebar/mod.ui:148 src/ui/session/sidebar/search/mod.ui:16
 msgid "Search"
-msgstr "Sök"
+msgstr "검색"
 
 #: src/ui/session/sidebar/mod.ui:165
 msgid "Sessions"
-msgstr "Sessioner"
+msgstr "세션"
 
 #: src/ui/session/sidebar/row.rs:414
 msgid "Draft:"
-msgstr "Utkast:"
+msgstr ""
 
 #: src/ui/session/sidebar/row.rs:597
 msgid "You"
-msgstr "Du"
+msgstr ""
 
 #: src/ui/session/sidebar/row_menu.blp:6
 msgid "_Pin"
-msgstr "_Fäst"
+msgstr ""
 
 #: src/ui/session/sidebar/row_menu.blp:12
 msgid "_Unpin"
-msgstr "_Avfäst"
+msgstr ""
 
 #: src/ui/session/sidebar/row_menu.blp:18
 msgid "_Mark as Unread"
-msgstr "_Markera som oläst"
+msgstr ""
 
 #: src/ui/session/sidebar/row_menu.blp:24
 msgid "Mark as _Read"
-msgstr "Markera som _läst"
+msgstr ""
 
 #: src/ui/session/sidebar/search/mod.ui:79
 msgid "No Search Results"
-msgstr "Inga sökresultat"
+msgstr ""
 
 #: src/ui/session/sidebar/search/mod.ui:80
 msgid "Try a different search."
-msgstr "Prova med en annan sökning."
+msgstr ""
 
 #: src/ui/session/sidebar/search/section_row.rs:127
 msgid "Global Search"
-msgstr "Global sök"
+msgstr ""
 
 #: src/ui/session/sidebar/search/section_row.rs:130
 msgid "Recent"
-msgstr "Senaste"
+msgstr ""
 
 #: src/ui/session/switcher.blp:7
 msgid "_Production Server"
-msgstr "_Produktionsserver"
+msgstr ""
 
 #: src/ui/session/switcher.blp:12
 msgid "_Test Server"
-msgstr "_Testserver"
+msgstr ""
 
 #: src/ui/session/switcher.blp:41
 msgid "New Session"
-msgstr "Ny Session"
-
-#~ msgid "A Telegram client optimized for the GNOME desktop"
-#~ msgstr "En Telegramklient optimerad för GNOME-skrivbordet"
-
-#~ msgid "Gnome;GTK;"
-#~ msgstr "Gnome;GTK;"
-
-#~ msgid ""
-#~ "A list of most recently used sessions, sorted by their database directory "
-#~ "names"
-#~ msgstr ""
-#~ "En lista över senast använda sessioner, sorterade efter deras "
-#~ "databaskatalognamn"
-
-#~ msgid "_Add Account"
-#~ msgstr "_Lägg till konto"
-
-#~ msgid "_Previous"
-#~ msgstr "_Föregående"
-
-#~ msgid "The code cannot be sent anymore."
-#~ msgstr "Denna kod kan inte skickas längre."
-
-#~ msgid "Use Recovery Code"
-#~ msgstr "Använd återställningskod"
-
-#~ msgid "_Send recovery code"
-#~ msgstr "_Skicka återställningskod"
-
-#~ msgid "Account Deletion"
-#~ msgstr "Radering av konto"
-
-#~ msgctxt "shortcut window"
-#~ msgid "General"
-#~ msgstr "Allmänt"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Show Shortcuts"
-#~ msgstr "Visa genvägar"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Quit"
-#~ msgstr "Avsluta"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Chat List"
-#~ msgstr "Chattlista"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Search Chats"
-#~ msgstr "Sök chattar"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Chat History"
-#~ msgstr "Chatthistorik"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Send Photo from Clipboard"
-#~ msgstr "Skicka foto från Urklipp"
-
-#~ msgid ""
-#~ "One way to continue using your account is to delete and then recreate it"
-#~ msgstr ""
-#~ "Ett sätt att fortsätta använda ditt konto är att ta bort och sedan "
-#~ "återskapa det"
-
-#~ msgid ""
-#~ "Since you have not provided a recovery e-mail address, the only way to "
-#~ "continue using your account is to delete and then recreate it"
-#~ msgstr ""
-#~ "Eftersom du inte har angett en återställnings-e-postadress är det enda "
-#~ "sättet att fortsätta använda ditt konto att ta bort och sedan återskapa "
-#~ "det"
-
-#~ msgid ""
-#~ "Please note, you will lose all your chats and messages, along with any "
-#~ "media and files you shared!"
-#~ msgstr ""
-#~ "Observera att du kommer att förlora alla dina chattar och meddelanden, "
-#~ "tillsammans med alla media och filer du delat!"
-
-#~ msgid "Telegrand"
-#~ msgstr "Telegrand"
-
-#~ msgid "_About Telegrand"
-#~ msgstr "_Om Telegrand"
-
-#~ msgid "Telegrand developers"
-#~ msgstr "Telegrand utvecklare"
-
-#~ msgid "_Open"
-#~ msgstr "_Öppna"
-
-#~ msgid "Welcome to Paper Plane"
-#~ msgstr "Välkommen till Paper Plane"
-
-#~ msgid "Appearance"
-#~ msgstr "Utseende"
-
-#~ msgid "_Go Back"
-#~ msgstr "_Gå tillbaka"
-
-#~ msgid ", "
-#~ msgstr ", "
-
-#~ msgid "Document"
-#~ msgstr "Dokument"
-
-#~ msgid "Use Telegram's test data center"
-#~ msgstr "Använd Telegrams testdatacenter"
-
-#~ msgid "Advanced"
-#~ msgstr "Avancerade alternativ"
-
-#~ msgid "Use Test Data Center"
-#~ msgstr "Använd testdatacenter"
-
-#~ msgid "This requires a restart to apply"
-#~ msgstr "Detta kräver en omstart för att gälla"
-
-#~ msgid "Unsupported draft message type"
-#~ msgstr "Utkastmeddelandetypen stöds inte"
-
-#~ msgid "Enter the Code Sent by Mail"
-#~ msgstr "Ange koden skickad via e-post"
-
-#~ msgid "Encryption Key"
-#~ msgstr "Krypteringsnyckel"
-
-#~ msgid "Enter the Encryption Key"
-#~ msgstr "Ange krypteringsnyckeln"
-
-#~ msgid "Welcome to Telegrand"
-#~ msgstr "Välkommen till Telegrand"
+msgstr ""

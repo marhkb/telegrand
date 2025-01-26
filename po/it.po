@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: paper-plane\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 16:58+0200\n"
-"PO-Revision-Date: 2023-08-23 19:53+0000\n"
-"Last-Translator: NicKoehler <grillinicola@proton.me>\n"
+"PO-Revision-Date: 2024-01-02 12:06+0000\n"
+"Last-Translator: \"Gabriele Arru (Saise)\" <arru.gabriele@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/paper-plane/main/"
 "it/>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/app.drey.PaperPlane.desktop.in.in:3
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:7
@@ -27,7 +27,7 @@ msgstr "Paper Plane"
 #: data/app.drey.PaperPlane.desktop.in.in:4
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:8
 msgid "Chat over Telegram on a modern and elegant client"
-msgstr ""
+msgstr "Chatta su Telegram con un client moderno ed elegante"
 
 #: data/app.drey.PaperPlane.desktop.in.in:9
 msgid "Gnome;GTK;telegram;tg;chat;im;messaging;messenger;"
@@ -49,13 +49,12 @@ msgid "Default window maximized behaviour"
 msgstr "Comportamento predefinito della finestra a schermo intero"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:21
-#, fuzzy
 msgid "Last used session"
-msgstr "Sessioni recentemente usate"
+msgstr "Ultima sessione usata"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:22
 msgid "The directory name of the last used session"
-msgstr ""
+msgstr "Il nome della directory dell'ultima sessione utilizzata"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:31
 #: src/ui/session/preferences_window.blp:7
@@ -72,32 +71,37 @@ msgid ""
 "user interface and strives to meet the design principles of the GNOME "
 "desktop."
 msgstr ""
+"Paper Plane è un client alternativo di Telegram. Utilizza libadwaita per la "
+"sua interfaccia utente e si impegna a rispettare i principi di design "
+"dell'ambiente desktop GNOME."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:14
 msgid ""
 "Paper Plane is still under development and not yet feature-complete. "
 "However, the following things are already working:"
 msgstr ""
+"Paper Plane è ancora in fase di sviluppo e non è ancora completo in tutte le "
+"sue funzionalità. Tuttavia, le seguenti cose sono già funzionanti:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:19
 msgid "The use of multiple accounts at the same time."
-msgstr ""
+msgstr "L'utilizzo di account multipli allo stesso tempo."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:20
 msgid "Viewing text messages, images, stickers and files."
-msgstr ""
+msgstr "Visualizzazione di messaggi di testo, immagini, adesivi e file."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:21
 msgid "Sending text messages and images."
-msgstr ""
+msgstr "Invio di messaggi di testo e immagini."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:22
 msgid "Replying to messages."
-msgstr ""
+msgstr "Rispondere ai messaggi."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:23
 msgid "Searching for groups and persons."
-msgstr ""
+msgstr "Cercare per gruppi e persone."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:29
 msgid "Main window"

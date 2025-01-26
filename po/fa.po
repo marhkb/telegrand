@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: paper-plane\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 16:58+0200\n"
-"PO-Revision-Date: 2023-09-07 09:56+0000\n"
-"Last-Translator: Endermancrop <amirenderman@tuta.io>\n"
+"PO-Revision-Date: 2024-10-20 14:16+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/paper-plane/main/"
 "fa/>\n"
 "Language: fa\n"
@@ -17,21 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"X-Generator: Weblate 5.8-rc\n"
 
 #: data/app.drey.PaperPlane.desktop.in.in:3
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:7
 msgid "Paper Plane"
-msgstr "هواپیمای کاغذی"
+msgstr "موشک کاغذی"
 
 #: data/app.drey.PaperPlane.desktop.in.in:4
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:8
 msgid "Chat over Telegram on a modern and elegant client"
-msgstr ""
+msgstr "گپ روی تلگرام در کارخواهی مدرن و شیک"
 
 #: data/app.drey.PaperPlane.desktop.in.in:9
 msgid "Gnome;GTK;telegram;tg;chat;im;messaging;messenger;"
 msgstr ""
+"Gnome;GTK;telegram;tg;chat;im;messaging;messenger;گنوم;تلگرام;گپ;چت;پیام;"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:6
 #: data/app.drey.PaperPlane.gschema.xml.in:7
@@ -49,13 +50,12 @@ msgid "Default window maximized behaviour"
 msgstr "رفتار بیشینه شدن پنجرهٔ پیش‌گزیده"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:21
-#, fuzzy
 msgid "Last used session"
-msgstr "نشست های به تازگی استفاده شده"
+msgstr "آخرین نشست استفاده شده"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:22
 msgid "The directory name of the last used session"
-msgstr ""
+msgstr "نام شاخهٔ آخرین نشست استفاده شده"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:31
 #: src/ui/session/preferences_window.blp:7
@@ -72,32 +72,36 @@ msgid ""
 "user interface and strives to meet the design principles of the GNOME "
 "desktop."
 msgstr ""
+"موشک کاغذی کارخواه جایگزینی برای تلگرام است. برای رابط کاربریش از libadwaita "
+"استفاده کرده و تلاش می‌کنم با اصول طرّاحی میزکار گنوم هماهنگ باشد."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:14
 msgid ""
 "Paper Plane is still under development and not yet feature-complete. "
 "However, the following things are already working:"
 msgstr ""
+"موشک کاغذی هنوز تحت توسعه بوده و ویژگی‌هایش کامل نیست. با این حال ویژگی‌های "
+"زیر کار می‌کنند:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:19
 msgid "The use of multiple accounts at the same time."
-msgstr ""
+msgstr "استفادهٔ هم‌زمان از چند حساب."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:20
 msgid "Viewing text messages, images, stickers and files."
-msgstr ""
+msgstr "نوشتن پیام‌های متنی، تصویرها، عکس برگردان‌ها و پرونده‌ها."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:21
 msgid "Sending text messages and images."
-msgstr ""
+msgstr "فرستادن تصویرها و پیام‌های متنی."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:22
 msgid "Replying to messages."
-msgstr ""
+msgstr "پاسخ دادن به پیام‌ها."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:23
 msgid "Searching for groups and persons."
-msgstr ""
+msgstr "جست‌وجو برای گروه‌ها و افراد."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:29
 msgid "Main window"
@@ -108,50 +112,58 @@ msgid ""
 "The third beta release of Paper Plane 0.1.0 should in the first place fix a "
 "build error on Flathub:"
 msgstr ""
+"ارائه بتای سوم موشک کاغذی ۰٫۱٫۰ باید در درجهٔ نخست خطای ساختی روی فلت‌هاب را "
+"حل کند:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:49
 msgid ""
 "Added registered categories to te desktop file to fix a build error on "
 "Flathub."
 msgstr ""
+"دسته‌های ثبت شده برای حل خطای ساخت روی فلت‌هاب به پروندهٔ میزکار افزوده شده."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:50
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:64
 msgid "Dependencies have been updated."
-msgstr ""
+msgstr "وابستگی‌ها به‌روز شدند."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:51
 msgid "Turkish translations have been updated, thanks to @sabriunal."
-msgstr ""
+msgstr "با سپاس از ‪@sabriunal‬ ترجمه‌های ترکی به‌روز شدند."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:57
 msgid ""
 "The second beta release of Paper Plane 0.1.0 contains the following "
 "features, fixes and chores:"
 msgstr ""
+"دومین ارائه بتای موشک کاغذی ۰٫۱٫۰ شامل ویژگی‌ها و رفع اشکال‌های زیر است:"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:59
 msgid ""
 "Blueprint compiler has been updated to version 0.8.1, thanks to "
 "@alissonlauffer."
-msgstr ""
+msgstr "با سپاس از ‪@alissonlauffe‬ مترجم بلوپرینت به نگارش ۰٫۸٫۱ به‌روز شد."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:60
 msgid ""
 "The chat history now has a background image, which is animated when new "
 "messages arrive, thanks to @yuraiz."
 msgstr ""
+"تاریخچهٔ گپ‌ها اکنون با سپاس از ‪@yuraix‬ تصویر پس‌زمینه‌ای دارد که هنگام رسیدن "
+"پیام‌های جدید حرکت می‌کند."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:61
 msgid ""
 "A bug was fixed that lead to an application crash if selecting non-existing "
 "chats from the contacts window, thank to @alissonlauffer."
 msgstr ""
+"مشکلی که منجر به فروپاشی برنامه در صورت گزینش گپ‌های ناموجود از پنجرهٔ آشنایان "
+"می‌شد با سپاس از ‪@alissonlauffer‬ رفع شد."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:62
 msgid ""
 "Avatars of deleted accounts now have a ghost icon set, thanks to @karl0d."
-msgstr ""
+msgstr "چهرک حساب‌های حذف شده اکنون نقشک روح دارند."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:63
 msgid ""
@@ -163,13 +175,14 @@ msgstr ""
 msgid ""
 "Portuguese and Polish translation have been updated, thanks to "
 "@jvlianodorneles and @karl0d."
-msgstr ""
+msgstr "ترجمه‌های پرتغالی و لهستانی به‌روز شدند."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:71
 msgid ""
 "Paper Plane 0.1.0-beta.1 is the first release for enthusiasts to try out and "
 "play around with."
 msgstr ""
+"موشک کاغذی ‪0.1.0-beta.1‬ نخستین ارائه برای علاقه‌مندان برای آزمایش است."
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:83
 msgid "Marco Melorio"
@@ -177,7 +190,7 @@ msgstr "مارکو ملوريو"
 
 #: src/application.rs:165
 msgid "Paper Plane developers"
-msgstr "توسعه دهندگان هواپیمای کاغذی"
+msgstr "توسعه دهندگان موشک کاغذی"
 
 #: src/application.rs:185
 msgid "Sponsors"
@@ -188,6 +201,9 @@ msgid ""
 "<span size=\"small\">Map data by                 <a href=\"https://www."
 "openstreetmap.org\">OpenStreetMap</a>                 and contributors</span>"
 msgstr ""
+"<span size=\"small\">داده‌های نقشه به دست                   <a href=\"https"
+"://www.openstreetmap.org\">اوپن‌استریت‌مپ</a>                    و مشارکت "
+"کنندگان</span>"
 
 #: src/application.rs:197
 msgid ""
@@ -196,6 +212,10 @@ msgid ""
 "Commons Open Database License </a> (ODbL) by the                 <a "
 "href=\"https://osmfoundation.org\">aOpenStreetMap Foundation</a> (OSMF)."
 msgstr ""
+"اوپن‌استریت‌مپ® دادهٔ آزاد است که تحت                   <a href=\"https"
+"://opendatacommons.org/licenses/odbl\">                     پروانهٔ پایگاه "
+"دادهٔ باز کمون‌های دادهٔ باز</a>‏(ODbL) به دست                    <a href=\"https"
+"://osmfoundation.org\">بنیاد اوپن‌استریت‌مپ</a>‏(OSMF) پروانه شده است."
 
 #: src/expressions.rs:20 src/ui/session/sidebar/search/item_row.rs:97
 #: src/ui/session/sidebar/search/mod.rs:182
@@ -233,24 +253,23 @@ msgstr "ارسال پیام در این گروه مجاز نیست."
 
 #: src/main.rs:121
 msgid "Prints application version"
-msgstr ""
+msgstr "چاپ نگارش برنامه"
 
 #: src/main.rs:130
 msgid "Specify the minimum log level"
-msgstr ""
+msgstr "مشخّص کردن سطح گزارش کمینه"
 
 #: src/main.rs:139
 msgid "Whether to use a test data center on first account"
-msgstr ""
+msgstr "این که از مرکز داده‌ای آزمایشی برای نخستین حساب استفاده شود یا نه"
 
 #: src/model/country_info.rs:99
 msgid "Invalid Country Code"
-msgstr ""
+msgstr "کد کشور نامعتبر"
 
 #: src/model/country_info.rs:108
-#, fuzzy
 msgid "Test Account"
-msgstr "_حذف حساب"
+msgstr "آزمون حساب"
 
 #: src/strings.rs:29
 msgid "{sender} is choosing a contact"
@@ -526,14 +545,12 @@ msgid "last seen within a month"
 msgstr "آخرین بار دیده شده در یک ماه"
 
 #: src/strings.rs:456 src/ui/session/content/message_row/location.blp:26
-#, fuzzy
 msgid "Live Location"
-msgstr "فیلم, {caption}"
+msgstr "مکان زنده"
 
 #: src/strings.rs:458
-#, fuzzy
 msgid "Location"
-msgstr "عنوان"
+msgstr "مکان"
 
 #: src/strings.rs:467
 msgid "Photo has expired"
@@ -553,7 +570,7 @@ msgstr "{sender} نماگرفت ثبت شد!"
 
 #: src/strings.rs:509
 msgid "Location, {venue}"
-msgstr ""
+msgstr "مکان، {venue}"
 
 #: src/strings.rs:510
 msgid "Unsupported Message"
@@ -589,21 +606,18 @@ msgstr "نگاره, {caption}"
 
 #. Translators: This is a sticker with the associated emoji
 #: src/strings.rs:564
-#, fuzzy
 msgid "{emoji} Sticker"
-msgstr "برچسب"
+msgstr "عکس برگردان {emoji}"
 
 #: src/strings.rs:569
 msgid "Video"
 msgstr "ویدیو"
 
 #: src/strings.rs:571
-#, fuzzy
 msgid "Video, {caption}"
-msgstr "فیلم, {caption}"
+msgstr "ویدیو، {caption}"
 
 #: src/strings.rs:577
-#, fuzzy
 msgid "Voice Message"
 msgstr "پیام صوتی"
 
@@ -628,7 +642,6 @@ msgid "Declined incoming call"
 msgstr "تماس ورودی رد شده"
 
 #: src/strings.rs:614
-#, fuzzy
 msgid "Canceled call"
 msgstr "تماس لغو شده"
 
@@ -669,9 +682,8 @@ msgid "Incoming call"
 msgstr "تماس دریافتی"
 
 #: src/strings.rs:665 src/strings.rs:682
-#, fuzzy
 msgid "{sender} created the group \"{title}\""
-msgstr "{sender} گروه \"{title}\" را ایجاد کرد"
+msgstr "{sender} گروه «{title}» را ایجاد کرد"
 
 #: src/strings.rs:677
 msgid "Channel created"
@@ -698,14 +710,12 @@ msgid "Channel photo removed"
 msgstr "عکس کانال برداشته شد"
 
 #: src/strings.rs:727
-#, fuzzy
 msgid "{sender} removed the group photo"
-msgstr "عکس گروه را برداشتید"
+msgstr "{sender} عکس گروه را برداشت"
 
 #: src/strings.rs:738 src/strings.rs:773
-#, fuzzy
 msgid "{sender} joined the group"
-msgstr "به گروه پیوستید"
+msgstr "{sender} به گروه پیوست"
 
 #: src/strings.rs:743
 msgid "{sender} added {first_user} and {second_user}"
@@ -720,9 +730,8 @@ msgid "{sender} joined the group via invite link"
 msgstr "{sender} به گروه از طریق پیوند دعوت پیوست"
 
 #: src/strings.rs:780
-#, fuzzy
 msgid "{sender} left the group"
-msgstr "گروه را ترک کردید"
+msgstr "{sender} گروه را ترک کرد"
 
 #: src/strings.rs:785
 msgid "{sender} removed {user}"
@@ -730,59 +739,59 @@ msgstr "{sender} حذف کرد {user}"
 
 #: src/strings.rs:810
 msgid "{sender} scored {points} in {game}"
-msgstr ""
+msgstr "{sender} در {game} {points} آورد"
 
 #: src/strings.rs:819
 msgid "{sender} scored {points}"
-msgstr ""
+msgstr "{sender} {points} آورد"
 
 #: src/strings.rs:847
 msgid "{sender} pinned \"{text}\""
-msgstr ""
+msgstr "{sender} «{text}» را سنجاق کرد"
 
 #: src/strings.rs:849
 msgid "{sender} pinned a GIF"
-msgstr ""
+msgstr "{sender} جیفی را سنجاق کرد"
 
 #: src/strings.rs:850
 msgid "{sender} pinned an audio file"
-msgstr ""
+msgstr "{sender} پرونده‌ای صوتی را سنجاق کرد"
 
 #: src/strings.rs:851
 msgid "{sender} pinned a file"
-msgstr ""
+msgstr "{sender} پرونده‌ای را سنجاق کرد"
 
 #: src/strings.rs:852
 msgid "{sender} pinned a photo"
-msgstr ""
+msgstr "{sender} عکسی را سنجاق کرد"
 
 #: src/strings.rs:853
 msgid "{sender} pinned a sticker"
-msgstr ""
+msgstr "{sender} عکس برگردانی را سنجاق کرد"
 
 #: src/strings.rs:854
 msgid "{sender} pinned a video"
-msgstr ""
+msgstr "{sender} ویدیویی را سنجاق کرد"
 
 #: src/strings.rs:855
 msgid "{sender} pinned a video message"
-msgstr ""
+msgstr "{sender} پیامی ویدیویی را سنجاق کرد"
 
 #: src/strings.rs:856
 msgid "{sender} pinned a voice message"
-msgstr ""
+msgstr "{sender} پیامی صوتی را سنجاق کرد"
 
 #: src/strings.rs:857 src/strings.rs:859
 msgid "{sender} pinned a message"
-msgstr ""
+msgstr "{sender} پیامی را سنجاق کرد"
 
 #: src/strings.rs:868
 msgid "{sender} joined Telegram"
-msgstr ""
+msgstr "{sender} به تلگرام پیوست"
 
 #: src/ui/components/map.blp:29
 msgid "Map data by OpenStreetMap"
-msgstr ""
+msgstr "داده‌های نقشه به دست اوپن‌استریت‌مپ"
 
 #: src/ui/components/phone_number_input.blp:13
 msgid "Country"
@@ -814,23 +823,23 @@ msgstr "_بعدی"
 
 #: src/ui/login/code.rs:117
 msgid "Send code via {type} (may still arrive within {countdown} seconds)"
-msgstr ""
+msgstr "فرستادن کد با {type} (هنوز ممکن است تا {countdown} ثانیه برسد)"
 
 #: src/ui/login/code.rs:122
 msgid "Send code via {type}"
-msgstr ""
+msgstr "فرستادن کد با {type}"
 
 #: src/ui/login/code.rs:147
 msgid "The code will arrive to you via {type}."
-msgstr ""
+msgstr "کد با {type} به دستتان خواهد رسید."
 
 #: src/ui/login/code.rs:184
 msgid "Failed to authenticate: {error}"
-msgstr ""
+msgstr "شکست در هویت‌سنجی: {error}"
 
 #: src/ui/login/code.rs:198
 msgid "Failed to resend auth code: {error}"
-msgstr ""
+msgstr "شکست در فرستادن دوبارهٔ کد هویتی: {error}"
 
 #. Translators: This is an authentication method
 #: src/ui/login/code.rs:228
@@ -864,13 +873,14 @@ msgstr "تکه"
 
 #: src/ui/login/mod.rs:116
 msgid "Reset Registration Process?"
-msgstr ""
+msgstr "بازنشانی فرایند ثبت‌نام؟"
 
 #: src/ui/login/mod.rs:117
 msgid ""
 "If you reset the registration process, the previous progress will be "
 "irrevocably lost."
 msgstr ""
+"اگر فرایند ثبت‌نام را بازنشانی کنید، پیشرفت پیشین برای همیشه از دست خواهد رفت."
 
 #: src/ui/login/mod.rs:128 src/ui/login/password.rs:242
 #: src/ui/session/row.rs:110
@@ -879,7 +889,7 @@ msgstr "_لغو"
 
 #: src/ui/login/mod.rs:129
 msgid "_Reset"
-msgstr ""
+msgstr "_بازنشانی"
 
 #: src/ui/login/other_device.blp:24
 msgid "Scan Code"
@@ -892,9 +902,8 @@ msgstr ""
 "کنید."
 
 #: src/ui/login/other_device.blp:42
-#, fuzzy
 msgid "Log in using your phone number"
-msgstr "_ورود به حساب کاربری با استفاده از کد QR"
+msgstr "ورود با شماره تلفنتان"
 
 #: src/ui/login/password.blp:26
 msgid "Enter Your Password"
@@ -909,14 +918,12 @@ msgid "Hint"
 msgstr "راهنما"
 
 #: src/ui/login/password.blp:88
-#, fuzzy
 msgid "Forgot password?"
-msgstr "_گذرواژه خود را فراموش کرده اید؟"
+msgstr "فراموشی گذرواژه؟"
 
 #: src/ui/login/password.blp:107
-#, fuzzy
 msgid "Recover Password"
-msgstr "گذرواژه خود را وارد کنید"
+msgstr "بازیابی گذرواژه"
 
 #: src/ui/login/password.blp:108
 msgid ""
@@ -927,18 +934,16 @@ msgstr ""
 "آن ایمیل یک کد برای بازنشانی گذرواژه ارسال کرد."
 
 #: src/ui/login/password.blp:131
-#, fuzzy
 msgid "_Send Code"
-msgstr "اسکن کد"
+msgstr "_فرستادن کد"
 
 #: src/ui/login/password.blp:150 src/ui/login/password.rs:243
 msgid "_Delete Account"
 msgstr "_حذف حساب کاربری"
 
 #: src/ui/login/password.blp:168
-#, fuzzy
 msgid "Enter the Code E-Mailed to You"
-msgstr "کدی که با ایمیل به شما ارسال شده است را وارد کنید"
+msgstr "ورود کد فرستاده شده با رایانامه"
 
 #: src/ui/login/password.blp:218
 msgid "Unable to access your e-mail?"
@@ -946,11 +951,11 @@ msgstr "_به ایمیل خود دسترسی ندارید؟"
 
 #: src/ui/login/password.rs:198
 msgid "Failed to verify password: {error}"
-msgstr ""
+msgstr "شکست در تأیید گذرواژه: {error}"
 
 #: src/ui/login/password.rs:222
 msgid "Failed to recover password: {error}"
-msgstr ""
+msgstr "شکست در بازیابی گذرواژه: {error}"
 
 #: src/ui/login/password.rs:234
 msgid "Warning"
@@ -970,19 +975,19 @@ msgstr ""
 
 #: src/ui/login/password.rs:269
 msgid "Failed to delete account: {error}"
-msgstr ""
+msgstr "شکست در حذف حساب: {error}"
 
 #: src/ui/login/password.rs:294
 msgid "Code expired. A new one has been sent you."
-msgstr ""
+msgstr "کد منقضی شده. کدی جدید برایتان فرستاده شد."
 
 #: src/ui/login/password.rs:299
 msgid "Code expired. Could not sent a new one: {error}"
-msgstr ""
+msgstr "کد منقضی شده. نتوانست کدی جدید برایتان بفرستد: {error}"
 
 #: src/ui/login/password.rs:307
 msgid "Failed to send password code: {error}"
-msgstr ""
+msgstr "شکست در فرستادن کد گذرواژه: {error}"
 
 #: src/ui/login/password.rs:316
 msgid "Sorry"
@@ -1006,25 +1011,24 @@ msgid "Welcome"
 msgstr "خوش آمدید"
 
 #: src/ui/login/phone_number.blp:66
-#, fuzzy
 msgid "Quick login using QR code"
-msgstr "_ورود به حساب کاربری با استفاده از کد QR"
+msgstr "ورود سریع با کد پاس"
 
 #: src/ui/login/phone_number.rs:125
 msgid "Failed to load country codes: {error}"
-msgstr ""
+msgstr "شکست در بار کردن کد کشورها: {error}"
 
 #: src/ui/login/phone_number.rs:177 src/ui/session/row.rs:126
 msgid "Failed to log out: {error}"
-msgstr ""
+msgstr "شکست در خروج: {error}"
 
 #: src/ui/login/phone_number.rs:209
 msgid "Failed to use phone number: {error}"
-msgstr ""
+msgstr "شکست در استفاده از شماره تلفن: {error}"
 
 #: src/ui/login/phone_number.rs:233
 msgid "Failed to request QR code: {error}"
-msgstr ""
+msgstr "شکست در درخواست کد پاس: {error}"
 
 #: src/ui/login/registration.blp:23
 msgid "Register New Account"
@@ -1048,7 +1052,7 @@ msgstr ""
 
 #: src/ui/login/registration.rs:145
 msgid "Failed to register account: {error}"
-msgstr ""
+msgstr "شکست در ثبت حساب: {error}"
 
 #: src/ui/login/registration.rs:168
 msgid "Do you accept the Terms of Service?"
@@ -1069,9 +1073,8 @@ msgid "Terms of Service"
 msgstr "شرایط و ضوابط خدمات"
 
 #: src/ui/session/contacts_window/mod.ui:3
-#, fuzzy
 msgid "Contacts"
-msgstr "_مخاطبین"
+msgstr "آشنایان"
 
 #: src/ui/session/content/chat_action_bar.blp:71
 msgid "Message"
@@ -1087,42 +1090,41 @@ msgstr "پیوستن"
 
 #: src/ui/session/content/chat_action_bar.rs:119
 msgid "Failed to join chat: {error}"
-msgstr ""
+msgstr "شکست در پیوستنم به گپ: {error}"
 
 #: src/ui/session/content/chat_action_bar.rs:369
 #: src/ui/session/content/chat_action_bar.rs:386
 msgid "Unknown"
-msgstr ""
+msgstr "ناشناخته"
 
 #: src/ui/session/content/chat_action_bar.rs:371
 #: src/ui/session/content/chat_action_bar.rs:388
 msgid "Deleted Message"
-msgstr ""
+msgstr "پیام حذف شده"
 
 #: src/ui/session/content/chat_action_bar.rs:382
-#, fuzzy
 msgid "Edit Message"
-msgstr "پیام صوتی"
+msgstr "ویرایش پیام"
 
 #: src/ui/session/content/chat_action_bar.rs:477
 msgid "Images"
-msgstr ""
+msgstr "تصویرها"
 
 #: src/ui/session/content/chat_action_bar.rs:796
 msgid "Unmute"
-msgstr ""
+msgstr "ناخموش"
 
 #: src/ui/session/content/chat_action_bar.rs:798
 msgid "Mute"
-msgstr ""
+msgstr "خموش"
 
 #: src/ui/session/content/chat_history.rs:224
 msgid "Leave chat?"
-msgstr ""
+msgstr "ترک گپ؟"
 
 #: src/ui/session/content/chat_history.rs:225
 msgid "Do you want to leave this chat?"
-msgstr ""
+msgstr "می‌خواهید این گپ را ترک کنید؟"
 
 #: src/ui/session/content/chat_history.ui:67
 msgid "Scroll to bottom"
@@ -1148,7 +1150,7 @@ msgstr "%Oe %OB %Oy"
 
 #: src/ui/session/content/chat_info_window.rs:132
 msgid "bot"
-msgstr ""
+msgstr "بات"
 
 #: src/ui/session/content/chat_info_window.rs:145
 msgid "Mobile"
@@ -1162,21 +1164,21 @@ msgstr "نام کاربری"
 #: src/ui/session/content/chat_info_window.rs:215
 msgid "{num} member"
 msgid_plural "{num} members"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} عضو"
+msgstr[1] "{num} عضو"
 
 #: src/ui/session/content/chat_info_window.rs:198
 #: src/ui/session/content/chat_info_window.rs:254
 msgid "Description"
-msgstr ""
+msgstr "شرح"
 
 #: src/ui/session/content/chat_info_window.rs:226
 msgid "Link"
-msgstr ""
+msgstr "پیوند"
 
 #: src/ui/session/content/chat_info_window.rs:272
 msgid "Copied to clipboard"
-msgstr ""
+msgstr "رونوشت شده در تخته‌گیره"
 
 #: src/ui/session/content/message_menu.blp:6
 msgid "_Reply"
@@ -1196,42 +1198,40 @@ msgstr "_حذف برای من"
 
 #: src/ui/session/content/message_row/indicators.rs:248
 msgid "edited"
-msgstr ""
+msgstr "ویراسته"
 
 #: src/ui/session/content/message_row/indicators.rs:256
 msgid "sponsored"
-msgstr ""
+msgstr "حمایت شده"
 
 #: src/ui/session/content/message_row/location.rs:139
 #: src/ui/session/content/message_row/location.rs:148
-#, fuzzy
 msgid "updated just now"
-msgstr "همین الان دیده شده است"
+msgstr "اکنون به‌روز شده"
 
 #: src/ui/session/content/message_row/location.rs:152
-#, fuzzy
 msgid "updated an hour ago"
-msgstr "آخرین بازدید {num} ساعت پیش"
+msgstr "ساعتی پیش به‌روز شده"
 
 #: src/ui/session/content/message_row/location.rs:155
 msgid "updated {hours} hours and {minutes} minutes ago"
-msgstr ""
+msgstr "{hours} ساعت و {minutes} دقیقه پیش به‌روز شده"
 
 #: src/ui/session/content/message_row/mod.rs:170
 msgid "Do you want to delete this message for <b>everyone</b>?"
-msgstr ""
+msgstr "مطمئنید که می‌خواهید این پسام را برای <b>همه</b> حذف کنید؟"
 
 #: src/ui/session/content/message_row/mod.rs:172
 msgid "Do you want to delete this message?"
-msgstr ""
+msgstr "می‌خواهید این پیام را حذف کنید؟"
 
 #: src/ui/session/content/message_row/mod.rs:176
 msgid "Confirm model::Message Deletion"
-msgstr ""
+msgstr "تأیید مدل::حذف پیام"
 
 #: src/ui/session/content/message_row/reply.rs:70
 msgid "Loading…"
-msgstr ""
+msgstr "بار کردن…"
 
 #: src/ui/session/content/message_row/text.rs:134
 msgid "This message is unsupported"
@@ -1247,7 +1247,7 @@ msgstr "برای شروع پیام‌رسانی، گفتگویی را انتخا
 
 #: src/ui/session/content/send_media_window.blp:8
 msgid "Send Image"
-msgstr ""
+msgstr "فرستادن تصویر"
 
 #: src/ui/session/content/send_media_window.blp:23
 msgid "Caption"
@@ -1255,22 +1255,20 @@ msgstr "عنوان"
 
 #: src/ui/session/content/send_media_window.blp:30
 msgid "Send"
-msgstr ""
+msgstr "فرستادن"
 
 #: src/ui/session/content/send_media_window.blp:41
 msgid "Send as _File"
-msgstr ""
+msgstr "فرستادن به شکل _پرونده"
 
 #: src/ui/session/mod.blp:15 src/ui/session/sidebar/mod.ui:38
 #: src/ui/session/sidebar/search/section_row.rs:124
-#, fuzzy
 msgid "Chats"
-msgstr "سیاههٔ گپ"
+msgstr "گپ‌ها"
 
 #: src/ui/session/mod.blp:26
-#, fuzzy
 msgid "Content"
-msgstr "_مخاطبین"
+msgstr "محتوا"
 
 #: src/ui/session/preferences_window.blp:10
 msgid "Follow System Colors"
@@ -1294,48 +1292,47 @@ msgstr "پاک کردن حافظه نهان"
 
 #: src/ui/session/preferences_window.rs:211
 msgid "Cache cleared"
-msgstr ""
+msgstr "انباره پاک شد"
 
 #: src/ui/session/row.blp:54
 msgid "Logout"
-msgstr ""
+msgstr "خروج"
 
 #: src/ui/session/row.rs:99
 msgid "Log out <i>{display_name}</i>"
-msgstr ""
+msgstr "خروج از <i>{display_name}</i>"
 
 #: src/ui/session/row.rs:105
 msgid "Are you sure you want to log out?"
-msgstr ""
+msgstr "مطمئنید که می‌خواهید خارج شوید؟"
 
 #: src/ui/session/row.rs:111
-#, fuzzy
 msgid "_Log out"
-msgstr "_خروج از حساب کاربری"
+msgstr "_خروج"
 
 #: src/ui/session/sidebar/mod.ui:7
 msgid "_Contacts"
-msgstr "_مخاطبین"
+msgstr "_آشنایان"
 
 #: src/ui/session/sidebar/mod.ui:13
 msgid "_Preferences"
-msgstr "_تنظیمات"
+msgstr "_ترجیحات"
 
 #: src/ui/session/sidebar/mod.ui:17
 msgid "_Keyboard Shortcuts"
-msgstr "_میانبرهای صفحه‌ کلید"
+msgstr "_میان‌برهای صفحه‌‌کلید"
 
 #: src/ui/session/sidebar/mod.ui:21
 msgid "_About Paper Plane"
-msgstr "_درباره هواپیمای کاغذی"
+msgstr "_دربارهٔ موشک کاغذی"
 
 #: src/ui/session/sidebar/mod.ui:148 src/ui/session/sidebar/search/mod.ui:16
 msgid "Search"
-msgstr "جستجو"
+msgstr "جست‌وجو"
 
 #: src/ui/session/sidebar/mod.ui:165
 msgid "Sessions"
-msgstr ""
+msgstr "نشست‌ها"
 
 #: src/ui/session/sidebar/row.rs:414
 msgid "Draft:"
@@ -1347,19 +1344,19 @@ msgstr "شما"
 
 #: src/ui/session/sidebar/row_menu.blp:6
 msgid "_Pin"
-msgstr "_سنجاق کردن"
+msgstr "_سنجاق"
 
 #: src/ui/session/sidebar/row_menu.blp:12
 msgid "_Unpin"
-msgstr "_برداشتن سنجاق"
+msgstr "سنجاق‌_برداری"
 
 #: src/ui/session/sidebar/row_menu.blp:18
 msgid "_Mark as Unread"
-msgstr "_علامت زدن به عنوان خوانده نشده"
+msgstr "علامت به خوانده _نشده"
 
 #: src/ui/session/sidebar/row_menu.blp:24
 msgid "Mark as _Read"
-msgstr "علامت زدن به عنوان خوانده شده"
+msgstr "علامت به خوانده _شده"
 
 #: src/ui/session/sidebar/search/mod.ui:79
 msgid "No Search Results"
@@ -1367,15 +1364,15 @@ msgstr "بدون نتیجه"
 
 #: src/ui/session/sidebar/search/mod.ui:80
 msgid "Try a different search."
-msgstr "جستجوی دیگری انجام دهید."
+msgstr "اقدام به جست‌وجویی دیگر."
 
 #: src/ui/session/sidebar/search/section_row.rs:127
 msgid "Global Search"
-msgstr ""
+msgstr "جست‌وجوی همه‌جا"
 
 #: src/ui/session/sidebar/search/section_row.rs:130
 msgid "Recent"
-msgstr ""
+msgstr "اخیر"
 
 #: src/ui/session/switcher.blp:7
 msgid "_Production Server"
@@ -1383,11 +1380,11 @@ msgstr "کارساز _محصول"
 
 #: src/ui/session/switcher.blp:12
 msgid "_Test Server"
-msgstr "_سرور آزمایشی"
+msgstr "_کارساز آزمون"
 
 #: src/ui/session/switcher.blp:41
 msgid "New Session"
-msgstr ""
+msgstr "نشست جدید"
 
 #~ msgid "A Telegram client optimized for the GNOME desktop"
 #~ msgstr "یک کارخواه تلگرام بهینه شده برای میزکار گنوم"

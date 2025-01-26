@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: paper-plane\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 16:58+0200\n"
-"PO-Revision-Date: 2023-08-26 11:54+0000\n"
-"Last-Translator: Jack77793 <jack77793@hotmail.com>\n"
+"PO-Revision-Date: 2024-02-02 04:01+0000\n"
+"Last-Translator: Aleksana <alexander.huang.y@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "paper-plane/main/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/app.drey.PaperPlane.desktop.in.in:3
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:7
@@ -27,7 +27,7 @@ msgstr "Paper Plane"
 #: data/app.drey.PaperPlane.desktop.in.in:4
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:8
 msgid "Chat over Telegram on a modern and elegant client"
-msgstr ""
+msgstr "用一个现代而优雅的客户端在 Telegram 上聊天"
 
 #: data/app.drey.PaperPlane.desktop.in.in:9
 msgid "Gnome;GTK;telegram;tg;chat;im;messaging;messenger;"
@@ -55,7 +55,7 @@ msgstr "最近使用的会话"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:22
 msgid "The directory name of the last used session"
-msgstr ""
+msgstr "最近使用会话的目录名称"
 
 #: data/app.drey.PaperPlane.gschema.xml.in:31
 #: src/ui/session/preferences_window.blp:7
@@ -72,32 +72,34 @@ msgid ""
 "user interface and strives to meet the design principles of the GNOME "
 "desktop."
 msgstr ""
+"Paper Plane 是一款替代的 Telegram 客户端。它使用 libadwaita 作为用户界面，"
+"并努力满足 GNOME 桌面的设计原则。"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:14
 msgid ""
 "Paper Plane is still under development and not yet feature-complete. "
 "However, the following things are already working:"
-msgstr ""
+msgstr "Paper Plane 仍在开发阶段，尚未完全具备所有功能。但以下功能已经可用："
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:19
 msgid "The use of multiple accounts at the same time."
-msgstr ""
+msgstr "在同一时间使用多个账户。"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:20
 msgid "Viewing text messages, images, stickers and files."
-msgstr ""
+msgstr "查看文本消息、图片、贴纸和文件。"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:21
 msgid "Sending text messages and images."
-msgstr ""
+msgstr "发送文本消息和图片。"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:22
 msgid "Replying to messages."
-msgstr ""
+msgstr "回复消息。"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:23
 msgid "Searching for groups and persons."
-msgstr ""
+msgstr "搜索群组和用户。"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:29
 msgid "Main window"
@@ -118,11 +120,11 @@ msgstr ""
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:50
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:64
 msgid "Dependencies have been updated."
-msgstr ""
+msgstr "依赖已更新。"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:51
 msgid "Turkish translations have been updated, thanks to @sabriunal."
-msgstr ""
+msgstr "土耳其语翻译已更新，感谢 @sabriunal。"
 
 #: data/app.drey.PaperPlane.metainfo.xml.in.in:57
 msgid ""
@@ -181,7 +183,7 @@ msgstr "Paper Plane 开发者"
 
 #: src/application.rs:185
 msgid "Sponsors"
-msgstr ""
+msgstr "赞助者"
 
 #: src/application.rs:191
 msgid ""
@@ -210,7 +212,7 @@ msgstr "删除帐户(_D)"
 
 #: src/expressions.rs:90
 msgid "The admins of this group have restricted you from writing here"
-msgstr ""
+msgstr "这个群组的管理员限制了你在这里发送消息"
 
 #. Translators: This is a time representation, without seconds.
 #. Here you may want to change to a 24-hours representation, based on your locale.
@@ -230,11 +232,11 @@ msgstr "%Y年%-m月%-d日"
 
 #: src/expressions.rs:120
 msgid "Writing messages isn't allowed in this group."
-msgstr ""
+msgstr "这个群组不允许发送消息。"
 
 #: src/main.rs:121
 msgid "Prints application version"
-msgstr ""
+msgstr "输出应用版本"
 
 #: src/main.rs:130
 msgid "Specify the minimum log level"
@@ -246,12 +248,11 @@ msgstr ""
 
 #: src/model/country_info.rs:99
 msgid "Invalid Country Code"
-msgstr ""
+msgstr "无效的国家区号"
 
 #: src/model/country_info.rs:108
-#, fuzzy
 msgid "Test Account"
-msgstr "删除帐户(_D)"
+msgstr "测试账户"
 
 #: src/strings.rs:29
 msgid "{sender} is choosing a contact"
@@ -267,7 +268,7 @@ msgstr ""
 
 #: src/strings.rs:45
 msgid "choosing a contact"
-msgstr ""
+msgstr "选择联系人"
 
 #: src/strings.rs:52
 msgid "{sender} is choosing a location"
@@ -283,7 +284,7 @@ msgstr ""
 
 #: src/strings.rs:68
 msgid "choosing a location"
-msgstr ""
+msgstr "选择地图位置"
 
 #: src/strings.rs:75
 msgid "{sender} is choosing a sticker"
@@ -295,11 +296,11 @@ msgstr ""
 
 #: src/strings.rs:86
 msgid "{num} people are choosing stickers"
-msgstr ""
+msgstr "{num} 个人正在选择贴纸"
 
 #: src/strings.rs:91
 msgid "choosing a sticker"
-msgstr ""
+msgstr "选择贴纸"
 
 #: src/strings.rs:98
 #, fuzzy
@@ -361,7 +362,7 @@ msgstr "{} 已加入 Telegram"
 
 #: src/strings.rs:171
 msgid "{sender1} and {sender2} are playing games"
-msgstr ""
+msgstr "{sender1} 和 {sender2} 正在玩游戏"
 
 #: src/strings.rs:178
 msgid "{num} people are playing games"
@@ -1057,8 +1058,8 @@ msgid ""
 "By signing up,\n"
 "you agree to the <a href=\"\">Terms of Service</a>."
 msgstr ""
-"要通过注册，\n"
-"需要你同意<a href=\"\">服务条款</a>。"
+"注册代表您同意遵守\n"
+"<a href=\"\">服务条款</a>。"
 
 #: src/ui/login/registration.rs:145
 msgid "Failed to register account: {error}"
@@ -1072,12 +1073,12 @@ msgstr "你接受此服务条款吗？"
 #: src/ui/login/registration.rs:169 src/ui/session/content/chat_history.rs:227
 #: src/ui/session/content/message_row/mod.rs:182
 msgid "_No"
-msgstr ""
+msgstr "否(_N)"
 
 #: src/ui/login/registration.rs:169 src/ui/session/content/chat_history.rs:227
 #: src/ui/session/content/message_row/mod.rs:182
 msgid "_Yes"
-msgstr ""
+msgstr "是(_Y)"
 
 #: src/ui/login/registration.rs:172
 msgid "Terms of Service"
@@ -1085,7 +1086,7 @@ msgstr "服务条款"
 
 #: src/ui/session/contacts_window/mod.ui:3
 msgid "Contacts"
-msgstr ""
+msgstr "联系人"
 
 #: src/ui/session/content/chat_action_bar.blp:71
 msgid "Message"
@@ -1106,12 +1107,12 @@ msgstr ""
 #: src/ui/session/content/chat_action_bar.rs:369
 #: src/ui/session/content/chat_action_bar.rs:386
 msgid "Unknown"
-msgstr ""
+msgstr "未知"
 
 #: src/ui/session/content/chat_action_bar.rs:371
 #: src/ui/session/content/chat_action_bar.rs:388
 msgid "Deleted Message"
-msgstr ""
+msgstr "已删除的消息"
 
 #: src/ui/session/content/chat_action_bar.rs:382
 #, fuzzy
@@ -1120,11 +1121,11 @@ msgstr "语音消息"
 
 #: src/ui/session/content/chat_action_bar.rs:477
 msgid "Images"
-msgstr ""
+msgstr "图片"
 
 #: src/ui/session/content/chat_action_bar.rs:796
 msgid "Unmute"
-msgstr ""
+msgstr "取消静音"
 
 #: src/ui/session/content/chat_action_bar.rs:798
 msgid "Mute"
@@ -1162,7 +1163,7 @@ msgstr "%Y年%-m月%-d日"
 
 #: src/ui/session/content/chat_info_window.rs:132
 msgid "bot"
-msgstr ""
+msgstr "机器人"
 
 #: src/ui/session/content/chat_info_window.rs:145
 msgid "Mobile"
@@ -1260,7 +1261,7 @@ msgstr "请选择一个对话开始聊天。"
 
 #: src/ui/session/content/send_media_window.blp:8
 msgid "Send Image"
-msgstr ""
+msgstr "发送图片"
 
 #: src/ui/session/content/send_media_window.blp:23
 msgid "Caption"
@@ -1306,11 +1307,11 @@ msgstr "清理缓存"
 
 #: src/ui/session/preferences_window.rs:211
 msgid "Cache cleared"
-msgstr ""
+msgstr "缓存已清空"
 
 #: src/ui/session/row.blp:54
 msgid "Logout"
-msgstr ""
+msgstr "登出"
 
 #: src/ui/session/row.rs:99
 msgid "Log out <i>{display_name}</i>"
@@ -1318,7 +1319,7 @@ msgstr ""
 
 #: src/ui/session/row.rs:105
 msgid "Are you sure you want to log out?"
-msgstr ""
+msgstr "你确认要登出吗？"
 
 #: src/ui/session/row.rs:111
 #, fuzzy
@@ -1339,20 +1340,19 @@ msgstr "快捷键(_K)"
 
 #: src/ui/session/sidebar/mod.ui:21
 msgid "_About Paper Plane"
-msgstr "关于 Telgrand(_A)"
+msgstr "关于 Paper Plane (_A)"
 
 #: src/ui/session/sidebar/mod.ui:148 src/ui/session/sidebar/search/mod.ui:16
 msgid "Search"
-msgstr "搜索聊天"
+msgstr "搜索"
 
 #: src/ui/session/sidebar/mod.ui:165
 msgid "Sessions"
-msgstr ""
+msgstr "会话"
 
 #: src/ui/session/sidebar/row.rs:414
-#, fuzzy
 msgid "Draft:"
-msgstr "草稿"
+msgstr "草稿："
 
 #: src/ui/session/sidebar/row.rs:597
 msgid "You"
@@ -1360,19 +1360,19 @@ msgstr "你"
 
 #: src/ui/session/sidebar/row_menu.blp:6
 msgid "_Pin"
-msgstr ""
+msgstr "置顶(_P)"
 
 #: src/ui/session/sidebar/row_menu.blp:12
 msgid "_Unpin"
-msgstr ""
+msgstr "取消置顶(_U)"
 
 #: src/ui/session/sidebar/row_menu.blp:18
 msgid "_Mark as Unread"
-msgstr "标为未读"
+msgstr "标为未读(_M)"
 
 #: src/ui/session/sidebar/row_menu.blp:24
 msgid "Mark as _Read"
-msgstr "标为已读"
+msgstr "标为已读(_R)"
 
 #: src/ui/session/sidebar/search/mod.ui:79
 msgid "No Search Results"
@@ -1384,11 +1384,11 @@ msgstr "尝试不同的搜索。"
 
 #: src/ui/session/sidebar/search/section_row.rs:127
 msgid "Global Search"
-msgstr ""
+msgstr "全局搜索"
 
 #: src/ui/session/sidebar/search/section_row.rs:130
 msgid "Recent"
-msgstr ""
+msgstr "最近"
 
 #: src/ui/session/switcher.blp:7
 msgid "_Production Server"
@@ -1400,7 +1400,7 @@ msgstr "测试服务器(_T)"
 
 #: src/ui/session/switcher.blp:41
 msgid "New Session"
-msgstr ""
+msgstr "新建会话"
 
 #~ msgid "A Telegram client optimized for the GNOME desktop"
 #~ msgstr "为 GNOME 桌面优化的 Telegram 客户端"
