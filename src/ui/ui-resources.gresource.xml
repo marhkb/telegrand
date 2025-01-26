@@ -48,7 +48,7 @@
     <file compressed="true" preprocess="xml-stripblanks">session/content/mod.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">session/content/send_media_window.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">session/mod.ui</file>
-    <file compressed="true" preprocess="xml-stripblanks">session/preferences_window.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">session/preferences_dialog.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">session/row.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">session/sidebar/avatar.ui</file>
     <file compressed="true" preprocess="xml-stripblanks">session/sidebar/chat_folder/bar.ui</file>

@@ -65,12 +65,15 @@ mod imp {
 
             let obj = &*self.obj();
 
-            self.client_manager
-                .connect_client_removed(clone!(@weak obj => move |_, client| {
+            self.client_manager.connect_client_removed(clone!(
+                #[weak]
+                obj,
+                move |_, client| {
                     if Some(client) == obj.active_client().as_ref() {
                         obj.restore_last_session()
                     }
-                }));
+                }
+            ));
 
             obj.restore_last_session();
         }
@@ -156,18 +159,22 @@ impl ClientManagerView {
     /// Sets the online status for the active logged in client. This will be called from the
     /// application `Window` when its active state has changed.
     pub(crate) fn set_active_client_online(&self) {
-        utils::spawn(clone!(@weak self as obj => async move {
-            if let Some(client) = obj.active_client() {
-                client
-                    .set_online(
-                        obj.root()
-                            .and_downcast::<gtk::Window>()
-                            .unwrap()
-                            .is_active()
-                    )
-                    .await;
+        utils::spawn(clone!(
+            #[weak(rename_to = obj)]
+            self,
+            async move {
+                if let Some(client) = obj.active_client() {
+                    client
+                        .set_online(
+                            obj.root()
+                                .and_downcast::<gtk::Window>()
+                                .unwrap()
+                                .is_active(),
+                        )
+                        .await;
+                }
             }
-        }));
+        ));
     }
 
     pub(crate) fn select_chat(&self, client_id: ClientId, chat_id: ChatId) {

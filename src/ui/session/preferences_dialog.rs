@@ -17,8 +17,8 @@ mod imp {
     use super::*;
 
     #[derive(Debug, Default, CompositeTemplate)]
-    #[template(resource = "/app/drey/paper-plane/ui/session/preferences_window.ui")]
-    pub(crate) struct PreferencesWindow {
+    #[template(resource = "/app/drey/paper-plane/ui/session/preferences_dialog.ui")]
+    pub(crate) struct PreferencesDialog {
         pub(super) session: OnceCell<ui::Session>,
         #[template_child]
         pub(super) follow_system_colors_switch: TemplateChild<gtk::Switch>,
@@ -29,10 +29,10 @@ mod imp {
     }
 
     #[glib::object_subclass]
-    impl ObjectSubclass for PreferencesWindow {
-        const NAME: &'static str = "PaplPreferencesWindow";
-        type Type = super::PreferencesWindow;
-        type ParentType = adw::PreferencesWindow;
+    impl ObjectSubclass for PreferencesDialog {
+        const NAME: &'static str = "PaplPreferencesDialog";
+        type Type = super::PreferencesDialog;
+        type ParentType = adw::PreferencesDialog;
 
         fn class_init(klass: &mut Self::Class) {
             klass.bind_template();
@@ -51,7 +51,7 @@ mod imp {
         }
     }
 
-    impl ObjectImpl for PreferencesWindow {
+    impl ObjectImpl for PreferencesDialog {
         fn properties() -> &'static [glib::ParamSpec] {
             static PROPERTIES: OnceLock<Vec<glib::ParamSpec>> = OnceLock::new();
             PROPERTIES.get_or_init(|| {
@@ -96,31 +96,33 @@ mod imp {
 
             obj.setup_bindings();
 
-            utils::spawn(clone!(@weak obj => async move {
-                obj.calculate_cache_size().await;
-            }));
+            utils::spawn(clone!(
+                #[weak]
+                obj,
+                async move {
+                    obj.calculate_cache_size().await;
+                }
+            ));
         }
     }
 
-    impl WidgetImpl for PreferencesWindow {}
-    impl WindowImpl for PreferencesWindow {}
-    impl AdwWindowImpl for PreferencesWindow {}
-    impl PreferencesWindowImpl for PreferencesWindow {}
+    impl WidgetImpl for PreferencesDialog {}
+    impl AdwDialogImpl for PreferencesDialog {}
+    impl PreferencesDialogImpl for PreferencesDialog {}
 }
 
 glib::wrapper! {
-    pub(crate) struct PreferencesWindow(ObjectSubclass<imp::PreferencesWindow>)
-        @extends gtk::Widget, gtk::Window, adw::Window, adw::PreferencesWindow;
+    pub(crate) struct PreferencesDialog(ObjectSubclass<imp::PreferencesDialog>)
+        @extends gtk::Widget, adw::Dialog, adw::PreferencesDialog;
 }
 
-impl PreferencesWindow {
-    pub(crate) fn new(parent_window: Option<&gtk::Window>, session: &ui::Session) -> Self {
-        glib::Object::builder()
-            .property("transient-for", parent_window)
-            .property("session", session)
-            .build()
+impl From<&ui::Session> for PreferencesDialog {
+    fn from(session: &ui::Session) -> Self {
+        glib::Object::builder().property("session", session).build()
     }
+}
 
+impl PreferencesDialog {
     fn setup_bindings(&self) {
         let imp = self.imp();
 
@@ -142,8 +144,10 @@ impl PreferencesWindow {
 
         // 'Dark theme' switch state handling
         let follow_system_colors_switch = &*imp.follow_system_colors_switch;
-        imp.dark_theme_switch.connect_active_notify(
-            clone!(@weak follow_system_colors_switch => move |switch| {
+        imp.dark_theme_switch.connect_active_notify(clone!(
+            #[weak]
+            follow_system_colors_switch,
+            move |switch| {
                 if !follow_system_colors_switch.is_active() {
                     let style_manager = adw::StyleManager::default();
                     let settings = gio::Settings::new(config::APP_ID);
@@ -157,8 +161,8 @@ impl PreferencesWindow {
                         settings.set_string("color-scheme", "light").unwrap();
                     }
                 }
-            }),
-        );
+            }
+        ));
 
         // Make the 'Dark theme' switch insensitive if the 'Follow system colors'
         // switch is active

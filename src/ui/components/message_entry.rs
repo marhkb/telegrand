@@ -103,14 +103,21 @@ mod imp {
 
             let obj = self.obj();
 
-            self.placeholder
-                .connect_text_notify(clone!(@weak obj => move |_| obj.notify("placeholder-text")));
+            self.placeholder.connect_text_notify(clone!(
+                #[weak]
+                obj,
+                move |_| obj.notify("placeholder-text")
+            ));
 
             // Handle the enter key to emit the "activate" signal if neither the "ctrl" nor the
             // "shift" modifier are pressed at the same time.
             let key_events = gtk::EventControllerKey::new();
-            key_events.connect_key_pressed(
-                clone!(@weak obj => @default-return glib::Propagation::Proceed, move |_, key, _, modifier| {
+            key_events.connect_key_pressed(clone!(
+                #[weak]
+                obj,
+                #[upgrade_or]
+                glib::Propagation::Proceed,
+                move |_, key, _, modifier| {
                     if !modifier.contains(gdk::ModifierType::CONTROL_MASK)
                         && !modifier.contains(gdk::ModifierType::SHIFT_MASK)
                         && (key == gdk::Key::Return || key == gdk::Key::KP_Enter)
@@ -120,26 +127,35 @@ mod imp {
                     } else {
                         glib::Propagation::Proceed
                     }
-                }),
-            );
+                }
+            ));
             self.text_view.add_controller(key_events);
 
             let press = gtk::GestureClick::new();
-            press.connect_pressed(clone!(@weak obj => move |_, _, _, _| {
-                obj.emit_by_name::<()>("emoji-button-press", &[&*obj.imp().emoji_button]);
-            }));
+            press.connect_pressed(clone!(
+                #[weak]
+                obj,
+                move |_, _, _, _| {
+                    obj.emit_by_name::<()>("emoji-button-press", &[&*obj.imp().emoji_button]);
+                }
+            ));
             self.emoji_button.add_controller(press);
 
-            self.text_view
-                .buffer()
-                .connect_changed(clone!(@weak obj => move |_| {
+            self.text_view.buffer().connect_changed(clone!(
+                #[weak]
+                obj,
+                move |_| {
                     obj.text_buffer_changed();
-                }));
+                }
+            ));
 
-            self.text_view
-                .connect_paste_clipboard(clone!(@weak obj => move |_| {
+            self.text_view.connect_paste_clipboard(clone!(
+                #[weak]
+                obj,
+                move |_| {
                     obj.emit_by_name::<()>("paste-clipboard", &[]);
-                }));
+                }
+            ));
         }
 
         fn dispose(&self) {

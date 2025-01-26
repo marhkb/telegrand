@@ -78,10 +78,13 @@ mod imp {
             let obj = self.obj();
             obj.set_overflow(gtk::Overflow::Hidden);
 
-            self.picture
-                .connect_paintable_notify(clone!(@weak obj => move |_| {
+            self.picture.connect_paintable_notify(clone!(
+                #[weak]
+                obj,
+                move |_| {
                     obj.notify("paintable");
-                }));
+                }
+            ));
         }
 
         fn dispose(&self) {

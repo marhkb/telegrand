@@ -54,7 +54,7 @@ pub(crate) use self::session::MessageSticker;
 pub(crate) use self::session::MessageText;
 pub(crate) use self::session::MessageVenue;
 pub(crate) use self::session::MessageVideo;
-pub(crate) use self::session::PreferencesWindow;
+pub(crate) use self::session::PreferencesDialog;
 pub(crate) use self::session::Row as SessionRow;
 pub(crate) use self::session::SendMediaWindow;
 pub(crate) use self::session::Session;
@@ -121,7 +121,7 @@ pub(crate) fn init() {
     MessageVenue::static_type();
     MessageVideo::static_type();
     PhoneNumberInput::static_type();
-    PreferencesWindow::static_type();
+    PreferencesDialog::static_type();
     SendMediaWindow::static_type();
     Session::static_type();
     SessionRow::static_type();

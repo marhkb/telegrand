@@ -199,17 +199,22 @@ impl ChatInfoWindow {
         self.update_info_list_visibility();
 
         // Full info
-        utils::spawn(clone!(@weak self as obj => async move {
-            let result = tdlib::functions::get_basic_group_full_info(basic_group_id, client_id).await;
-            match result {
-                Ok(tdlib::enums::BasicGroupFullInfo::BasicGroupFullInfo(full_info)) => {
-                    obj.setup_basic_group_full_info(full_info);
-                }
-                Err(e) => {
-                    log::warn!("Failed to get basic group full info: {e:?}");
+        utils::spawn(clone!(
+            #[weak(rename_to = obj)]
+            self,
+            async move {
+                let result =
+                    tdlib::functions::get_basic_group_full_info(basic_group_id, client_id).await;
+                match result {
+                    Ok(tdlib::enums::BasicGroupFullInfo::BasicGroupFullInfo(full_info)) => {
+                        obj.setup_basic_group_full_info(full_info);
+                    }
+                    Err(e) => {
+                        log::warn!("Failed to get basic group full info: {e:?}");
+                    }
                 }
             }
-        }));
+        ));
     }
 
     fn setup_basic_group_full_info(&self, basic_group_full_info: tdlib::types::BasicGroupFullInfo) {
@@ -255,17 +260,22 @@ impl ChatInfoWindow {
         self.update_info_list_visibility();
 
         // Full info
-        utils::spawn(clone!(@weak self as obj => async move {
-            let result = tdlib::functions::get_supergroup_full_info(supergroup_id, client_id).await;
-            match result {
-                Ok(tdlib::enums::SupergroupFullInfo::SupergroupFullInfo(full_info)) => {
-                    obj.setup_supergroup_full_info(full_info);
-                }
-                Err(e) => {
-                    log::warn!("Failed to get supergroup full info: {e:?}");
+        utils::spawn(clone!(
+            #[weak(rename_to = obj)]
+            self,
+            async move {
+                let result =
+                    tdlib::functions::get_supergroup_full_info(supergroup_id, client_id).await;
+                match result {
+                    Ok(tdlib::enums::SupergroupFullInfo::SupergroupFullInfo(full_info)) => {
+                        obj.setup_supergroup_full_info(full_info);
+                    }
+                    Err(e) => {
+                        log::warn!("Failed to get supergroup full info: {e:?}");
+                    }
                 }
             }
-        }));
+        ));
     }
 
     fn setup_supergroup_full_info(&self, supergroup_full_info: tdlib::types::SupergroupFullInfo) {
@@ -288,12 +298,16 @@ impl ChatInfoWindow {
 
     fn make_row_copyable(&self, action_row: &adw::ActionRow) {
         action_row.set_activatable(true);
-        action_row.connect_activated(clone!(@weak self as obj => move |action_row| {
-            action_row.clipboard().set_text(&action_row.title());
+        action_row.connect_activated(clone!(
+            #[weak(rename_to = obj)]
+            self,
+            move |action_row| {
+                action_row.clipboard().set_text(&action_row.title());
 
-            let toast = adw::Toast::new(&gettext("Copied to clipboard"));
-            obj.imp().toast_overlay.add_toast(toast);
-        }));
+                let toast = adw::Toast::new(&gettext("Copied to clipboard"));
+                obj.imp().toast_overlay.add_toast(toast);
+            }
+        ));
     }
 
     pub(crate) fn chat(&self) -> Option<&model::Chat> {

@@ -8,7 +8,7 @@ use gtk::gdk;
 use gtk::gio;
 use gtk::glib;
 use gtk::prelude::*;
-use image::io::Reader as ImageReader;
+use image::ImageReader;
 use regex::Regex;
 use thiserror::Error;
 

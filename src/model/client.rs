@@ -68,9 +68,13 @@ mod imp {
 
             let obj = &*self.obj();
 
-            utils::spawn(clone!(@weak obj => async move {
-                obj.init().await;
-            }));
+            utils::spawn(clone!(
+                #[weak]
+                obj,
+                async move {
+                    obj.init().await;
+                }
+            ));
             obj.set_state(model::ClientStateAuth::from(obj).upcast());
         }
     }
@@ -256,26 +260,36 @@ impl Client {
         match update {
             Update::AuthorizationState(state) => match state.authorization_state {
                 AuthorizationState::WaitTdlibParameters => {
-                    utils::spawn(clone!(@weak self as obj => async move {
-                        if let Err(e) = obj.send_tdlib_parameters().await {
-                            log::error!("Failed sensing tdlib parameters: {e:?}");
+                    utils::spawn(clone!(
+                        #[weak(rename_to = obj)]
+                        self,
+                        async move {
+                            if let Err(e) = obj.send_tdlib_parameters().await {
+                                log::error!("Failed sensing tdlib parameters: {e:?}");
+                            }
                         }
-                    }));
+                    ));
                 }
                 AuthorizationState::Ready => {
-                    utils::spawn(clone!(@weak self as obj => async move {
-                        let tdlib::enums::User::User(me) =
-                            tdlib::functions::get_me(obj.id()).await.unwrap();
+                    utils::spawn(clone!(
+                        #[weak(rename_to = obj)]
+                        self,
+                        async move {
+                            let tdlib::enums::User::User(me) =
+                                tdlib::functions::get_me(obj.id()).await.unwrap();
 
-                        let state = model::ClientStateSession::new(&obj, me);
-                        while let Some(update) = obj.imp().queued_updates.borrow_mut().pop_front() {
-                            state.handle_update(update);
+                            let state = model::ClientStateSession::new(&obj, me);
+                            while let Some(update) =
+                                obj.imp().queued_updates.borrow_mut().pop_front()
+                            {
+                                state.handle_update(update);
+                            }
+
+                            obj.set_state(state.upcast());
+
+                            obj.client_manager_().on_client_logged_in(&obj);
                         }
-
-                        obj.set_state(state.upcast());
-
-                        obj.client_manager_().on_client_logged_in(&obj);
-                    }));
+                    ));
                 }
                 AuthorizationState::Closing => {
                     self.set_state(model::ClientStateLoggingOut::default().upcast());

@@ -142,19 +142,27 @@ impl ChatList {
     }
 
     pub(crate) fn fetch(&self) {
-        utils::spawn(clone!(@weak self as obj => async move {
-            let result = tdlib::functions::load_chats(Some(obj.list_type().0), 20, obj.session_().client_().id())
+        utils::spawn(clone!(
+            #[weak(rename_to = obj)]
+            self,
+            async move {
+                let result = tdlib::functions::load_chats(
+                    Some(obj.list_type().0),
+                    20,
+                    obj.session_().client_().id(),
+                )
                 .await;
 
-            if let Err(err) = result {
-                // Error 404 means that all chats have been loaded
-                if err.code != 404 {
-                    log::error!("Received an error for LoadChats: {}", err.code);
+                if let Err(err) = result {
+                    // Error 404 means that all chats have been loaded
+                    if err.code != 404 {
+                        log::error!("Received an error for LoadChats: {}", err.code);
+                    }
+                } else {
+                    obj.fetch();
                 }
-            } else {
-                obj.fetch();
             }
-        }));
+        ));
     }
 
     pub(crate) fn update_chat_position(

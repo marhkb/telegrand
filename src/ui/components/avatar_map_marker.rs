@@ -67,9 +67,13 @@ mod imp {
 
             self.avatar.connect_notify_local(
                 Some("item"),
-                clone!(@weak obj => move |_, _| {
-                    obj.notify("user");
-                }),
+                clone!(
+                    #[weak]
+                    obj,
+                    move |_, _| {
+                        obj.notify("user");
+                    }
+                ),
             );
         }
 

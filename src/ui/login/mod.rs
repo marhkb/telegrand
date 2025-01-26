@@ -82,11 +82,15 @@ mod imp {
             if let Some(state) = model.state() {
                 obj.update_state(state);
             }
-            model.connect_state_notify(clone!(@weak obj => move |auth| {
-                if let Some(state) = auth.state() {
-                    obj.update_state(state);
+            model.connect_state_notify(clone!(
+                #[weak]
+                obj,
+                move |auth| {
+                    if let Some(state) = auth.state() {
+                        obj.update_state(state);
+                    }
                 }
-            }));
+            ));
 
             self.model.set(Some(model));
             obj.notify_model();
@@ -112,16 +116,9 @@ impl Login {
     }
 
     pub(crate) fn reset(&self) {
-        let dialog = adw::MessageDialog::builder()
+        let dialog = adw::AlertDialog::builder()
             .heading(gettext("Reset Registration Process?"))
             .body(gettext("If you reset the registration process, the previous progress will be irrevocably lost."))
-            .transient_for(
-                self
-                    .root()
-                    .unwrap()
-                    .downcast_ref::<gtk::Window>()
-                    .unwrap(),
-            )
             .build();
 
         dialog.add_responses(&[
@@ -134,12 +131,17 @@ impl Login {
         let model = self.model_();
 
         dialog.choose(
+            self.root().unwrap().downcast_ref::<gtk::Window>().unwrap(),
             gio::Cancellable::NONE,
-            clone!(@weak model => move |response| {
-                if response == "reset" {
-                    model.reset();
+            clone!(
+                #[weak]
+                model,
+                move |response| {
+                    if response == "reset" {
+                        model.reset();
+                    }
                 }
-            }),
+            ),
         );
     }
 

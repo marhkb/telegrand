@@ -133,11 +133,14 @@ impl MessageBaseExt for MessageLocation {
         imp.message_bubble.update_from_message(message, true);
 
         // Update the message.
-        let handler_id =
-            message.connect_content_notify(clone!(@weak self as obj => move |message| {
+        let handler_id = message.connect_content_notify(clone!(
+            #[weak(rename_to = obj)]
+            self,
+            move |message| {
                 obj.update_row(message);
                 obj.update_map_window(message);
-            }));
+            }
+        ));
         imp.handler_id.replace(Some(handler_id));
         self.update_row(message);
 
@@ -177,31 +180,38 @@ impl MessageLocation {
 
                     let source_id = glib::timeout_add_seconds_local(
                         1,
-                        clone!(@weak self as obj => @default-return glib::ControlFlow::Break, move || {
-                            match obj.update_time(message_date, message_.live_period) {
-                                Some(now) => {
-                                    let minutes = now.difference(&last_update_date).as_minutes();
-                                    obj.imp().last_updated_label.set_label(&if minutes <= 1 {
-                                        gettext("updated just now")
-                                    } else if minutes < 60 {
-                                        gettext!("updated {} minutes ago", minutes)
-                                    } else if minutes == 60 {
-                                        gettext("updated an hour ago")
-                                    } else {
-                                        gettext_f(
-                                            "updated {hours} hours and {minutes} minutes ago",
-                                            &[
-                                                ("hours", &(minutes / 60).to_string()),
-                                                ("minutes", &(minutes % 60).to_string()),
-                                            ],
-                                        )
-                                    });
+                        clone!(
+                            #[weak(rename_to = obj)]
+                            self,
+                            #[upgrade_or]
+                            glib::ControlFlow::Break,
+                            move || {
+                                match obj.update_time(message_date, message_.live_period) {
+                                    Some(now) => {
+                                        let minutes =
+                                            now.difference(&last_update_date).as_minutes();
+                                        obj.imp().last_updated_label.set_label(&if minutes <= 1 {
+                                            gettext("updated just now")
+                                        } else if minutes < 60 {
+                                            gettext!("updated {} minutes ago", minutes)
+                                        } else if minutes == 60 {
+                                            gettext("updated an hour ago")
+                                        } else {
+                                            gettext_f(
+                                                "updated {hours} hours and {minutes} minutes ago",
+                                                &[
+                                                    ("hours", &(minutes / 60).to_string()),
+                                                    ("minutes", &(minutes % 60).to_string()),
+                                                ],
+                                            )
+                                        });
 
-                                    glib::ControlFlow::Continue
+                                        glib::ControlFlow::Continue
+                                    }
+                                    None => glib::ControlFlow::Break,
                                 }
-                                None => glib::ControlFlow::Break,
                             }
-                        }),
+                        ),
                     );
                     imp.expire_source_id.replace(Some(source_id));
 

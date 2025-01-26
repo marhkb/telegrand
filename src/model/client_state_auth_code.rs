@@ -70,17 +70,23 @@ mod imp {
 
                 let source_id = glib::timeout_add_seconds_local(
                     1,
-                    clone!(@weak obj => @default-return glib::ControlFlow::Break, move || {
-                        let imp = obj.imp();
+                    clone!(
+                        #[weak]
+                        obj,
+                        #[upgrade_or]
+                        glib::ControlFlow::Break,
+                        move || {
+                            let imp = obj.imp();
 
-                        imp.set_countdown(obj.countdown() - 1);
-                        glib::ControlFlow::from(if obj.countdown() == 0 {
-                            imp.stop_code_next_type_countdown();
-                            false
-                        } else {
-                            true
-                        })
-                    }),
+                            imp.set_countdown(obj.countdown() - 1);
+                            glib::ControlFlow::from(if obj.countdown() == 0 {
+                                imp.stop_code_next_type_countdown();
+                                false
+                            } else {
+                                true
+                            })
+                        }
+                    ),
                 );
                 self.countdown_source_id.replace(Some(source_id));
             }

@@ -116,13 +116,21 @@ impl Sticker {
 
         let format = sticker.format;
 
-        utils::spawn(clone!(@weak self as obj, @weak session => async move {
+        utils::spawn(clone!(
+            #[weak(rename_to = obj)]
+            self,
+            #[weak]
+            session,
+            async move {
                 if sticker.sticker.local.is_downloading_completed {
-                    obj.load_sticker(sticker.sticker.local.path, file_id, looped, format).await;
+                    obj.load_sticker(sticker.sticker.local.path, file_id, looped, format)
+                        .await;
                 } else {
-                obj.download_sticker(file_id, &session, looped, format).await
+                    obj.download_sticker(file_id, &session, looped, format)
+                        .await
+                }
             }
-        }));
+        ));
     }
 
     pub(crate) fn play_animation(&self) {

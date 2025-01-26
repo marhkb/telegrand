@@ -267,17 +267,23 @@ impl ClientManager {
 
     fn start_tdlib_thread(&self) {
         let (sender, receiver) = async_channel::unbounded();
-        glib::spawn_future_local(clone!(@weak self as obj => async move {
-            while let Ok((update, client_id)) = receiver.recv().await {
-                obj.handle_update(update, client_id);
+        glib::spawn_future_local(clone!(
+            #[weak(rename_to = obj)]
+            self,
+            async move {
+                while let Ok((update, client_id)) = receiver.recv().await {
+                    obj.handle_update(update, client_id);
+                }
             }
-        }));
+        ));
 
         thread::spawn(move || loop {
             if let Some((update, client_id)) = tdlib::receive() {
-                glib::spawn_future(clone!(@strong sender => async move {
-                    _ = sender.send((update, client_id)).await;
-                }));
+                glib::spawn_future(clone!(
+                    #[strong]
+                    sender,
+                    async move { _ = sender.send((update, client_id)).await }
+                ));
             }
         });
     }

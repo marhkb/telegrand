@@ -230,12 +230,11 @@ impl Password {
     }
 
     pub(crate) fn delete_account(&self) {
-        let dialog = adw::MessageDialog::builder()
+        let dialog = adw::AlertDialog::builder()
             .heading(gettext("Warning"))
             .body(gettext(
                 "You will lose all your chats and messages, along with any media and files you shared!\n\nDo you want to delete your account?",
             ))
-            .transient_for(self.root().unwrap().downcast_ref::<gtk::Window>().unwrap())
             .build();
 
         dialog.add_responses(&[
@@ -246,36 +245,48 @@ impl Password {
         dialog.set_response_appearance("delete", adw::ResponseAppearance::Destructive);
 
         dialog.choose(
+            self.root().unwrap().downcast_ref::<gtk::Window>().unwrap(),
             gio::Cancellable::NONE,
-            clone!(@weak self as obj => move |response| {
-                if response == "delete" {
-                    obj.freeze(true);
-                    let client_id = obj.model().unwrap().auth().unwrap().client().unwrap().id();
+            clone!(
+                #[weak(rename_to = obj)]
+                self,
+                move |response| {
+                    if response == "delete" {
+                        obj.freeze(true);
+                        let client_id = obj.model().unwrap().auth().unwrap().client().unwrap().id();
 
-                    utils::spawn(clone!(@weak obj => async move {
-                        let result = tdlib::functions::delete_account(
-                            "Cloud password lost and not recoverable".into(),
-                            String::new(),
-                            client_id,
-                        )
-                        .await;
+                        utils::spawn(clone!(
+                            #[weak]
+                            obj,
+                            async move {
+                                let result = tdlib::functions::delete_account(
+                                    "Cloud password lost and not recoverable".into(),
+                                    String::new(),
+                                    client_id,
+                                )
+                                .await;
 
-                        // Just unfreeze in case of an error, else stay frozen until we are
-                        // redirected to the welcome page.
-                        if let Err(e) = result {
-                            log::error!("Failed to delete account: {e:?}");
-                            utils::show_toast(
-                                &obj,
-                                gettext_f("Failed to delete account: {error}", &[("error", &e.message)])
-                            );
+                                // Just unfreeze in case of an error, else stay frozen until we are
+                                // redirected to the welcome page.
+                                if let Err(e) = result {
+                                    log::error!("Failed to delete account: {e:?}");
+                                    utils::show_toast(
+                                        &obj,
+                                        gettext_f(
+                                            "Failed to delete account: {error}",
+                                            &[("error", &e.message)],
+                                        ),
+                                    );
 
-                            obj.freeze(false);
-                        }
-                    }));
-                } else {
-                    obj.imp().password_entry_row.grab_focus();
+                                    obj.freeze(false);
+                                }
+                            }
+                        ));
+                    } else {
+                        obj.imp().password_entry_row.grab_focus();
+                    }
                 }
-            }),
+            ),
         );
     }
 
@@ -312,31 +323,37 @@ impl Password {
     }
 
     pub(crate) fn show_no_email_access_dialog(&self) {
-        let dialog = adw::MessageDialog::builder()
+        let dialog = adw::AlertDialog::builder()
             .heading(gettext("Sorry"))
             .body(gettext(
                 "If you can't restore access to the e-mail, your remaining options are either to remember your password or to delete and then recreate your account.",
             ))
-            .transient_for(self.root().unwrap().downcast_ref::<gtk::Window>().unwrap())
             .build();
 
         dialog.add_responses(&[("ok", &gettext("_OK"))]);
         dialog.set_default_response(Some("ok"));
 
         dialog.choose(
+            self.root().unwrap().downcast_ref::<gtk::Window>().unwrap(),
             gio::Cancellable::NONE,
-            clone!(@weak self as obj => move |_| {
-                obj.imp()
-                    .password_recovery_code_entry_row
-                    .grab_focus();
-            }),
+            clone!(
+                #[weak(rename_to = obj)]
+                self,
+                move |_| {
+                    obj.imp().password_recovery_code_entry_row.grab_focus();
+                }
+            ),
         );
     }
 
     pub(crate) fn focus_password_entry_row(&self) {
-        glib::idle_add_local_once(clone!(@weak self as obj => move || {
-            obj.imp().password_entry_row.grab_focus();
-        }));
+        glib::idle_add_local_once(clone!(
+            #[weak(rename_to = obj)]
+            self,
+            move || {
+                obj.imp().password_entry_row.grab_focus();
+            }
+        ));
     }
 
     fn freeze(&self, freeze: bool) {
